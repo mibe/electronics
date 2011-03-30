@@ -18,17 +18,44 @@ const int redLed = 6;        // Red LED output pin
 const int yellowLed  = 5;    // Yellow LED output pin
 const int greenLed = 3;      // Green LED output pin
 
-// Duration of the red & green phase:
+// Duration of the red & green phase in seconds:
 const int redPhase = 5;
 const int greenPhase = 5;
 
+// The different phases of a german traffic light
+enum phase {
+  red,
+  red_yellow,
+  yellow,
+  green
+};
+
 int brightness = 0;
+phase currentPhase;
+int dummyCounter;
 
 void setup() {
+  // Start with red phase
+  currentPhase = red;
+  dummyCounter = redPhase * 100;
 }
 
 void loop() {
-  readBrightness();
+  //outputLogic();
+//  digitalWrite(13, HIGH);
+//  readBrightness();
+//  analogWrite(redLed, LOW);
+  //analogWrite(redLed, brightness);
+  //delay(10);
+  /*
+  // if timer is zero switch to the next phase
+  if (dummyCounter == 0) {
+    switchToNextPhase();
+  }
+  
+  dummyCounter--;
+  delay(10);*/
+
   
   // Red phase
   analogWrite(redLed, brightness);
@@ -52,6 +79,76 @@ void loop() {
   // Start new red phase
   analogWrite(redLed, brightness);
   analogWrite(yellowLed, LOW);
+}
+
+void switchToNextPhase() {
+  switch(currentPhase) {
+    case red: currentPhase = red_yellow;
+      dummyCounter = 100;    // 1 second
+      break;
+    case red_yellow: currentPhase = green;
+      dummyCounter = greenPhase * 100;
+      break;
+    case green: currentPhase = yellow;
+      dummyCounter = 300;    // 3 seconds
+      break;
+    case yellow: currentPhase = red;
+      dummyCounter = redPhase * 100;
+      break;
+  }
+}
+
+void outputLogic() {
+  readBrightness();
+  
+  switch(currentPhase) {
+    red: switchToRed();
+      break;
+    red_yellow: switchToRedYellow();
+      break;
+    green: switchToGreen();
+      break;
+    yellow: switchToYellow();
+      break;
+  }
+}
+
+// activate red phase
+void switchToRed() {
+  switchOn(redLed);
+  switchOff(yellowLed);
+  switchOff(greenLed);
+}
+
+// activate red & yellow phase
+void switchToRedYellow() {
+  switchOn(redLed);
+  switchOn(yellowLed);
+  switchOff(greenLed);
+}
+
+// activate green phase
+void switchToGreen() {
+  switchOff(redLed);
+  switchOff(yellowLed);
+  switchOn(greenLed);
+}
+
+// activate yellow phase
+void switchToYellow() {
+  switchOff(redLed);
+  switchOn(yellowLed);
+  switchOff(greenLed);
+}
+
+// switch a output pin on
+void switchOn(int ledPin) {
+  analogWrite(ledPin, brightness);
+}
+
+// switch a output pin off
+void switchOff(int ledPin) {
+  analogWrite(ledPin, 0);
 }
 
 void readBrightness() {
