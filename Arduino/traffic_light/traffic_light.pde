@@ -1,5 +1,5 @@
 /*
- A simple program for a german traffic light with brighness control.
+ A simple program for a german traffic light with brightness control.
  
  Connect a potentiometer to an analog input pin and a red, yellow
  and green LED to output pins which have PWM.
