@@ -41,44 +41,15 @@ void setup() {
 }
 
 void loop() {
-  //outputLogic();
-//  digitalWrite(13, HIGH);
-//  readBrightness();
-//  analogWrite(redLed, LOW);
-  //analogWrite(redLed, brightness);
-  //delay(10);
-  /*
+  outputLogic();
+
   // if timer is zero switch to the next phase
   if (dummyCounter == 0) {
     switchToNextPhase();
   }
   
   dummyCounter--;
-  delay(10);*/
-
-  
-  // Red phase
-  analogWrite(redLed, brightness);
-  delay(redPhase * 1000);
-  
-  // Activate yellow LED
-  analogWrite(yellowLed, brightness);
-  delay(1000);
-  
-  // Green phase: Red & yellow off, green on
-  analogWrite(redLed, LOW);
-  analogWrite(yellowLed, LOW);
-  analogWrite(greenLed, brightness);
-  delay(greenPhase * 1000);
-  
-  // Switch to yellow again
-  analogWrite(yellowLed, brightness);
-  analogWrite(greenLed, LOW);
-  delay(3000);
-  
-  // Start new red phase
-  analogWrite(redLed, brightness);
-  analogWrite(yellowLed, LOW);
+  delay(10);
 }
 
 void switchToNextPhase() {
@@ -102,13 +73,13 @@ void outputLogic() {
   readBrightness();
   
   switch(currentPhase) {
-    red: switchToRed();
+    case red: switchToRed();
       break;
-    red_yellow: switchToRedYellow();
+    case red_yellow: switchToRedYellow();
       break;
-    green: switchToGreen();
+    case green: switchToGreen();
       break;
-    yellow: switchToYellow();
+    case yellow: switchToYellow();
       break;
   }
 }
