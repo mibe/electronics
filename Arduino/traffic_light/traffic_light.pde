@@ -73,53 +73,22 @@ void outputLogic() {
   readBrightness();
   
   switch(currentPhase) {
-    case red: switchToRed();
+    case red: setLeds(1, 0, 0);
       break;
-    case red_yellow: switchToRedYellow();
+    case red_yellow: setLeds(1, 1, 0);
       break;
-    case green: switchToGreen();
+    case green: setLeds(0, 0, 1);
       break;
-    case yellow: switchToYellow();
+    case yellow: setLeds(0, 1, 0);
       break;
   }
 }
 
-// activate red phase
-void switchToRed() {
-  switchOn(redLed);
-  switchOff(yellowLed);
-  switchOff(greenLed);
-}
-
-// activate red & yellow phase
-void switchToRedYellow() {
-  switchOn(redLed);
-  switchOn(yellowLed);
-  switchOff(greenLed);
-}
-
-// activate green phase
-void switchToGreen() {
-  switchOff(redLed);
-  switchOff(yellowLed);
-  switchOn(greenLed);
-}
-
-// activate yellow phase
-void switchToYellow() {
-  switchOff(redLed);
-  switchOn(yellowLed);
-  switchOff(greenLed);
-}
-
-// switch a output pin on
-void switchOn(int ledPin) {
-  analogWrite(ledPin, brightness);
-}
-
-// switch a output pin off
-void switchOff(int ledPin) {
-  analogWrite(ledPin, 0);
+// de- / activate LEDs
+void setLeds(int red, int yellow, int green) {
+  analogWrite(redLed, red * brightness);
+  analogWrite(yellowLed, yellow * brightness);
+  analogWrite(greenLed, green * brightness);
 }
 
 void readBrightness() {
