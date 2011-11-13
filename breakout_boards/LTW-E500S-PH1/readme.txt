@@ -1,0 +1,1 @@
+A breakout board for the SMD RGB LED LTW-E500S-PH1 from LiteOn.

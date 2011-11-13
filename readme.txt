@@ -1,3 +1,4 @@
-This folder contains some electronic projects of mine.
+This repo contains some electronic projects of mine.
 
 Arduino			Some simple codes for the Arduino platform
+breakout_board		Some breakout boards for use on a breadboard
