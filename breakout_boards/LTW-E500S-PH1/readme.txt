@@ -1,5 +1,16 @@
 A breakout board for the SMD RGB LED LTW-E500S-PH1 from LiteOn.
 
+This is a single layer layout, with a 4 pin header as connector.
+
+Part list:
+
+D1	LTW-E500S-PH1 SMD RGB LED
+R1	SMD resistor 91 Ohms in 1206 package
+R2	SMD resistor 56 Ohms in 1206 package
+R3	SMD resistor 82 Ohms in 1206 package
+K1	1x4 pin header
+
+
 Copyright (C) 2011 Michael Bemmerl
 
 License:
