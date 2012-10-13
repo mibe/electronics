@@ -10,6 +10,14 @@ R2	SMD resistor 56 Ohms in 1206 package
 R3	SMD resistor 82 Ohms in 1206 package
 K1	1x4 pin header
 
+The original LED from LiteOn is not available anymore, but the
+Full-Color SMD LED CLP6C-FKB from Cree works as a replacement.
+Unfortunately the red and green pins are swapped. Changed part list:
+
+D1	CLP6C-FKB PLCC6 RGB SMD LED
+R1	SMD resistor 90 Ohms in 1206 package
+R2	SMD resistor 150 Ohms in 1206 package
+R3	SMD resistor 90 Ohms in 1206 package
 
 Copyright (C) 2011 Michael Bemmerl
 
