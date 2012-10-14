@@ -7,8 +7,10 @@
 #define BLUE (1 << PB0)
 
 #define BUTTON (1 << PB3)
+#define POTI (1 << PB4)
 
 void set_led(uint8_t red, uint8_t green, uint8_t blue);
+void setup_adc(void);
 
 int main(void)
 {
@@ -17,6 +19,8 @@ int main(void)
 
 	// Interner-Pull-Up aktiv
 	PINB |= BUTTON;
+
+	setup_adc();
 
 	uint8_t asdf = 0;
 
@@ -66,4 +70,20 @@ void set_led(uint8_t red, uint8_t green, uint8_t blue)
 		out &= ~BLUE;
 
 	PORTB = out;
+}
+
+void setup_adc(void)
+{
+	// Internal 1.1 Voltage Reference
+	ADMUX |= (1 << REFS1);
+	// ADC Left Adjust Result
+	ADMUX |= (1 << ADLAR);
+	// ADC2 (PB4)
+	ADMUX |= (1 << MUX1);
+
+	// ADC Prescaler (1 MHz / 8 == 125 kHz)
+	ADCSRA |= (1 << ADPS1) | (1 << ADPS0);
+	
+	// ADC2D (PB4) Digital Input Disable
+	DIDR0 |= (1 << ADC2D);
 }
