@@ -9,6 +9,10 @@
 #define BUTTON (1 << PB3)
 #define POTI (1 << PB4)
 
+#ifndef F_CPU
+#error F_CPU not defined!
+#endif
+
 void set_led(uint8_t red, uint8_t green, uint8_t blue);
 void setup_adc(void);
 
