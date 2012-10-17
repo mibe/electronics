@@ -1,11 +1,12 @@
 #include <avr/io.h>
 
-void setup_adc(void)
+void adc_setup(void)
 {
-	// Vcc as Vref
+	// Vcc as Vref (default)
 
 	// ADC Left Adjust Result
 	ADMUX |= (1 << ADLAR);
+
 	// ADC2 (PB4)
 	ADMUX |= (1 << MUX1);
 
@@ -19,7 +20,7 @@ void setup_adc(void)
 	ADCSRA |= (1 << ADEN);
 }
 
-uint8_t read_adc(void)
+uint8_t adc_read(void)
 {
 	// ADC Start Conversation
 	ADCSRA |= (1 << ADSC);
