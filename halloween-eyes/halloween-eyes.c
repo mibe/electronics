@@ -15,7 +15,8 @@
 #endif
 
 void setup_brightness(void);
-void setup_blinkrate(void);
+void blink();
+void wait(uint8_t wait);
 
 int main(void)
 {
@@ -30,8 +31,14 @@ int main(void)
 	adc_read();
 	pwm_setup();
 
+	srand(adc_read());
+
 	setup_brightness();
-	setup_blinkrate();
+
+	while(1)
+	{
+		blink();
+	}
 }
 
 void setup_brightness(void)
@@ -53,7 +60,38 @@ void setup_brightness(void)
 	_delay_ms(250);
 }
 
-void setup_blinkrate(void)
+void blink()
 {
-	
+// 	pwm_off();
+// 	_delay_ms(5000);
+// 	pwm_on();
+// 	_delay_ms(100);
+// 	pwm_off();
+// 	_delay_ms(200);
+// 	pwm_on();
+// 	_delay_ms(100);
+
+// 	pwm_on();
+// 	_delay_ms(5000);
+// 	pwm_off();
+// 	_delay_ms(150);
+// 	pwm_on();
+// 	_delay_ms(400);
+// 	pwm_off();
+// 	_delay_ms(150);
+// 	pwm_on();
+
+	pwm_on();
+	uint8_t rando = rand();
+	wait(rando);
+	pwm_off();
+	_delay_ms(150);
 }
+
+void wait(uint8_t wait)
+{
+	// 2^8 == max. 20 seconds
+	while(wait-- > 0)
+		_delay_ms(78);
+}
+
