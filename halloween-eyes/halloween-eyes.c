@@ -24,6 +24,7 @@ int main(void)
 	srand(adc_read());
 
 	setup_brightness();
+	blink_mode_switched();
 
 	uint8_t mode = 0;
 
@@ -35,13 +36,15 @@ int main(void)
 			blink_mode_switched();
 		}
 
- 		if (mode == 2)
+ 		if (mode == 3)
  			mode = 0;
 
 		if (mode == 0)
-			blink_static(false);
+			blink_static(true);
+		else if (mode == 1)
+			blink_random(true);
 		else
-			blink_random(false);
+			blink_both_random(true);
 	}
 }
 
@@ -97,16 +100,29 @@ void blink_random(bool defaultOn)
 	_delay_ms(150);
 }
 
+void blink_both_random(bool defaultOn)
+{
+	defaultOn ? pwm_on() : pwm_off();
+
+	uint8_t rando = rand();
+	wait(rando);
+
+	defaultOn ? pwm_off() : pwm_on();
+
+	rando = rand();
+	wait_short(rando);
+}
+
 void blink_mode_switched(void)
 {
-	uint8_t times = 5;
+	uint8_t times = 7;
 
 	while(times-- > 0)
 	{
 		pwm_off();
-		_delay_ms(200);
+		_delay_ms(100);
 		pwm_on();
-		_delay_ms(200);
+		_delay_ms(100);
 	}
 	
 	_delay_ms(1000);
@@ -118,4 +134,12 @@ void wait(uint8_t wait)
 	while(wait-- > 0)
 		_delay_ms(78);
 }
+
+void wait_short(uint8_t wait)
+{
+	// 2^8 == max. 20 seconds
+	while(wait-- > 0)
+		_delay_ms(19);
+}
+
 

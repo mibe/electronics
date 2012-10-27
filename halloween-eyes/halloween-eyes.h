@@ -15,6 +15,8 @@ void setup_brightness(void);
 void blink_mode_switched(void);
 void blink_static(bool);
 void blink_random(bool);
+void blink_both_random(bool);
 void wait(uint8_t wait);
+void wait_short(uint8_t wait);
 
 #endif // _HALLOWEENEYES_H_

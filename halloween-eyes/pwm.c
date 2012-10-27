@@ -16,8 +16,10 @@ void pwm_setup(void)
 
 void pwm_set(uint8_t value)
 {
-	// save last value
+	// save last value for later
+	// (used for switching on again if switched off)
 	last_value = value;
+
 	OCR0A = last_value;
 }
 
@@ -28,6 +30,8 @@ void pwm_on(void)
 
 void pwm_off(void)
 {
+	// On inverting PWM mode, "off" isn't zero
+	// but 2^8-1
 	if (TCCR0A & COM0A0)
 		OCR0A = 255;
 	else
