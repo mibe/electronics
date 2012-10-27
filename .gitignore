@@ -1,3 +1,8 @@
+######### AVR
+# Ignore AVR Studio workspace
+*.aws
+
+######### Target 3001!
 # Ignore list for Target 3001!, a PCB layout tool
 
 # mutex file
