@@ -24,6 +24,7 @@ int main(void)
 	srand(adc_read());
 
 	setup_brightness();
+	adc_off();
 	blink_mode_switched();
 
 	uint8_t mode = 0;

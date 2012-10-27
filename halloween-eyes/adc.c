@@ -31,3 +31,15 @@ uint8_t adc_read(void)
 	// ADC High data byte
 	return ADCH;
 }
+
+void adc_off(void)
+{
+	// ADC Disable
+	ADCSRA &= ~(1 << ADEN);
+}
+
+void adc_on(void)
+{
+	// ADC Enable
+	ADCSRA |= (1 << ADEN);
+}
