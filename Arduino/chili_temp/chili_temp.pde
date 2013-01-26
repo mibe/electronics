@@ -45,22 +45,26 @@ void loop(void)
     Serial.println("sensor error");
   else
   {
-    if (client.connect())
-    {
-      client.print("GET /add.php?temp1=");
-      client.print(temp1);
-      client.println(" HTTP/1.1");
-      client.println("Host: chili.michis-pla.net");
-      client.println("User-Agent: Arduino");
-      client.println();
-      delay(500);
-      client.stop();
-      Serial.println("sent beacon");
-    }
-    else
-      Serial.println("connect error");
+    send_to_web(temp1);
   }
   
   delay(60000);
 }
 
+void send_to_web(float temp1)
+{
+  if (client.connect())
+  {
+    client.print("GET /add.php?temp1=");
+    client.print(temp1);
+    client.println(" HTTP/1.1");
+    client.println("Host: chili.michis-pla.net");
+    client.println("User-Agent: Arduino");
+    client.println();
+    delay(500);
+    client.stop();
+    Serial.println("sent beacon");
+  }
+  else
+    Serial.println("connect error");  
+}
