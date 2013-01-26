@@ -27,7 +27,7 @@ void setup(void)
   sensors.begin();
 }
 
-float get_temp(void)
+float get_temp1(void)
 {
     // Temperaturen abfragen
   sensors.requestTemperatures();
@@ -38,17 +38,17 @@ return tempC1;
 
 void loop(void)
 { 
-  float temp = get_temp();
-  Serial.println(temp);
+  float temp1 = get_temp1();
+  Serial.println(temp1);
   
-  if (temp == -127 || temp == 85)
+  if (temp1 == -127 || temp1 == 85)
     Serial.println("sensor error");
   else
   {
     if (client.connect())
     {
-      client.print("GET /add.php?temp=");
-      client.print(temp);
+      client.print("GET /add.php?temp1=");
+      client.print(temp1);
       client.println(" HTTP/1.1");
       client.println("Host: chili.michis-pla.net");
       client.println("User-Agent: Arduino");
