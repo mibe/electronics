@@ -36,6 +36,7 @@ void setup(void)
 
   lcd_reset();
   lcd_cursor_form(0);
+  lcd_led_mode(0);
 
   delay(2000);
 
@@ -54,6 +55,12 @@ float get_temp1(void)
 
 void loop(void)
 { 
+  update_temp();
+  delay(10000);
+}
+
+void update_temp(void)
+{
   float temp1 = get_temp1();
   Serial.println(temp1);
 
@@ -66,8 +73,6 @@ void loop(void)
     lcd_print(temp1);
     //send_to_web(temp1);
   }
-
-  delay(10000);
 }
 
 void send_to_web(float temp1)
@@ -113,3 +118,9 @@ void lcd_cursor_form(int mode)
   mySerial.print(mode + 48, BYTE);
 }
 
+void lcd_led_mode(int mode)
+{
+  mySerial.print(ESC, BYTE);
+  mySerial.print('L');
+  mySerial.print(mode, BYTE);
+}
