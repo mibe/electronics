@@ -17,6 +17,7 @@ byte server[] = { 80,67,28,163 };
 #define P_LCD_DUMMY 9
 #define P_BUTTON 3
 #define I_BUTTON 1
+#define P_LM75 0
 
 // Refresh interval in seconds
 unsigned int REFRESH = 10;
@@ -64,6 +65,13 @@ float get_temp1(void)
   return tempC1;
 }
 
+float get_temp2(void)
+{
+  float tempC = analogRead(P_LM75);
+  tempC = (5.0 * tempC * 100) / 1024.0;
+  return tempC;
+}
+
 void loop(void)
 { 
   update_temp();
@@ -83,15 +91,20 @@ void button_pressed(void)
 void update_temp(void)
 {
   float temp1 = get_temp1();
+  float temp2 = get_temp2();
+  
   Serial.println(temp1);
+  Serial.println(temp2);
 
   if (temp1 == -127 || temp1 == 85)
     Serial.println("sensor error");
   else
   {
-    Serial.print("Temp: ");
+    Serial.print("Temp1: ");
     Serial.println(temp1);
-    lcd_print(temp1);
+    Serial.print("Temp2: ");
+    Serial.println(temp2);
+    lcd_print(temp1, temp2);
     //send_to_web(temp1);
   }
 }
@@ -121,13 +134,19 @@ void lcd_reset(void)
   delay(500);
 }
 
-void lcd_print(float temp1)
+void lcd_print(float temp1, float temp2)
 {
   char tempStr[5];
   dtostrf(temp1, 5, 2, tempStr);
   
   mySerial.print(0x0C, BYTE);
   mySerial.print("Temperatur 1: ");
+  mySerial.print(tempStr);
+  mySerial.print(0xF8, BYTE);
+  
+  dtostrf(temp2, 5, 2, tempStr);
+  
+  mySerial.print("Temperatur 2: ");
   mySerial.print(tempStr);
   mySerial.print(0xF8, BYTE);
 }
