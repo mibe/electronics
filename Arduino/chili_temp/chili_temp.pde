@@ -19,7 +19,7 @@ byte server[] = { 80,67,28,163 };
 #define I_BUTTON 1
 
 // Refresh interval in seconds
-#define REFRESH 60
+unsigned int REFRESH = 10;
 
 int ESC = 0x1B;
 
@@ -67,8 +67,8 @@ float get_temp1(void)
 void loop(void)
 { 
   update_temp();
-  
-  delay(REFRESH * 1000);
+  unsigned long refresh = REFRESH * 1000;
+  delay(refresh);
 }
 
 void button_pressed(void)
@@ -132,14 +132,14 @@ void lcd_print(float temp1)
   mySerial.print(0xF8, BYTE);
 }
 
-void lcd_cursor_form(int mode)
+void lcd_cursor_form(byte mode)
 {
   mySerial.print(ESC, BYTE);
   mySerial.print('C');
   mySerial.print(mode + 48, BYTE);
 }
 
-void lcd_led_mode(int mode)
+void lcd_led_mode(byte mode)
 {
   mySerial.print(ESC, BYTE);
   mySerial.print('L');
