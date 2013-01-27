@@ -13,8 +13,15 @@ byte server[] = { 80,67,28,163 };
 // Pins
 // 2 = DS1820
 #define P_DS1820 2
-#define P_LCD_TX 10
-#define P_LCD_DUMMY 11
+#define P_LCD_TX 8
+#define P_LCD_DUMMY 9
+#define P_BUTTON 3
+#define I_BUTTON 1
+
+// Refresh interval in seconds
+#define REFRESH 60
+
+int ESC = 0x1B;
 
 // 1-Wire-Bus instanzieren
 OneWire oneWire(P_DS1820);
@@ -22,7 +29,6 @@ OneWire oneWire(P_DS1820);
 // Instanzieren der Dallas-Sensoren
 DallasTemperature sensors(&oneWire);
 SoftwareSerial mySerial(P_LCD_DUMMY, P_LCD_TX); // RX, TX
-int ESC = 0x1B;
 Client client(server, 80);
 
 void setup(void)
@@ -31,14 +37,19 @@ void setup(void)
   Serial.begin(9600);
 
   pinMode(P_LCD_TX, OUTPUT);
+  pinMode(P_BUTTON, INPUT);
+  digitalWrite(P_BUTTON, HIGH);
+  
   // set the data rate for the SoftwareSerial port
   mySerial.begin(9600);
 
+  delay(2000);
+  
   lcd_reset();
   lcd_cursor_form(0);
   lcd_led_mode(0);
 
-  delay(2000);
+  attachInterrupt(I_BUTTON, button_pressed, CHANGE);
 
   // Start der Sensorübertragung
   sensors.begin();
@@ -56,7 +67,17 @@ float get_temp1(void)
 void loop(void)
 { 
   update_temp();
-  delay(10000);
+  
+  delay(REFRESH * 1000);
+}
+
+void button_pressed(void)
+{
+  Serial.println("interrupt");
+  
+  // LED 10 Sek. an
+  lcd_led_mode(100);
+  delay(250);
 }
 
 void update_temp(void)
