@@ -69,6 +69,7 @@ float get_temp1(void)
   sensors.requestTemperatures();
   // Sensor 0
   float tempC1 = sensors.getTempCByIndex(0);
+  tempC1 -= 2.0;
   return tempC1;
 }
 
