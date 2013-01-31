@@ -20,7 +20,7 @@ byte server[] = { 80,67,28,163 };
 #define P_LM75 0
 
 // Refresh interval in seconds
-unsigned int REFRESH = 10;
+unsigned int REFRESH = 60;
 
 int ESC = 0x1B;
 
@@ -34,7 +34,7 @@ Client client(server, 80);
 
 void setup(void)
 {
-  //  Ethernet.begin(mac, ip, gateway, subnet);
+  Ethernet.begin(mac, ip, gateway, subnet);
   Serial.begin(9600);
 
   pinMode(P_LCD_TX, OUTPUT);
@@ -121,16 +121,18 @@ void update_temp(void)
     Serial.print("Temp2: ");
     Serial.println(temp2);
     lcd_print(temp1, temp2);
-    //send_to_web(temp1);
+    send_to_web(temp1, temp2);
   }
 }
 
-void send_to_web(float temp1)
+void send_to_web(float temp1, float temp2)
 {
   if (client.connect())
   {
     client.print("GET /add.php?temp1=");
     client.print(temp1);
+    client.print("&temp2=");
+    client.print(temp2);
     client.println(" HTTP/1.1");
     client.println("Host: chili.michis-pla.net");
     client.println("User-Agent: Arduino");
