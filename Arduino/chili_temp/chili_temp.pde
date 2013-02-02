@@ -69,16 +69,26 @@ float get_temp1(void)
   sensors.requestTemperatures();
   // Sensor 0
   float tempC1 = sensors.getTempCByIndex(0);
-  tempC1 -= 2.0;
-  return tempC1;
+  
+  if (tempC1 == -127 || tempC1 == 85)
+    return -999;
+  else
+    return tempC1 - 2.0;
 }
 
 float get_temp2(void)
 {
-  float tempC = analogRead(P_LM75);
-  float vcc = read_vcc() / 1000.0;
-  tempC = (vcc * tempC * 100) / 1024.0;
-  return tempC;
+  float result = 0.0;
+  
+  // 10x messen für arithmetisches Mittel
+  for (int a = 0; a < 10; a++)
+  {
+    float tempC = analogRead(P_LM75);
+    float vcc = read_vcc() / 1000.0;
+    result += (vcc * tempC * 100) / 1024.0;
+  }
+
+  return result / 10.0;
 }
 
 long read_vcc()
@@ -109,10 +119,7 @@ void update_temp(void)
   float temp1 = get_temp1();
   float temp2 = get_temp2();
   
-  Serial.println(temp1);
-  Serial.println(temp2);
-
-  if (temp1 == -127 || temp1 == 85)
+  if (temp1 == -999)
     Serial.println("sensor error");
   else
   {
