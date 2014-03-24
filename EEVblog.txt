@@ -1,3 +1,208 @@
+# PS: "youtube-dl --get-id -e ytuser:eevblog | Tee-Object -file list.txt
+# ^(.+ .+)$		# \1
+# ^(.{11})$		http://youtu.be/\1
+# Á				µ
+
+# EEVblog #594 - How To Measure Power Supply Ripple & Noise
+http://youtu.be/Edel3eduRj4
+# EEVblog #593 - HP35670A DSA Repair Part 4 - Thermal Testing
+http://youtu.be/NiPJr1XNuPI
+# EEVblog #592 - Mailbag
+http://youtu.be/NYWGXLuyH4M
+# EEVblog #591 - Agilent 54622D Retro Mixed Signal Osciloscope Review & Teardown
+http://youtu.be/aVNfFewFn_Y
+# EEVblog #590 - DIYINHK 1080P HD USB Soldering Microscope Review   Tagarno FHD ZIP
+http://youtu.be/HIWUFFlr2I4
+# EEVblog #589 - Voltech PM300 Power Analyser Teardown
+http://youtu.be/-6qopB8bd5w
+# EEVblog #588 - How To Do PCB Production Testing
+http://youtu.be/UESc7ms4efo
+# EEVblog #587 - Tektronix MDO3000 Mixed Domain Oscilloscope Teardown
+http://youtu.be/VFX47ZGOn_o
+# EEVblog #586 - Open Source Hardware uARM 4-Axis Desktop Robotic Arm Kickstarter
+http://youtu.be/gKKWUZeyAac
+# EEVblog #585 - Lab Bench ESD Matting Upgrade   Tagarno HD Microscope
+http://youtu.be/NNXo4AbaKFc
+# EEVblog #584 - What Effect Does Your Multimeter Input Impedance Have?
+http://youtu.be/i3XjdT4mIbQ
+# Announcement - EEVBlog Negative Feedback T-Shirts
+http://youtu.be/N-wcHkEBkSc
+# EEVblog #583 - Wyong HAM Radio Field Day 2014
+http://youtu.be/1yAx1Etr1Gc
+# EEVblog #582 - HP41CV Calculator Teardown
+http://youtu.be/mGFJQxAbWeY
+# EEVblog #581 - How To Do Kickstarter Surveys & Project Management
+http://youtu.be/Lb8r6ewHf_k
+# EEVblog #580 - Q&A
+http://youtu.be/YpJ9ueJ9bEA
+# EEVblog #579 - Precision Low Current Source
+http://youtu.be/OYOYI_IPKGY
+# EEVblog #578 - Proprietary Connector Rant - Panasonic LF1
+http://youtu.be/U-sGY_hsNU0
+# EEVblog #577 - Precision 1A Current Source Part 2
+http://youtu.be/O2ohz8DyJoQ
+# EEVblog #576 - Advantest R6142 Current Voltage Generator
+http://youtu.be/tSzem8xshxk
+# EEVblog #575 - DIY 1970s Spectrum Analyser
+http://youtu.be/579SYLxORyw
+# EEVblog #574 - NEC Analog TV IF Modulator Teardown
+http://youtu.be/ZmyYYKFePz4
+# EEVblog #573 - Mailbag
+http://youtu.be/R4V1xPHL804
+# EEVblog #572 - Cascading Opamps For Increased Bandwidth
+http://youtu.be/ZvT9hHG17tQ
+# uCurrent GOLD Assembler Parts Shipping
+http://youtu.be/m9tza_c4sxc
+# EEVblog #571 - Sennheiser EW100 G3 Wireless Microphone Teardown
+http://youtu.be/dFvN04Woihk
+# EEVblog #570 - LAB Cleanup And Shelving
+http://youtu.be/3g_BsHIMbrc
+# EEVblog #569 - Tour of an Analog TV Transmission Facility
+http://youtu.be/mR_wJkxKSXU
+# EEVblog #568 - Solderless Breadboard Capacitance
+http://youtu.be/6GIscUsnlM0
+# EEVblog #567 - Precision 1A Current Source
+http://youtu.be/pXMhpEi_wPU
+# EEVblog #566 - Cheap USB Microscope Reviews
+http://youtu.be/H2P1_JZYnVc
+# Analog TV Transmitter Teardown Teaser
+http://youtu.be/sEOxix7-kXk
+# EEVblog #565 - Tektronix TDS3054 Oscilloscope Repair - Part 2
+http://youtu.be/qXGqDDE9-4M
+# EEVblog #564 - Tektronix TDS3054 Oscilloscope Teardown Repair
+http://youtu.be/leC-zSMbtfg
+# EEVblog #563 - 2013 Review
+http://youtu.be/0Q-z5V9bYUs
+# uCurrent GOLD Kickstarter First Manufacture
+http://youtu.be/Ux7WdK6oym4
+# EEVblog #562 - More SMD Oven Reflow
+http://youtu.be/JA-vi2iQ5vA
+# EEVblog #561 - Mailbag
+http://youtu.be/vCRHGr0RfkM
+# EEVblog #560 - How To Remove Sticker Residue On Test Equipment
+http://youtu.be/FRDCLRry6ZU
+# EEVblog #559 - Auction Score
+http://youtu.be/uqURkr9YVvM
+# EEVblog #558 - Beta Layout DIY SMD Thermal Reflow Oven
+http://youtu.be/FNNRoXZom30
+# EEVblog #557 - Retro Sinclair ZX Spectrum Computer Teardown
+http://youtu.be/0-IebArtT9I
+# µCurrent GOLD Kickstarter Announcement
+http://youtu.be/Sztyhc-bKZ8
+# EEVblog #556 - Mailbag
+http://youtu.be/ZQr0As65P7k
+# EEVblog #555 - 555 Timer Kit
+http://youtu.be/U6qZPx4uD0g
+# EEVblog #554 - Sinclair FTV1 TV80 Flat Screen Pocket TV Teardown
+http://youtu.be/qCJPF6Ei3Vw
+# The End Of Australian Analog TV - Switching Off
+http://youtu.be/8q_S0Fk3dyM
+# EEVblog #553 - Mailbag
+http://youtu.be/gRiadnjyBdo
+# EEVblog #552 - DFM Automated PCB Panel Testing
+http://youtu.be/2zGisPMNstI
+# EEVblog #551 - Sydney Mini Maker Faire
+http://youtu.be/nN8uYDQHvpI
+# EEVblog #550 - Manfrotto Video Camera Articulated Arm
+http://youtu.be/1CZOThWik1k
+# Sydney Mini Maker Faire Announcement
+http://youtu.be/bFcgW4zsJZU
+# EEVblog #549 - Rigol DP832 Lab Power Supply Followup
+http://youtu.be/6Kfp77-7VU8
+# EEVblog #548 - EMC Pre-Compliance Conducted Emissions Testing
+http://youtu.be/uLIr1eFjY2s
+# EEVblog #547 - Dumpster Phone Teardown
+http://youtu.be/WTkrk2blxhY
+# RANT: Big New Youtube Google  Changes Nov 2013
+http://youtu.be/V2ilbmv70oQ
+# EEVblog #546 - Mailbag Monday
+http://youtu.be/A6hv5jZUwtc
+# EEVblog #545 - Vintage Design Rant
+http://youtu.be/X-2Kj979B3E
+# EEVblog #544 - Fluke 5450A Resistance Calibrator Teardown
+http://youtu.be/QFOH8n43kY4
+# EEVBlog #543 - PCB VIA Current Investigation
+http://youtu.be/vPm-qMyNwpo
+# EEVBlog Giveaway Draw Oct 2013
+http://youtu.be/hgtc6jM6qC0
+# EEVblog Q&A #1 Announcement
+http://youtu.be/2YcwVHM_4Ck
+# EEVblog #542 - ZD985 Desoldering Station
+http://youtu.be/Ft50m8UU5WQ
+# EEVblog #541 - Mailbag
+http://youtu.be/HVB7BW--zGY
+# EEVblog #540 - HP35670A DSA Repair - Part 3
+http://youtu.be/orYJFKQDZLo
+# EEVblog #539 - RFID Tag Card Repair
+http://youtu.be/5DJmp6iA1FE
+# EEVblog #538 - HP35670A DSA Repair - Part 2
+http://youtu.be/7dd_A28gtzY
+# EEVblog #537 - Square Kilometre Array Phase Array Feed Prototype
+http://youtu.be/VF3EnUzynhg
+# EEVblog #536 - HP35670A DSA Repair
+http://youtu.be/YwiZROj3SSI
+# µRuler Shipment Update
+http://youtu.be/92vemLHr9yE
+# EEVblog #535 - Dumpster Dive Plotter
+http://youtu.be/EMjHbidR2CA
+# EEVblog #534 - Mailbag
+http://youtu.be/LKv-F2clFDc
+# EEVblog #533 - LED Fluoro Tube Teardown
+http://youtu.be/PFcC315vuQ8
+# EEVblog #532 - Silicon Chip Wafer Fab Mailbag
+http://youtu.be/y0WEx0Gwk1E
+# EEVblog Contest Announcement
+http://youtu.be/qZGfVIrt0hQ
+# EEVblog #531 - LAB LED Fluoro Lighting Tube Replacement
+http://youtu.be/8d46gG4NNr4
+# EEVblog #530 - Electrophoresis Power Supply Teardown
+http://youtu.be/1j4L4ecjUz0
+# EEVblog #529 - HP 35660A DSA Upgrade Investigation
+http://youtu.be/MNDisp8IKe0
+# EEVblog #528 - Opamp Input Noise Voltage Tutorial
+http://youtu.be/Y0jkPLuFdnM
+# EEVblog #527 - Altium Entry Level PCB Tool Rant
+http://youtu.be/9GjBFQgVWv0
+# EEVblog #526 - Bank Note Acceptor Followup
+http://youtu.be/uMONqo-Ewug
+# EEVblog #525 - Bank Note Acceptor Teardown
+http://youtu.be/qOzP5Vl-CIk
+# EEVblog #524 - Vignetting on a Cathode Ray Tube
+http://youtu.be/YhXueY3FW6s
+# EEVblog #523 - REPAIR: HP 35660A Dynamic Signal Analyser
+http://youtu.be/VNsJ8qSk6CI
+# EEVblog #522 - Rigol DS1000Z Oscilloscope Quick Look
+http://youtu.be/CAnWSYg1z9A
+# µRuler Packing
+http://youtu.be/kU2qmhzlc2o
+# EEVblog #521 - Picoscope 5000 USB Oscilloscope Teardown
+http://youtu.be/TM7HGFOc74M
+# EEVblog #520 - Michael's 3D Printer
+http://youtu.be/nlfU1gvwBRM
+# EEVblog #519 - Ardusat Arduino Based CubeSat Satellite
+http://youtu.be/WCfG0OBEPHM
+# EEVblog #518 - 9V Alkaline Battery Construction
+http://youtu.be/c9JGfoLxVCo
+# EEVblog #517 - Car Airbag Controller Teardown
+http://youtu.be/kcxw850YpVc
+# EEVblog #516 - LTSPICE Tutorial - DC Operating Point Analysis
+http://youtu.be/FEGT5dUpdrc
+# Electronex 2013 Announcement
+http://youtu.be/cB0G41vUbJE
+# 2013 Australian Federal Election Rant
+http://youtu.be/uO4cxVw8wfU
+# EEVblog #515 - Battery Ionic Resistance Investigation
+http://youtu.be/fJSNAyMmNGk
+# EEVblog #514 - $5 Mobile Phone Teardown - LG800G
+http://youtu.be/eoNRiHWOnqM
+# EEVblog #513 - Mailbag
+http://youtu.be/ehXw1Amj40E
+# EEVblog #512 - Rigol DP832 Bad Design Investigation
+http://youtu.be/y-KkPLWZJko
+# Hameg Oscilloscope Draw
+http://youtu.be/ZCwBj-EMIdE
+# EEVblog #511 - Rigol DP832 Power Supply Teardown
+http://youtu.be/s4rV20ulsm0
 # EEVblog #510 - Mailbag
 http://youtu.be/V-l2tA8YSR8
 # EEVblog µRuler Crowd Funding
