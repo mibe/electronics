@@ -1,8 +1,28 @@
-# PS: "youtube-dl --get-id -e ytuser:eevblog | Tee-Object -file list.txt
+# PS: "youtube-dl --get-id -e ytuser:eevblog | Tee-Object -file list.txt"
 # ^(.+ .+)$		# \1
 # ^(.{11})$		http://youtu.be/\1
 # Á				µ
 
+# EEVblog #604 - Sinclair C5 Restoration - Part 1
+http://youtu.be/VCUdDe0t7YM
+# EEVblog #603 - Gas Sensor Teardown - Drõger Multiwarn II
+http://youtu.be/ph3utXdviAY
+# EEVblog #602 - Introduction to Microphones
+http://youtu.be/ihAG6cMpUlY
+# EEVblog #601 - Why Digital Oscilloscopes Appear Noisy
+http://youtu.be/Znwp0pK8Tzk
+# EEVblog #600 - OpAmps Explained - What is an Operational Amplifier?
+http://youtu.be/7FYHt5XviKc
+# EEVblog #599 - 5 years of the EEVblog
+http://youtu.be/tUjfRbt5bEQ
+# EEVblog #598 - Sony DME7000 Video Multi Effects Processor Teardown
+http://youtu.be/d9lZ2-a1P-E
+# EEVblog #597 - Fluke 114 Kit Multimeter   Sparkfun/Fluke Rant
+http://youtu.be/iFyEqcVpKLI
+# EEVblog #596 - World's Cheapest Soldering Station - Yihua 936
+http://youtu.be/0GdV7XBae74
+# EEVblog #595 - World's Worst Shittiest Camcorder: Teardown
+http://youtu.be/1EuBRmfJLSk
 # EEVblog #594 - How To Measure Power Supply Ripple & Noise
 http://youtu.be/Edel3eduRj4
 # EEVblog #593 - HP35670A DSA Repair Part 4 - Thermal Testing
