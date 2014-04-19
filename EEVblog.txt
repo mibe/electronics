@@ -1,11 +1,12 @@
 # PS: "youtube-dl --get-id -e ytuser:eevblog | Tee-Object -file list.txt"
 # ^(.+ .+)$		# \1
 # ^(.{11})$		http://youtu.be/\1
-# ¡				µ
+# √Å				¬µ
+# √µ				√§
 
 # EEVblog #604 - Sinclair C5 Restoration - Part 1
 http://youtu.be/VCUdDe0t7YM
-# EEVblog #603 - Gas Sensor Teardown - Drıger Multiwarn II
+# EEVblog #603 - Gas Sensor Teardown - Dr√§ger Multiwarn II
 http://youtu.be/ph3utXdviAY
 # EEVblog #602 - Introduction to Microphones
 http://youtu.be/ihAG6cMpUlY
@@ -107,7 +108,7 @@ http://youtu.be/uqURkr9YVvM
 http://youtu.be/FNNRoXZom30
 # EEVblog #557 - Retro Sinclair ZX Spectrum Computer Teardown
 http://youtu.be/0-IebArtT9I
-# µCurrent GOLD Kickstarter Announcement
+# ¬µCurrent GOLD Kickstarter Announcement
 http://youtu.be/Sztyhc-bKZ8
 # EEVblog #556 - Mailbag
 http://youtu.be/ZQr0As65P7k
@@ -161,7 +162,7 @@ http://youtu.be/7dd_A28gtzY
 http://youtu.be/VF3EnUzynhg
 # EEVblog #536 - HP35670A DSA Repair
 http://youtu.be/YwiZROj3SSI
-# µRuler Shipment Update
+# ¬µRuler Shipment Update
 http://youtu.be/92vemLHr9yE
 # EEVblog #535 - Dumpster Dive Plotter
 http://youtu.be/EMjHbidR2CA
@@ -193,7 +194,7 @@ http://youtu.be/YhXueY3FW6s
 http://youtu.be/VNsJ8qSk6CI
 # EEVblog #522 - Rigol DS1000Z Oscilloscope Quick Look
 http://youtu.be/CAnWSYg1z9A
-# µRuler Packing
+# ¬µRuler Packing
 http://youtu.be/kU2qmhzlc2o
 # EEVblog #521 - Picoscope 5000 USB Oscilloscope Teardown
 http://youtu.be/TM7HGFOc74M
@@ -225,7 +226,7 @@ http://youtu.be/ZCwBj-EMIdE
 http://youtu.be/s4rV20ulsm0
 # EEVblog #510 - Mailbag
 http://youtu.be/V-l2tA8YSR8
-# EEVblog µRuler Crowd Funding
+# EEVblog ¬µRuler Crowd Funding
 http://youtu.be/7U3R0pR6xeA
 # EEVblog #509 - Rigol DP832 Lab Power Supply
 http://youtu.be/IaWgF1SORkk
@@ -745,7 +746,7 @@ http://youtu.be/04qDj2GzD04
 http://youtu.be/lhsgJnrkQYc
 # EEVblog #271 - Zoom H1 Recorder Teardown
 http://youtu.be/2CCWnJ35obQ
-# EEVblog #270 - µCurrent Test Jig
+# EEVblog #270 - ¬µCurrent Test Jig
 http://youtu.be/-q21AfxS1LY
 # EEVblog #269 - Energy Micro Tiny Gecko
 http://youtu.be/1ihszfJAECk
@@ -909,7 +910,7 @@ http://youtu.be/J9_JxRiuS5A
 http://youtu.be/2gImgpxrchI
 # Makerbot Venture Capital Funding - EEVblog #198
 http://youtu.be/dJwn4KVF6wQ
-# RAW! Testing µCurrent's, Keithley Current/Voltage Sources, DIY Pick And Place - EEVblog #197
+# RAW! Testing ¬µCurrent's, Keithley Current/Voltage Sources, DIY Pick And Place - EEVblog #197
 http://youtu.be/wYChtniJxKY
 # Tektronix 2225 Analog Oscilloscope - EEVblog #196
 http://youtu.be/8GR_6QH3uZk
