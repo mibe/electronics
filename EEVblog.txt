@@ -4,6 +4,14 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #608 - Condenser & Electret Microphone Construction
+http://youtu.be/yKOH0DyRWRU
+# EEVblog #607 - Agilent B2912A Source Measure Unit SMU Teardown
+http://youtu.be/pKX50E_14MQ
+# EEVblog #606 - Mailbag
+http://youtu.be/BXWbmODBvhI
+# EEVblog #605 - Fig.8 & Cardioid Microphone Patterns
+http://youtu.be/_rTAqO7xz8U
 # EEVblog #604 - Sinclair C5 Restoration - Part 1
 http://youtu.be/VCUdDe0t7YM
 # EEVblog #603 - Gas Sensor Teardown - Dräger Multiwarn II
