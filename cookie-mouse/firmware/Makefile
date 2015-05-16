@@ -6,11 +6,11 @@
 # Copyright: (c) 2008 by OBJECTIVE DEVELOPMENT Software GmbH
 # License: GNU GPL v2 (see License.txt), GNU GPL v3 or proprietary (CommercialLicense.txt)
 
-DEVICE  = atmega168
-F_CPU   = 16000000	# in Hz
-FUSE_L  = # see below for fuse values for particular devices
-FUSE_H  = 
-AVRDUDE = avrdude -c usbasp -p $(DEVICE) # edit this line for your programmer
+DEVICE  = attiny45
+F_CPU   = 16500000	# in Hz
+FUSE_L  = 0xe1
+FUSE_H  = 0xdd
+AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE) # edit this line for your programmer
 
 CFLAGS  = -Iusbdrv -I. -DDEBUG_LEVEL=0
 OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o main.o
