@@ -37,8 +37,8 @@ PROGMEM const char usbHidReportDescriptor[52] = { /* USB report descriptor, size
 	0x09, 0x01,                    //   USAGE (Pointer)
 	0xA1, 0x00,                    //   COLLECTION (Physical)
 	0x05, 0x09,                    //     USAGE_PAGE (Button)
-	0x19, 0x01,                    //     USAGE_MINIMUM
-	0x29, 0x03,                    //     USAGE_MAXIMUM
+	0x19, 0x01,                    //     USAGE_MINIMUM (1)
+	0x29, 0x03,                    //     USAGE_MAXIMUM (3)
 	0x15, 0x00,                    //     LOGICAL_MINIMUM (0)
 	0x25, 0x01,                    //     LOGICAL_MAXIMUM (1)
 	0x95, 0x03,                    //     REPORT_COUNT (3)
@@ -74,24 +74,19 @@ typedef struct{
 }report_t;
 
 static report_t reportBuffer;
-static int      sinus = 7 << 6, cosinus = 0;
 static uchar    idleRate;   /* repeat rate for keyboards, never used for mice */
 
-
-/* The following function advances sin/cos by a fixed angle
- * and stores the difference to the previous coordinates in the report
- * descriptor.
- * The algorithm is the simulation of a second order differential equation.
+/* Pin, onto which the switch is wired to.
+ * The pins for the USB D- and D+ line cannot be used here, of course.
  */
-static void advanceCircleByFixedAngle(void)
-{
-char    d;
+#define SWITCH_PIN PB4
 
-#define DIVIDE_BY_64(val)  (val + (val > 0 ? 32 : -32)) >> 6    /* rounding divide */
-	reportBuffer.dx = d = DIVIDE_BY_64(cosinus);
-	sinus += d;
-	reportBuffer.dy = d = DIVIDE_BY_64(sinus);
-	cosinus -= d;
+/* Set the button mask according to the state of the activation switch
+ */
+static void adaptSwitchState(void)
+{
+	// Since the switch input is low active, it has to be negated.
+	reportBuffer.buttonMask = !(PINB & _BV(SWITCH_PIN));
 }
 
 /* ------------------------------------------------------------------------- */
@@ -198,6 +193,10 @@ uchar   i;
 		_delay_ms(1);
 	}
 	usbDeviceConnect();
+
+	// Activate the pull-up on the switch pin
+	PORTB |= _BV(SWITCH_PIN);
+
 	sei();
 	DBG1(0x01, 0, 0);       /* debug output: main loop starts */
 	for(;;){                /* main event loop */
@@ -206,7 +205,7 @@ uchar   i;
 		usbPoll();
 		if(usbInterruptIsReady()){
 			/* called after every poll of the interrupt endpoint */
-			advanceCircleByFixedAngle();
+			adaptSwitchState();
 			DBG1(0x03, 0, 0);   /* debug output: interrupt report prepared */
 			usbSetInterrupt((void *)&reportBuffer, sizeof(reportBuffer));
 		}
