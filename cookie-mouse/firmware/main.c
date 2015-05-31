@@ -81,15 +81,6 @@ static uchar    idleRate;   /* repeat rate for keyboards, never used for mice */
  */
 #define SWITCH_PIN PB4
 
-/* Set the button mask according to the state of the activation switch
- */
-static void adaptSwitchState(void)
-{
-	// Since the switch input is low active, it has to be negated.
-	if (!(PINB & _BV(SWITCH_PIN)))
-		reportBuffer.buttonMask = 1;
-}
-
 /* ------------------------------------------------------------------------- */
 
 usbMsgLen_t usbFunctionSetup(uchar data[8])
@@ -197,6 +188,9 @@ uchar   i;
 
 	// Activate the pull-up on the switch pin
 	PORTB |= _BV(SWITCH_PIN);
+	
+	// setup Timer1: select default prescaler CK/16384 
+	TCCR1 = (1 << CS13) | (1 << CS12) | (1 << CS11) | (1 << CS10);
 
 	sei();
 	DBG1(0x01, 0, 0);       /* debug output: main loop starts */
@@ -206,10 +200,30 @@ uchar   i;
 		usbPoll();
 		if(usbInterruptIsReady()){
 			/* called after every poll of the interrupt endpoint */
-			adaptSwitchState();
+			
+			uint8_t switchState = PINB & _BV(SWITCH_PIN);
+			
+			// overflow of Timer1 happened and switch pin is low and no mouse buttons are active
+			if ((TIFR & _BV(TOV1)) && !switchState && reportBuffer.buttonMask == 0)
+			{
+				// clear the TOV1 flag
+				// http://www.atmel.com/webdoc/AVRLibcReferenceManual/FAQ_1faq_intbits.html
+				TIFR = _BV(TOV1);
+				
+				// activate left mouse button
+				reportBuffer.buttonMask = 1;
+			}
+			else if (switchState)
+			{
+				// Reset timer when switch is not active. When the user activates the switch
+				// the timespan until the first "mouse click" is constant (one timer overflow)
+				TCNT1 = 0;
+			}
+			
 			DBG1(0x03, 0, 0);   /* debug output: interrupt report prepared */
 			usbSetInterrupt((void *)&reportBuffer, sizeof(reportBuffer));
 			
+			// reset button state
 			if (reportBuffer.buttonMask != 0)
 				reportBuffer.buttonMask = 0;
 		}
