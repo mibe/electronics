@@ -4,6 +4,350 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #751 - How To Debunk A Product (The Batteriser)
+http://youtu.be/4iEshd6izgk
+# EEVblog #750 - Special Mailbag!
+http://youtu.be/fKf_SIdCH1Q
+# EEVblog #749 - Mailbag
+http://youtu.be/XmdBOcmXlsc
+# EEVblog #748 - How Do Transistors Work?
+http://youtu.be/qUeK7pHe0rI
+# eevBLAB #10 - Why Learn Basic Electronics?
+http://youtu.be/zyuRcsM0gjI
+# EEVblog #747 - PC Based Logic Analyser Project
+http://youtu.be/iwRhvhKJlzs
+# EEVblog #746 - Sharp X68000 Retro Computer Teardown
+http://youtu.be/W40qGkp-mEU
+# EEVblog #745 - Mailbag
+http://youtu.be/RRSHrGQ_UDk
+# EEVblog #743 - Solar Roadways Test Results
+http://youtu.be/6-ZSXB3KDF0
+# EEVblog #742 - Why Electrolytic Capacitors Are Connected In Parallel
+http://youtu.be/wwANKw36Mjw
+# EEVblog #740 - LitePlacer Pick & Place Machine Kit Unboxing
+http://youtu.be/porhgJ5Znrc
+# EEVblog #739 - Ebay Hardware Tin Collection
+http://youtu.be/qY4RIWjXfQg
+# EEVblog #738 - Yamaha DME32 Digital Mixer Teardown
+http://youtu.be/rWBjeB9JP3Y
+# EEVblog #737 - World's Biggest Collection Of Electronics Components
+http://youtu.be/x8nbHYOc8ns
+# EEVBlog #736 - World's First IR Thermal Camera Watch
+http://youtu.be/bMFNk9af1qA
+# EEVblog #735 - Mailbag
+http://youtu.be/V9tcC7Ks4_c
+# eevBLAB #9 - Meet David
+http://youtu.be/Ji4ZIZKQRJw
+# Giroptic 360cam Kickstarter Prototype Test Footage
+http://youtu.be/MtRU8WPGlss
+# EEVblog #734 - Giroptic 360cam Kickstarter Prototype
+http://youtu.be/p6oYaFweigc
+# EEVblog #733 - Mailbag
+http://youtu.be/UYGl0vebWN8
+# EEVblog #732 - PCB Sheet Resistance
+http://youtu.be/ME4Xe53TMxI
+# EEVblog #731 - Keithley DMM7510 7.5 Digit Multimeter Teardown
+http://youtu.be/uvgJ2zAxgAY
+# EEVblog #730 - Thin Film Resistor Networks
+http://youtu.be/Rxy-VpSDPg4
+# eevBLAB #8 - New Tektronix AGO3000 Oscilloscope
+http://youtu.be/JobJswHcnLE
+# EEVblog #729 - Mailbag
+http://youtu.be/50m_OUrcxcM
+# EEVblog #728 - T4 LED Lighting
+http://youtu.be/_UFT-mjyhG0
+# The Art Of Electronics 3rd Edition!
+http://youtu.be/f4-jbobSll4
+# EEVblog #727 - How To Kill An Opamp
+http://youtu.be/EZZcfOrcMkk
+# EEVblog #726 - Dual Xeon Video Editing Machine Build
+http://youtu.be/YBuqISRPkEI
+# EEVblog #725 - LG Plasma TV Teardown
+http://youtu.be/7OW5ga49QBg
+# Home Solar Power System Installation Time Lapse
+http://youtu.be/fQAd7nposJQ
+# EEVblog #724 - Home Solar Power System Analysis & Update
+http://youtu.be/gq0f6FXjyMk
+# EEVblog #723 - Keysight 34470A 7.5 Digit Multimeter Teardown
+http://youtu.be/_QpApuKdcqQ
+# The Art Of Electronics 3rd Edition!
+http://youtu.be/f4-jbobSll4
+# EEVblog #727 - How To Kill An Opamp
+http://youtu.be/EZZcfOrcMkk
+# EEVblog #726 - Dual Xeon Video Editing Machine Build
+http://youtu.be/YBuqISRPkEI
+# EEVblog #725 - LG Plasma TV Teardown
+http://youtu.be/7OW5ga49QBg
+# Home Solar Power System Installation Time Lapse
+http://youtu.be/fQAd7nposJQ
+# EEVblog #724 - Home Solar Power System Analysis & Update
+http://youtu.be/gq0f6FXjyMk
+# EEVblog #723 - Keysight 34470A 7.5 Digit Multimeter Teardown
+http://youtu.be/_QpApuKdcqQ
+# EEVblog #722 - Mailbag
+http://youtu.be/qGQ2--t_Cyg
+# EEVblog #721 - Globalstar Satellite Phone Teardown
+http://youtu.be/uyr1ICZxJYI
+# EEVblog #720 - Mailbag
+http://youtu.be/v7TaU-N3ab0
+# EEVblog #719 - Sony Low Noise Audiophile SDXC Memory Card
+http://youtu.be/AO-vbzLPwSc
+# EEVblog #718 - Keithley 2400 SMU Teardown
+http://youtu.be/DJ2nzvX2gBc
+# EEVblog #717 - How To Hack Vacuum Fluorescent Displays
+http://youtu.be/clUVEyi_YNM
+# EEVblog #716 - Raspberry Pi 2 Xenon Flash Problem Explained
+http://youtu.be/SrDfRCi1UV0
+# EEVblog #715 - Mailbag
+http://youtu.be/v4iFgukMwsI
+# EEVblog #714 - Metal Detector Reverse Engineering
+http://youtu.be/RqB93K47Phg
+# EEVblog #713 - Voice Recognition - 1980's Style
+http://youtu.be/kFth9K_IvwA
+# EEVblog #712 - Uni-T UT71E Multimeter (Why Uni-T Meters Suck)
+http://youtu.be/i2Tkm21dI1g
+# eevBLAB #7 - Radio Shack Declares Bankruptcy!
+http://youtu.be/Gq8ly6TQQu8
+# eevBLAB #6 - Don't Assume It's Faulty
+http://youtu.be/ZYC763Vx9O8
+# EEVblog #711 - Mailbag
+http://youtu.be/lSe4f9LJ93I
+# EEVblog #710 - Intercom System Repair
+http://youtu.be/-MKUsLi90O4
+# EEVblog #709 - EDC 4601 AC Voltage Standard Teardown
+http://youtu.be/pUXGQ7zQxkM
+# EEVblog #708 - Free Energy Overunity BULLSHIT!
+http://youtu.be/hoqF3gjLIyI
+# EEVblog #707 - Rigol Oscilloscope Probe Performance
+http://youtu.be/pHbooMWS0bU
+# EEVblog #706 - Joystick Porn
+http://youtu.be/MCDsge-3z0U
+# EEVblog #705 - Mailbag
+http://youtu.be/4hHPeNIU6ls
+# EEVBlog #704 - Rigol DS1054Z Oscilloscope Features Review
+http://youtu.be/W2qdtQkBKhc
+# EEVblog #703 - Rigol DS1054Z Oscilloscope Review Summary
+http://youtu.be/ETCOhzU1O5A
+# EEVblog #702 - Keysight 3000T Oscilloscope Teardown
+http://youtu.be/H9QONLaitWU
+# EEVblog #701 - Keysight 3000T Oscilloscope Review
+http://youtu.be/FtcZ9K8551s
+# EEVblog #700 - Indiana Jones HO Scale Model Train Set
+http://youtu.be/SWm7hMkytyI
+# EEVblog #699 - Rigol DS1054Z Oscilloscope Jitter Fix Testing
+http://youtu.be/K1IJH9aJvgE
+# EEVblog #698 - GPU Video Rendering
+http://youtu.be/jV1BlsL5xVw
+# eevBLAB #4 - Youtube Multi-Channel Networks SUCK!
+http://youtu.be/o3nABDOf3KU
+# EEVblog #697 - Mailbag
+http://youtu.be/NesFg-sfY6Q
+# eevBLAB #3 - Engineers Can't Spell
+http://youtu.be/h2sOEN_TVT4
+# EEVblog #696 - Apple Lisa Retro Computer Teardown
+http://youtu.be/_hxdz6c8bHg
+# EEVblog #695 - Mailbag Tektronix 2465 Analog Oscilloscopes
+http://youtu.be/GyFeF9qPFCc
+# EEVblog #694 - Mailbag
+http://youtu.be/CQgJmmn-eSE
+# EEVblog #693 - AVO Transistor Analyser Teardown
+http://youtu.be/Qo7MI9mrvfM
+# eevBLAB #2 - Are Electronics Hobbyists Useless?
+http://youtu.be/9iXFhKUa1BU
+# eevBLAB #1 - The EEVblog Is Hiring
+http://youtu.be/9_qhlFc-MVU
+# EEVblog #692 - Digilent Analog Discovery Review
+http://youtu.be/Aymumu3mYl8
+# EEVblog #691 - Dumpster Dive Xeon Servers
+http://youtu.be/XLhlY61ho-Y
+# EEVblog #690 - TDS220 Oscilloscope Autopsy
+http://youtu.be/VZCokbsTwmQ
+# Sydney Mud Run 2014
+http://youtu.be/yAahT8_P-_E
+# EEVblog #689 - Back To The Future Time Circuits Troubleshooting
+http://youtu.be/4-PhbPS5LQU
+# Mud Run Update & Auction
+http://youtu.be/a_OGrHeAP44
+# EEVblog #687 - EFTPOS PIN Pad Terminal Teardown
+http://youtu.be/tCgtTPwlDSo
+# EEVblog #686 - Mailbag
+http://youtu.be/RRgjgs3NnnE
+# Drag An Oscilloscope Through 6km of Mud?
+http://youtu.be/SRSzewMx1Ow
+# EEVblog #685 - What Is Oscilloscope AC Trigger Coupling?
+http://youtu.be/y5aAjd9YPok
+# EEVblog #684 - Ness SMT Manufacturing & Assembly Factory Tour
+http://youtu.be/bTij7Juj5qE
+# EEVblog #683 - Rigol DS1000Z & DS2000 Oscilloscope Jitter Problems
+http://youtu.be/kcOdzFaIYNE
+# EEVblog #682 - Ness D16X Alarm Panel Repair
+http://youtu.be/h6D4MMWjrmM
+# EEVblog #681 - More Solar Roadways BULLSHIT!
+http://youtu.be/HOZBrHqTJk4
+# EEVblog #680 - Mailbag
+http://youtu.be/Engw6uxgpRg
+# EEVblog #679 - How To Build A Small Electronics Work Bench
+http://youtu.be/vuUSIt3rbyU
+# EEVblog #678 - What is a PCB Spark Gap?
+http://youtu.be/vfP_65gSSBU
+# EEVblog #677 - Mailbag
+http://youtu.be/wq2BGsgaPk0
+# EEVblog #676 - RANT: FTDI Bricking Counterfeit Chips!
+http://youtu.be/eU66as4Bbds
+# EEVblog #675 - How To Reverse Engineer A Rigol DS1054Z
+http://youtu.be/lJVrTV_BeGg
+# EEVblog #674 - Rigol DS1054Z Teardown
+http://youtu.be/kb9P1Am9aFU
+# EEVblog #673 - Mailbag
+http://youtu.be/4L6JZ5g4Wa8
+# EEVblog #672 - GoPro Hero 4 Silver Teardown
+http://youtu.be/DER1I7tan5I
+# EEVblog #671 - White Van Speaker Scam Teardown
+http://youtu.be/i3B_KKyntQE
+# EEVblog #670 - FLIR TG165 Lepton Sensor Followup
+http://youtu.be/dvuI8OKtBwE
+# EEVblog #669 - FLIR TG165 Thermal Imager Teardown
+http://youtu.be/xFFXUc4Bwjs
+# EEVblog #668 - Mailbag   FLIR TG165
+http://youtu.be/oJbgcbedHhI
+# EEVblog #667 - Agilent 6643A Power Supply Binding Post Hack
+http://youtu.be/mgVsW4-cfh0
+# EEVblog #665 - Polar Wearlink Heart Rate Transmitter Teardown
+http://youtu.be/bDxabiM-WF8
+# EEVblog #664 - Peltier TEG Energy Harvesting Experiments
+http://youtu.be/9aSPopIcKLQ
+# WENS 540 Handheld 10MHz Oscilloscope and Debug Meter
+http://youtu.be/yzO1PsscjOI
+# EEVblog #663 - Compucorp 322G Calculator Teardown
+http://youtu.be/ezr3CzGUVeQ
+# EEVblog #662- How & Why to use Integration on an Oscilloscope
+http://youtu.be/Dh0xYu8YvaE
+# Electronex 2014 - Walkaround
+http://youtu.be/2vJ0c0ioAXY
+# Electronex 2014 - Behind The Scenes
+http://youtu.be/1ljwyt1FQCc
+# EEVblog #661 - Mailbag
+http://youtu.be/E9lYHIAZeTc
+# Electronex 2014 Announcement
+http://youtu.be/aIZJsJlYmME
+# EEVblog #660 - Electrocardiogram (ECG) Experiments
+http://youtu.be/XWnylXMrMII
+# EEVblog #659 - Medical Plugpack Teardown
+http://youtu.be/_EMAggN5H-w
+# EEVblog #658 - Mailbag
+http://youtu.be/LICQ6ca8h9Y
+# EEVblog #656 - Pacemaker Monitor Teardown
+http://youtu.be/_FIiolI37RU
+# EEVblog #657 - Maker Faire 2014 Interviews
+http://youtu.be/vR8mAcKo7_g
+# EEVblog #655 - Auction Score
+http://youtu.be/peRJtgfn-Lw
+# EEVblog #654 - Sydney Maker Faire 2014 Behind The Scenes
+http://youtu.be/B_W0BJ-q8ms
+# EEVblog #653 - Sydney Maker Faire 2014 Highlights
+http://youtu.be/GJJ_qqYs3RQ
+# EEVblog #652 - Oscilloscope & Function Generator Measurement Trap
+http://youtu.be/PPgxFd97taY
+# Sydney Mini Maker Faire 2014 - Announcement
+http://youtu.be/yGRZmoc02Fs
+# EEVblog #651 - Mailbag
+http://youtu.be/KPZDNp6cZro
+# EEVblog #650 - Canon HF G30 / XA20 / XA25 Camcorder Review
+http://youtu.be/ewO_2hQyGtY
+# EEVblog #649 - Power Designs 2005 PSU Teardown
+http://youtu.be/xc2HKX6XwiA
+# EEVblog #648 - Mailbag
+http://youtu.be/ofCXpIuFhno
+# EEVblog #647 - Agilent 53131A Frequency Counter Oven Upgrade
+http://youtu.be/KmZwAjmzHx8
+# EEVblog #646 - Gravity Detection Using A Frequency Counter!
+http://youtu.be/zILwgQhjC_Q
+# EEVblog #645 - TRS-80 Model I Retro Computer Teardown
+http://youtu.be/F6R3uynR9Kk
+# EEVblog #644 - How To Design Front Panels On Extruded Enclosures - µSupply Part 14
+http://youtu.be/wg_J9WElvBY
+# EEVblog #643 - Mailbag
+http://youtu.be/UpEbY6tsKzM
+# EEVblog #642 - TI Connected Launchpad
+http://youtu.be/n13odoXQYeo
+# EEVblog #641 - Dumpster Cash Register Teardown
+http://youtu.be/xLmGWhk7t-0
+# EEVblog #640 - New Bench Build
+http://youtu.be/GMRvEA8rgJs
+# EEVblog #639 - IBM L40SX Retro Laptop Teardown
+http://youtu.be/h4QNxhlCHFo
+# EEVblog #638 - Apollo Saturn V LVDC Testing
+http://youtu.be/U-3_2UtTMtA
+# EEVblog #637 - Omni Directional Laser Barcode Scanner Teardown
+http://youtu.be/PIn00-qW5WI
+# The EEVblog Rap
+http://youtu.be/bTW65Ny-UMY
+# EEVblog #636 - FPGA Demo Boards - DE0 Nano
+http://youtu.be/XZpYfm7jOt8
+# EEVblog #635 - FPGA's Vs Microcontrollers
+http://youtu.be/AZInaAaDlvE
+# EEVblog #634 - Analog Multimeter Teardowns
+http://youtu.be/S00c_qQB-hA
+# EEVblog #633 - Mailbag
+http://youtu.be/f2Tr8r2j8wQ
+# EEVblog #632 - Solar Roadways Are BULLSHIT!
+http://youtu.be/obS6TUVSZds
+# EEVblog #631 - How To: Soniq LCD TV Repair Part 2
+http://youtu.be/orFkIXO0uUI
+# EEVblog #630 - Soniq LCD TV Troubleshooting Repair
+http://youtu.be/QbOYO32uL1A
+# EEVblog #629 - How To Design a Microphone Preamplifier
+http://youtu.be/niZizzHBanA
+# EEVblog #628 - Tektronix 213 Vintage Portable Oscilloscope Teardown
+http://youtu.be/czv_8d66IQU
+# EEVblog #627 - Dumpster Dive
+http://youtu.be/drmmL7ESN8c
+# Apollo Saturn LVDC Live testing
+http://youtu.be/yl6DGgiE3J8
+# EEVblog #626 - Ceramic Capacitor Voltage Dependency
+http://youtu.be/2MQyQUkwmMk
+# EEVblog #625 - Retro Teardown: Sony's First Digital Camera
+http://youtu.be/1jPcYCcaHv0
+# EEVblog #624 - Mailbag
+http://youtu.be/YKJXBD6isR8
+# LIVE EEVblog Mailbag
+http://youtu.be/EEMcIZAcKjc
+# EEVblog #623 - See Through Thermal Camera Followup
+http://youtu.be/3RHR_HSQhxg
+# EEVblog #622 - How To See Through Objects With A Thermal Camera
+http://youtu.be/yVqLx7SlHVg
+# EEVblog #621- Stanford Research SR650 Repair - Part 2
+http://youtu.be/P_vM1_FAYHA
+# EEVblog #620 - Repair: Stanford Research SR650 Programmable Filter
+http://youtu.be/OIrtkF_rBDs
+# EEVblog #619 - Dumpster Dive PABX Teardown
+http://youtu.be/KXbz2KUr8HQ
+# EEVblog #618 - Mailbag
+http://youtu.be/tXoyQssMwMM
+# EEVblog #617 - Tektronix Oscilloscope Anomaly
+http://youtu.be/AE0_gcOBHA8
+# EEVblog #616 - How Microphone Phantom Powering Works
+http://youtu.be/e5xenXTwAzo
+# New EEVblog Lab VDSL2 Internet Connection
+http://youtu.be/nJxQZr4dz3g
+# EEVblog #614 Part 2 - Cebit Australia 2014 Walkaround
+http://youtu.be/qUW_hw1dZN4
+# EEVblog #615 - Prema 6047 Multimeter Followup
+http://youtu.be/6VTkWJtny9c
+# EEVblog #614 - Cebit 2014 Highlights
+http://youtu.be/RwAhluh7MUE
+# EEVblog #613 - Prema 6047 Multimeter Teardown
+http://youtu.be/G-6BBF3HyRU
+# EEVblog #612 - Mailbag
+http://youtu.be/IHpoDx2FLyQ
+# EEVblog #611 - Electret Microphone Design
+http://youtu.be/UhG83WS51q8
+# Announcement - Hack A Day Prize - WIN a trip to SPACE!
+http://youtu.be/PNnlPWvqEnI
+# EEVblog #610 - Why Digital Scopes Appear Noisy - Part 2
+http://youtu.be/l5Cts5nPpcA
+# EEVblog #609 - Condenser Microphone Design Tutorial
+http://youtu.be/WTJhIVIGvSU
 # EEVblog #608 - Condenser & Electret Microphone Construction
 http://youtu.be/yKOH0DyRWRU
 # EEVblog #607 - Agilent B2912A Source Measure Unit SMU Teardown

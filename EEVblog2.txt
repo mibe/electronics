@@ -1,0 +1,144 @@
+# PS: "youtube-dl --get-id -e ytuser:eevblog2 | Tee-Object -file list.txt"
+# ^(.+ .+)$		# \1
+# ^(.{11})$		http://youtu.be/\1
+# Á				µ
+# õ				ä
+
+# Marble Run Time Lapse Build
+http://youtu.be/pVTlSlTWeN8
+# Lego 60083 Snowplow Truck Timelapse Build & Review
+http://youtu.be/9olLT6Z0P2E
+# ATL HDI3000 Ultrasound Machine
+http://youtu.be/JJwxFFpnt0M
+# Live Teardown
+http://youtu.be/dUooBnCHgFg
+# New Youtube Paid Subscription Service - Compulsory?
+http://youtu.be/0fEEdACthuE
+# EEVblog727 HowToKillAnOpamp 1920x1080
+http://youtu.be/uHJzhgqhp38
+# Weird problem with the Canon HF G30 Video Camera
+http://youtu.be/MJqyAoCoA_E
+# Dumpster Dive HD Plasma TV
+http://youtu.be/FPK1_hy4KMU
+# Maker Faire Sydney - Trends in Hardware Innovation Fireside Chat
+http://youtu.be/HfQz0Yik10c
+# Detail Test 60fps Original Footage
+http://youtu.be/-_sBhJVovWc
+# Detail Test 25fps XDCAM
+http://youtu.be/Hy1AmLRTQpw
+# Detail Test 50fps SonyAVC
+http://youtu.be/UVr__7ITL0w
+# Indiana Jones Scale Model Train Set Teardown
+http://youtu.be/7ed8X5zNTj0
+# Sagan At Altronics
+http://youtu.be/jUJCRPSAztA
+# EEVblog Bunker First Look
+http://youtu.be/SBZWIF-MgOI
+# Rode NT3 Microphone Prototype
+http://youtu.be/YDZvy6R66_M
+# The EEVblog Bunker
+http://youtu.be/aeCyhWSPqfc
+# Dick Smith - Amateur Radio & Adventure
+http://youtu.be/fK2KBDo7ISY
+# Hackaday Prize Finalists
+http://youtu.be/mFAVUcrltpg
+# Canon HFG30 Camcorder Distortion Test
+http://youtu.be/SSCjHnyyb7s
+# Judging the Hack-A-Day Prize
+http://youtu.be/y5rgopC4MVg
+# GoPro Hero 4 Silver/Black Low Light Performance Test
+http://youtu.be/P2AO5fvPJTk
+# Fluke VT02 Visual Thermometer vs Flir i3 Thermal Camera
+http://youtu.be/O3LP2entyNQ
+# How To Clean Model Train Railway Track
+http://youtu.be/bsBzWp_xdUc
+# Silicon Chip Electronex 2014
+http://youtu.be/adSk6suM29E
+# EEVBlog Outtake - Check before hitting record...
+http://youtu.be/JbkNE-UWWXY
+# Tesla Model S - Australian Test Drive
+http://youtu.be/6RRKWORDPxM
+# Interview with Rod Elliott from Elliott Sound Products
+http://youtu.be/mjfOTRBqpJw
+# LAB LED Lighting Shuffle
+http://youtu.be/Z9t6KFUUaqM
+# Adobe Premiere Pro CC vs Sony (Vegas) Movie Studio Quality Test - Sony AVC Output
+http://youtu.be/aoMiATXObGU
+# Adobe Premiere Pro CC vs Sony (Vegas) Movie Studio Quality Test - Sony XDCAM Output
+http://youtu.be/zEmRRfWjros
+# Adobe Premiere Pro CC vs Sony (Vegas) Movie Studio Quality Test - Premiere Footage
+http://youtu.be/9VclrClfKtg
+# How To Exercise In The Lab
+http://youtu.be/UEbYiDrK1rQ
+# Destin From SmarterEveryDay - High Speed Video Capture
+http://youtu.be/VfGUM66j5zg
+# Canon HF G30 Audio Test
+http://youtu.be/pKVnYVU-TK0
+# Audio Test - Zoom H1 vs Canon HF G30
+http://youtu.be/cYCkvUqrFLU
+# Dumpster Dive - Gigabyte Motherboard
+http://youtu.be/Bg_s25z3W1E
+# Chris Hadfield LIVE - Space Odditiy
+http://youtu.be/0DtX3ir7UYQ
+# Retro Vintage: An Original Apple I Computer In A Briefcase
+http://youtu.be/lppoXnpNqz0
+# Sydney Maker Faire 2014 - Introduction Talk
+http://youtu.be/vZQdSBjdMZQ
+# Maker Fair Sydney 2014 Talk - Growing Maker Communities
+http://youtu.be/VGwCZ8_EzqI
+# Canon HF G30 vs Sony NEX VG30
+http://youtu.be/vgHtVKgHfmE
+# Another Dumpster Dive PC
+http://youtu.be/rtQ2vTdYBn4
+# EEVblog2 #650 - Canon HF G30 Camcorder Review - FULL
+http://youtu.be/Wf7t3MTH7s4
+# EEVblog LAB Network Cabling
+http://youtu.be/fr1FkUauc18
+# Canon HF G30 vs HF G10 Image Stabilisation Comparison
+http://youtu.be/9RFBuZn_SFQ
+# Back (Hair) Light Studio Video Test - Part 2
+http://youtu.be/olnTE7ZrB_s
+# Back (Hair) Light Studio Video Test - Part 3
+http://youtu.be/775hKErBeY0
+# Back (Hair) Light Studio Video Test
+http://youtu.be/QIuuZziV-wU
+# Back To The Future Lego Delorean Build Time Lapse
+http://youtu.be/n844W7IafCI
+# Back To The Future Lego Delorean Time Machine Build Review
+http://youtu.be/EcNUdmHC3BA
+# IgniteSydney12: Be a maker, not just a consumer - Raspberry Pi
+http://youtu.be/bYPNhWfPQFE
+# Another Dumpster Dive Laser Printer
+http://youtu.be/0J3gp0Q7R-w
+# Sydney Maker Faire 2013 - Behind The Scenes
+http://youtu.be/nyfD_bgnsG0
+# Sydney Maker Faire 2013 - Robo Dino Time-lapse
+http://youtu.be/E-YspiURsBc
+# Sydney Maker Fair 2013 - Time-lapse Turbine Hall
+http://youtu.be/_BnOsgeFkYA
+# The Dish - Parkes Radio Telescope
+http://youtu.be/0ifbVLZBOMs
+# OpenROV - Open Source Underwater Robot - Sydney Maker Faire 2013
+http://youtu.be/RIqUGwAzZI0
+# Sydney Robot Workshop - R2-D2 - Sydney Maker Faire 2013
+http://youtu.be/icHSkvt3yk8
+# James Meigs Presentation - Devcon 2010
+http://youtu.be/lPlgHsyjn6k
+# Shuttle PC Rebuild
+http://youtu.be/GaMpbx8kMbU
+# Hack A Day Prize Interview
+http://youtu.be/-xX2kK-RmQU
+# Live Mailbag
+http://youtu.be/EEUxNsSgxPM
+# Outtake from EEVblog #626
+http://youtu.be/T9cMjpCFioQ
+# Tagarno Microscope Capture Test
+http://youtu.be/h114siAxzOU
+SolarInstallationTimeLapse
+http://youtu.be/lmGS50kXalg
+# KoradFollowup Charles
+http://youtu.be/gqzZHbEfWDU
+# ElectronexStandSetup 1280x720
+http://youtu.be/qod7axjK06w
+# $140K Agilent Oscilloscope Unboxing
+http://youtu.be/ulSTHy5kItM
