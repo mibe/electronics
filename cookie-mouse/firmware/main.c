@@ -170,8 +170,9 @@ ISR(ADC_vect)
 	// This is done by shifting the ADC value four times to the right.
 	// (Bit 0-3) are the prescaler bits in the TCCR1 register. The other
 	// timer features on bit 4-7 are not used, so the bits contain already
-	// a zero.
-	TCCR1 = (ADCH >> 4);
+	// a zero. But do not stop the timer (ADC values =< 0x0F will stop it).
+	if (ADCH > 0x0F)
+		TCCR1 = (ADCH >> 4);
 }
 
 int __attribute__((noreturn)) main(void)
@@ -223,6 +224,7 @@ uchar   i;
 			// overflow of Timer1 happened, switch pin is low and no mouse buttons are active
 			if ((TIFR & _BV(TOV1)) && !switchState && reportBuffer.buttonMask == 0)
 			{
+				//PINB |= _BV(PB1);
 				// clear the TOV1 flag
 				// http://www.atmel.com/webdoc/AVRLibcReferenceManual/FAQ_1faq_intbits.html
 				TIFR = _BV(TOV1);
