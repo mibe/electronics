@@ -167,12 +167,20 @@ ISR(ADC_vect)
 	sei();
 	
 	// Change prescaler of Timer1 depending on the value of the ADC.
-	// This is done by shifting the ADC value four times to the right.
-	// (Bit 0-3) are the prescaler bits in the TCCR1 register. The other
-	// timer features on bit 4-7 are not used, so the bits contain already
-	// a zero. But do not stop the timer (ADC values =< 0x0F will stop it).
-	if (ADCH > 0x0F)
-		TCCR1 = (ADCH >> 4);
+	// Three different "click speeds" are supported, which should result
+	// in toggling times of about 255 ms, 127 ms and 63 ms. This means
+	// the value of the ADC is split into three ranges.
+	uint8_t adcValue = ADCH;
+	
+	if (adcValue < 86)
+		// CK/4096
+		TCCR1 = _BV(CS13) | _BV(CS12) | _BV(CS10);
+	else if (adcValue >= 86 && adcValue <= 170)
+		// CK/8192
+		TCCR1 = _BV(CS13) | _BV(CS12) | _BV(CS11);
+	else if (adcValue > 170)
+		// CK/16384
+		TCCR1 = _BV(CS13) | _BV(CS12) | _BV(CS11) | _BV(CS10);
 }
 
 int __attribute__((noreturn)) main(void)
