@@ -162,6 +162,18 @@ void hadUsbReset(void)
 	//eeprom_write_byte(0, OSCCAL);   /* store the calibrated value in EEPROM */
 }
 
+ISR(ADC_vect)
+{
+	sei();
+	
+	// Change prescaler of Timer1 depending on the value of the ADC.
+	// This is done by shifting the ADC value four times to the right.
+	// (Bit 0-3) are the prescaler bits in the TCCR1 register. The other
+	// timer features on bit 4-7 are not used, so the bits contain already
+	// a zero.
+	TCCR1 = (ADCH >> 4);
+}
+
 int __attribute__((noreturn)) main(void)
 {
 uchar   i;
@@ -191,6 +203,11 @@ uchar   i;
 	
 	// setup Timer1: select default prescaler CK/16384 
 	TCCR1 = (1 << CS13) | (1 << CS12) | (1 << CS11) | (1 << CS10);
+	
+	// setup ADC: Vcc as reference voltage, ADC3 as input, left adjusted
+	// enable and start ADC, enable auto triggering (Free Running) and ADC interrupt, use prescaler of 128.
+	ADMUX = _BV(MUX0) | _BV(MUX1) | _BV(ADLAR);
+	ADCSRA = _BV(ADEN) | _BV(ADSC) | _BV(ADATE) | _BV(ADIE) | _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0);
 
 	sei();
 	DBG1(0x01, 0, 0);       /* debug output: main loop starts */
@@ -203,7 +220,7 @@ uchar   i;
 			
 			uint8_t switchState = PINB & _BV(SWITCH_PIN);
 			
-			// overflow of Timer1 happened and switch pin is low and no mouse buttons are active
+			// overflow of Timer1 happened, switch pin is low and no mouse buttons are active
 			if ((TIFR & _BV(TOV1)) && !switchState && reportBuffer.buttonMask == 0)
 			{
 				// clear the TOV1 flag
@@ -216,7 +233,7 @@ uchar   i;
 			else if (switchState)
 			{
 				// Reset timer when switch is not active. When the user activates the switch
-				// the timespan until the first "mouse click" is constant (one timer overflow)
+				// the timespan until the first "mouse click" is thereby constant (one timer overflow)
 				TCNT1 = 0;
 			}
 			
