@@ -178,6 +178,7 @@ ISR(ADC_vect)
 int __attribute__((noreturn)) main(void)
 {
 uchar   i;
+uint8_t inactiveReportSent = 1;
 
 	wdt_enable(WDTO_1S);
 	/* If you don't use the watchdog, replace the call above with a wdt_disable().
@@ -201,6 +202,7 @@ uchar   i;
 
 	// Activate the pull-up on the switch pin
 	PORTB |= _BV(SWITCH_PIN);
+	DDRB |= _BV(PB1);
 	
 	// setup Timer1: select default prescaler CK/16384 
 	TCCR1 = (1 << CS13) | (1 << CS12) | (1 << CS11) | (1 << CS10);
@@ -222,7 +224,7 @@ uchar   i;
 			uint8_t switchState = PINB & _BV(SWITCH_PIN);
 			
 			// overflow of Timer1 happened, switch pin is low and no mouse buttons are active
-			if ((TIFR & _BV(TOV1)) && !switchState && reportBuffer.buttonMask == 0)
+			if ((TIFR & _BV(TOV1)) && !switchState && reportBuffer.buttonMask == 0 && inactiveReportSent)
 			{
 				//PINB |= _BV(PB1);
 				// clear the TOV1 flag
@@ -244,7 +246,12 @@ uchar   i;
 			
 			// reset button state
 			if (reportBuffer.buttonMask != 0)
+			{
 				reportBuffer.buttonMask = 0;
+				inactiveReportSent = 0;
+			}
+			else
+				inactiveReportSent = 1;
 		}
 	}
 }
