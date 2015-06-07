@@ -210,7 +210,6 @@ uint8_t inactiveReportSent = 1;
 
 	// Activate the pull-up on the switch pin
 	PORTB |= _BV(SWITCH_PIN);
-	DDRB |= _BV(PB1);
 	
 	// setup Timer1: select default prescaler CK/16384 
 	TCCR1 = (1 << CS13) | (1 << CS12) | (1 << CS11) | (1 << CS10);
@@ -234,7 +233,6 @@ uint8_t inactiveReportSent = 1;
 			// overflow of Timer1 happened, switch pin is low and no mouse buttons are active
 			if ((TIFR & _BV(TOV1)) && !switchState && reportBuffer.buttonMask == 0 && inactiveReportSent)
 			{
-				//PINB |= _BV(PB1);
 				// clear the TOV1 flag
 				// http://www.atmel.com/webdoc/AVRLibcReferenceManual/FAQ_1faq_intbits.html
 				TIFR = _BV(TOV1);
