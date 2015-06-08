@@ -1,21 +1,32 @@
 /* Name: main.c
- * Project: hid-mouse, a very simple HID example
- * Author: Christian Starkjohann
- * Creation Date: 2008-04-07
- * Tabsize: 4
- * Copyright: (c) 2008 by OBJECTIVE DEVELOPMENT Software GmbH
- * License: GNU GPL v2 (see License.txt), GNU GPL v3 or proprietary (CommercialLicense.txt)
+ *
+ * Part of the "cookie-mouse" project, an automatic clicking mouse
+ * for the game "Cookie Clicker".
+ *
+ * This work is based on the following project:
+ * 		v-usb framework http://www.obdev.at/vusb/
+ * 		Project: "hid-mouse" example
+ * 		Author: Christian Starkjohann
+ * 		Copyright: (c) 2008 by OBJECTIVE DEVELOPMENT Software GmbH
+ *		License: see usbdrv/License.txt (GNU GPL v2, GNU GPL v3 or proprietary)
+ *
+ * Copyright: (C) 2015 by Michael Bemmerl
+ * 
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-/*
-This example should run on most AVRs with only little changes. No special
-hardware resources except INT0 are used. You may have to change usbconfig.h for
-different I/O pins for USB. Please note that USB D+ must be the INT0 pin, or
-at least be connected to INT0 as well.
-
-We use VID/PID 0x046D/0xC00E which is taken from a Logitech mouse. Don't
-publish any hardware using these IDs! This is for demonstration only!
-*/
 
 #include <avr/io.h>
 #include <avr/wdt.h>
@@ -25,6 +36,11 @@ publish any hardware using these IDs! This is for demonstration only!
 #include <avr/pgmspace.h>   /* required by usbdrv.h */
 #include "usbdrv.h"
 #include "oddebug.h"        /* This is also an example for using debug macros */
+
+/* Pin, onto which the switch is wired to.
+ * The pins for the USB D- and D+ line cannot be used here, of course.
+ */
+#define SWITCH_PIN PB4
 
 /* ------------------------------------------------------------------------- */
 /* ----------------------------- USB interface ----------------------------- */
@@ -75,11 +91,6 @@ typedef struct{
 
 static report_t reportBuffer;
 static uchar    idleRate;   /* repeat rate for keyboards, never used for mice */
-
-/* Pin, onto which the switch is wired to.
- * The pins for the USB D- and D+ line cannot be used here, of course.
- */
-#define SWITCH_PIN PB4
 
 /* ------------------------------------------------------------------------- */
 
