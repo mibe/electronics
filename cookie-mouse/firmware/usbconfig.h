@@ -218,7 +218,7 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
 
 /* -------------------------- Device Description --------------------------- */
 
-#define  USB_CFG_VENDOR_ID       0xc0, 0x16 /* = 0x16c0 = 5824 = voti.nl */
+#define  USB_CFG_VENDOR_ID       0x09, 0x12 /* = 0x1209 = pid.codes */
 /* USB vendor ID for the device, low byte first. If you have registered your
  * own Vendor ID, define it here. Otherwise you may use one of obdev's free
  * shared VID/PID pairs. Be sure to read USB-IDs-for-free.txt for rules!
@@ -227,7 +227,7 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
  * with libusb: 0x16c0/0x5dc.  Use this VID/PID pair ONLY if you understand
  * the implications!
  */
-#define  USB_CFG_DEVICE_ID       0xe8, 0x03 /* VOTI's lab use PID */
+#define  USB_CFG_DEVICE_ID       0x01, 0x00 /* pid.codes' test PID */
 /* This is the ID of the product, low byte first. It is interpreted in the
  * scope of the vendor ID. If you have registered your own VID with usb.org
  * or if you have licensed a PID from somebody else, define it here. Otherwise
@@ -241,8 +241,8 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
 #define USB_CFG_DEVICE_VERSION  0x00, 0x01
 /* Version number of the device: Minor number first, then major number.
  */
-#define USB_CFG_VENDOR_NAME     'o', 'b', 'd', 'e', 'v', '.', 'a', 't'
-#define USB_CFG_VENDOR_NAME_LEN 8
+#define USB_CFG_VENDOR_NAME     'M', 'i', 'c', 'h', 'a', 'e', 'l', ' ', 'B', 'e', 'm', 'm', 'e', 'r', 'l'
+#define USB_CFG_VENDOR_NAME_LEN 15
 /* These two values define the vendor name returned by the USB device. The name
  * must be given as a list of characters under single quotes. The characters
  * are interpreted as Unicode (UTF-16) entities.
@@ -251,8 +251,8 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
  * obdev's free shared VID/PID pair. See the file USB-IDs-for-free.txt for
  * details.
  */
-#define USB_CFG_DEVICE_NAME     'M', 'o', 'u', 's', 'e'
-#define USB_CFG_DEVICE_NAME_LEN 5
+#define USB_CFG_DEVICE_NAME     'c', 'o', 'o', 'k', 'i', 'e', '-', 'm', 'o', 'u', 's', 'e'
+#define USB_CFG_DEVICE_NAME_LEN 12
 /* Same as above for the device name. If you don't want a device name, undefine
  * the macros. See the file USB-IDs-for-free.txt before you assign a name if
  * you use a shared VID/PID.
