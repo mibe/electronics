@@ -1,6 +1,8 @@
 ######### AVR
 # Ignore AVR Studio workspace
 *.aws
+*.o
+*.elf
 
 ######### Target 3001!
 # Ignore list for Target 3001!, a PCB layout tool
