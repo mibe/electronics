@@ -27,6 +27,7 @@ The code was
 The mouse was successfully tested with the following operating systems:
 
 * Windows 7 Professional x64
+* Knoppix 6.7 (Microkernel 2.6.39.3)
 
 ### Drivers
 No operating system drivers are required since this device works as a HID mouse. All modern operating systems already include drivers for Human Interface Devices.
