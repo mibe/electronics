@@ -4,6 +4,34 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #767 - Super Regenerative Receiver Problems
+http://youtu.be/XzwEymOslFo
+# EEVblog #766 - Vivid Sydney 2015 Light Festival
+http://youtu.be/G519KyjFE5c
+# EEVblog #765 - LED Panel Lighting Switching Noise
+http://youtu.be/ty_sxMxUWeU
+# EEVblog #764 - New Lab Ceiling LED Lighting Installation
+http://youtu.be/Oy32jWg1cYM
+# EEVblog #763 - Dumpster Plasma TV Bad Cap Repair
+http://youtu.be/eFSNgDQS5JE
+# EEVblog #762 - How Secure Are Electronic Safe Locks?
+http://youtu.be/HxQUKAjq-7w
+# EEVblog #761 - Pebble Time Smartwatch Teardown
+http://youtu.be/MDJ0EOkU_Fg
+# EEVblog #760 - Pebble Time Smartwatch Torture Test!
+http://youtu.be/Ll-Obr91Z6s
+# EEVblog #759 - Mailbag
+http://youtu.be/ukT6riqyE-A
+# EEVblog #758 - Pebble Time Smartwatch Unboxing & Review
+http://youtu.be/PP_gN_Im9IM
+# EEVblog #757 - HP4263A LCR Meter Teardown
+http://youtu.be/73AWJSugx3o
+# EEVblog #756 - Mailbag
+http://youtu.be/R40i-ZsUbHc
+# EEVblog #755 - Fluke PM2812 PSU Ebay Score
+http://youtu.be/UI0aVEko7ic
+# EEVblog #754 - Altium Circuit Maker First Impressions
+http://youtu.be/TWcL0OF_eQI
 # EEVblog #753 - Inventables X-Carve Milling Machine Unboxing
 http://youtu.be/tV25auv4SAE
 # EEVblog #752 - Original Sony Walkman TPS-L2 Teardown
