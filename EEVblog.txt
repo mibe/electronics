@@ -4,6 +4,134 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB #16 - 4K Render Youtube Experiment
+http://youtu.be/4SqryR3-8uE
+# EEVBlog #805 - Siglent SDG2122X Arb Generator Teardown
+http://youtu.be/Ijb_SzJ9Fs0
+# EEVblog #804 - HP1740A Oscilloscope Repair - Part 2
+http://youtu.be/7ocancoZ02Q
+# EEVblog #803 - HP1740A Analog Oscilloscope
+http://youtu.be/Cmz8bzUsj7E
+# eevBLAB#15 - The Martian Movie Review
+http://youtu.be/X_s7fqt-XZ8
+# EEVblog #802 - Mailbag
+http://youtu.be/F_REyGWNAmc
+# EEVblog #801 - How To Design A Digital Clock
+http://youtu.be/5kGhoRuhlxM
+# Electronex 2015 Walkaround
+http://youtu.be/Ns0i3PEfOag
+# EEVblog #800 - Siglent 1000X Oscilloscope Teardown
+http://youtu.be/qtcyjByI24U
+# EEVblog #799 - How To Remove Warranty Void Security Stickers
+http://youtu.be/colVXihqdGo
+# EEVblog #798 - Mailbag
+http://youtu.be/L5oQbdgsLtE
+# EEVblog #797 - Siglent SDS1000X Oscilloscope Review
+http://youtu.be/gUz3KYp_5Tc
+# EEVblog #796 - Leica DVM6 3D Microscope
+http://youtu.be/0rGdyCzJkCo
+# EEVblog #795 - Electronex 2015
+http://youtu.be/0omYGdhmZQQ
+# eevBLAB #14 - 14yo Hobbyist Arrested For Bringing DIY Clock To School
+http://youtu.be/cNSt1GCVqyU
+# EEVblog #794 - Samsung Dumpster LCD Repair Connector Followup
+http://youtu.be/4HK2OnvhJeY
+# EEVblog #793 - Rohde & Schwarz HMO1002 Oscilloscope Hands-On
+http://youtu.be/WvepxIvy45U
+# EEVBlog #792 - Lecroy Wavejet Touch 354 Oscilloscope Review
+http://youtu.be/uDBuUI5GZ7Q
+# EEVblog #791 - Ebay Fluke 45 Multimeter Teardown
+http://youtu.be/mK-Sc57SA0I
+# Announcement: Electronex 2015 in Melbourne
+http://youtu.be/fX6jyoA2Zl4
+# eevBLAB #13 - Buying Youtube DISLIKES! - The Batteriser
+http://youtu.be/OU08zwBH-wo
+# EEVblog #790 - Lecroy Wavejet 354 Touch Oscilloscope Teardown
+http://youtu.be/WTK4CgYbXEQ
+# EEVblog #789 - Batteriser Monkey BUSTED!
+http://youtu.be/Z-m-7jex88k
+# eevBLAB #12 - Dailymotion vs Youtube CPM Revenue
+http://youtu.be/J4talSeaiMc
+# EEVblog #788 - Apple IIC Teardown
+http://youtu.be/JsUM-ZcBFE0
+# EEVblog #787 - Mailbag
+http://youtu.be/g65sCqZc5Ug
+# EEVBlog #786 - Sydney Maker Faire 2015 - Behind The Scenes
+http://youtu.be/3OrG5ucVQBA
+# EEVblog #785 - Sydney Maker Faire 2015 Interviews
+http://youtu.be/XxAElAtC7uE
+# EEVblog #784 - Sydney Maker Faire 2015
+http://youtu.be/uCuNyiseJ5g
+# EEVblog #783 - Dumpster Dive Power Macs
+http://youtu.be/fl0e6PF5y5g
+# EEVblog #782 - The Dangers Of Reflow Soldering
+http://youtu.be/U7soJAFbKwY
+# EEVblog #781 - Samsung LCD TV Part 2
+http://youtu.be/C7nBF9bkG5Q
+# EEVblog #780 - Samsung LCD TV Dumpster Dive Teardown
+http://youtu.be/BmkpPZ13S80
+# 2015 Sydney Maker Faire Announcement
+http://youtu.be/Qnprvwjk9f0
+# EEVblog #779 - Batteriser: How To Measure Battery Cutoff Voltage
+http://youtu.be/dnXiLBabSTU
+# EEVblog #778 - Oscilloscope Vertical Confusion
+http://youtu.be/DMXiD3dKYJc
+# EEVblog #777 - Keithley 177 Microvolt DMM Repair
+http://youtu.be/kdCfAR06GeI
+# EEVblog #776 - World's Smallest Digital Dosimeter
+http://youtu.be/PKjtOTeAevg
+# EEVblog #775 - Mailbag
+http://youtu.be/bOE89yPxmGs
+# EEVblog #774 - Low Battery Discharge Testing Part 1
+http://youtu.be/b_eictfFUao
+# Inventables X-Carve LIVE Build Part 4
+http://youtu.be/jUtzoO-ur34
+# Inventables X-Carve LIVE Build Part 3 + Batteriser Rant
+http://youtu.be/199gtbX1y4M
+# EEVblog #773 - 80W INDUAL LED Light Teardown
+http://youtu.be/gQ3M3jb9eTU
+# EEVblog #772 - How To Calculate Wasted Battery Capacity
+http://youtu.be/1hs_9vx9APw
+# EEVblog #771 - Electronic Safe Lock Powerline Attack Part 2
+http://youtu.be/mdnHHNeesPE
+# Inventables X-Carve LIVE Build Part 2
+http://youtu.be/nQH4I_p7-MI
+# Inventables X-Carve LIVE Build
+http://youtu.be/XBMNFXGKpaw
+# EEVblog #770 - Rockband 3 Stratocaster Guitar Teardown
+http://youtu.be/lfOmlhnwTug
+# EEVblog #769 - Mailbag
+http://youtu.be/Crx84tv0dyM
+# EEVblog #768 - Cordless Anti-Static Wristbands BUSTED!
+http://youtu.be/nvgW5iWXbts
+# EEVblog #767 - Super Regenerative Receiver Problems
+http://youtu.be/XzwEymOslFo
+# EEVblog #766 - Vivid Sydney 2015 Light Festival
+http://youtu.be/G519KyjFE5c
+# EEVblog #765 - LED Panel Lighting Switching Noise
+http://youtu.be/ty_sxMxUWeU
+# EEVblog #764 - New Lab Ceiling LED Lighting Installation
+http://youtu.be/Oy32jWg1cYM
+# EEVblog #763 - Dumpster Plasma TV Bad Cap Repair
+http://youtu.be/eFSNgDQS5JE
+# EEVblog #762 - How Secure Are Electronic Safe Locks?
+http://youtu.be/HxQUKAjq-7w
+# EEVblog #761 - Pebble Time Smartwatch Teardown
+http://youtu.be/MDJ0EOkU_Fg
+# EEVblog #760 - Pebble Time Smartwatch Torture Test!
+http://youtu.be/Ll-Obr91Z6s
+# EEVblog #759 - Mailbag
+http://youtu.be/ukT6riqyE-A
+# EEVblog #758 - Pebble Time Smartwatch Unboxing & Review
+http://youtu.be/PP_gN_Im9IM
+# EEVblog #757 - HP4263A LCR Meter Teardown
+http://youtu.be/73AWJSugx3o
+# EEVblog #756 - Mailbag
+http://youtu.be/R40i-ZsUbHc
+# EEVblog #755 - Fluke PM2812 PSU Ebay Score
+http://youtu.be/UI0aVEko7ic
+# EEVblog #754 - Altium Circuit Maker First Impressions
+http://youtu.be/TWcL0OF_eQI
 # EEVblog #753 - Inventables X-Carve Milling Machine Unboxing
 http://youtu.be/tV25auv4SAE
 # EEVblog #752 - Original Sony Walkman TPS-L2 Teardown
