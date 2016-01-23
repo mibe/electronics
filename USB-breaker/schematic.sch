@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -11140,6 +11140,263 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="mibe">
+<packages>
+<package name="10104110-0001LF">
+<smd name="P$1" x="-1.3" y="4.3" dx="0.4" dy="1.4" layer="1"/>
+<smd name="P$2" x="-0.65" y="4.3" dx="0.4" dy="1.4" layer="1"/>
+<smd name="P$3" x="0" y="4.3" dx="0.4" dy="1.4" layer="1"/>
+<smd name="P$4" x="0.65" y="4.3" dx="0.4" dy="1.4" layer="1"/>
+<smd name="P$5" x="1.3" y="4.3" dx="0.4" dy="1.4" layer="1"/>
+<smd name="P$6" x="-3.75" y="1.45" dx="2.3" dy="1.9" layer="1"/>
+<smd name="P$7" x="3.75" y="1.45" dx="2.3" dy="1.9" layer="1"/>
+<wire x1="-6.5" y1="0" x2="6.5" y2="0" width="0.127" layer="51" style="shortdash"/>
+<text x="5.2" y="-0.65" size="0.5" layer="51">PCB Edge</text>
+<wire x1="-3.75" y1="4.3" x2="-1.95" y2="4.3" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="4.3" x2="1.95" y2="4.3" width="0.127" layer="51"/>
+<wire x1="1.95" y1="4.3" x2="3.75" y2="4.3" width="0.127" layer="21"/>
+<wire x1="3.75" y1="4.3" x2="3.75" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3.75" y1="2.6" x2="3.75" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="3.75" y1="-0.7" x2="3.1" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="3.1" y1="-0.7" x2="-3.1" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-3.1" y1="-0.7" x2="-3.75" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="-0.7" x2="-3.75" y2="2.6" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="2.6" x2="-3.75" y2="4.3" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-1.3" x2="3.1" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="3.1" y1="-1.3" x2="3.1" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-3.1" y1="-1.3" x2="-3.1" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="-0.7" x2="-3.9" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="3.9" y1="-1.3" x2="3.75" y2="-0.7" width="0.127" layer="51"/>
+<text x="-3.25" y="6.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.15" y="0.65" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="UX60SC-MB-5ST">
+<smd name="P$1" x="-1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.8" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$3" x="0" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$4" x="0.8" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$5" x="1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$6" x="-4.2" y="3.7" dx="3.8" dy="2.5" layer="1" rot="R90"/>
+<smd name="P$7" x="4.2" y="3.7" dx="3.8" dy="2.5" layer="1" rot="R90"/>
+<polygon width="0.127" layer="41">
+<vertex x="-1.5" y="3.6"/>
+<vertex x="1.5" y="3.6"/>
+<vertex x="1.5" y="2.1"/>
+<vertex x="2.95" y="2.1"/>
+<vertex x="2.95" y="1.3"/>
+<vertex x="1.5" y="1.3"/>
+<vertex x="1.5" y="0.5"/>
+<vertex x="2.95" y="0.5"/>
+<vertex x="2.95" y="0"/>
+<vertex x="-2.95" y="0"/>
+<vertex x="-2.95" y="0.5"/>
+<vertex x="-1.5" y="0.5"/>
+<vertex x="-1.5" y="1.3"/>
+<vertex x="-2.95" y="1.3"/>
+<vertex x="-2.95" y="2.1"/>
+<vertex x="-1.5" y="2.1"/>
+</polygon>
+<wire x1="-3.85" y1="6.5" x2="3.85" y2="6.5" width="0.127" layer="51"/>
+<wire x1="-3.85" y1="6.5" x2="-3.85" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-3.85" y1="1.6" x2="-3.85" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-3.85" y1="-0.5" x2="3.85" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="3.85" y1="-0.5" x2="3.85" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.85" y1="1.6" x2="3.85" y2="6.5" width="0.127" layer="51"/>
+<wire x1="-6.4" y1="0" x2="6.4" y2="0" width="0.127" layer="51" style="shortdash"/>
+<text x="4.8" y="-0.8" size="0.5" layer="51">PCB Edge</text>
+<text x="-4" y="7.2" size="1.27" layer="21">&gt;NAME</text>
+<text x="7.2" y="0.8" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
+</package>
+<package name="UX60SA-MB-5ST">
+<smd name="P$1" x="-1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.8" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$3" x="0" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$4" x="0.8" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$5" x="1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
+<polygon width="0.127" layer="41">
+<vertex x="-1.5" y="3.6"/>
+<vertex x="1.5" y="3.6"/>
+<vertex x="1.5" y="2.1"/>
+<vertex x="2.95" y="2.1"/>
+<vertex x="2.95" y="1.3"/>
+<vertex x="1.5" y="1.3"/>
+<vertex x="1.5" y="0.5"/>
+<vertex x="2.95" y="0.5"/>
+<vertex x="2.95" y="0"/>
+<vertex x="-2.95" y="0"/>
+<vertex x="-2.95" y="0.5"/>
+<vertex x="-1.5" y="0.5"/>
+<vertex x="-1.5" y="1.3"/>
+<vertex x="-2.95" y="1.3"/>
+<vertex x="-2.95" y="2.1"/>
+<vertex x="-1.5" y="2.1"/>
+</polygon>
+<wire x1="-3.85" y1="6.5" x2="3.85" y2="6.5" width="0.127" layer="51"/>
+<wire x1="-3.85" y1="6.5" x2="-3.85" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-3.85" y1="1.6" x2="-3.85" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-3.85" y1="-0.5" x2="-2.95" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-0.5" x2="-2.95" y2="-1.14" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-1.14" x2="2.95" y2="-1.14" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-1.14" x2="2.95" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-0.5" x2="3.85" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="3.85" y1="-0.5" x2="3.85" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.85" y1="1.6" x2="3.85" y2="6.5" width="0.127" layer="51"/>
+<wire x1="-6.4" y1="0" x2="6.4" y2="0" width="0.127" layer="51" style="shortdash"/>
+<text x="4.8" y="-0.8" size="0.5" layer="51">PCB Edge</text>
+<text x="-4" y="7.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.2" y="0.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<smd name="P$7" x="4.8" y="3.2" dx="1" dy="1" layer="1"/>
+<polygon width="0.127" layer="1">
+<vertex x="2.95" y="1.8"/>
+<vertex x="5.45" y="1.8"/>
+<vertex x="5.45" y="5.6"/>
+<vertex x="4.35" y="5.6"/>
+<vertex x="4.35" y="6.5"/>
+<vertex x="2.45" y="6.5"/>
+<vertex x="2.45" y="5"/>
+<vertex x="2.95" y="5"/>
+</polygon>
+<smd name="P$6" x="-4.8" y="3.2" dx="1" dy="1" layer="1"/>
+<polygon width="0.127" layer="1">
+<vertex x="-2.95" y="1.8"/>
+<vertex x="-5.45" y="1.8"/>
+<vertex x="-5.45" y="5.6"/>
+<vertex x="-4.35" y="5.6"/>
+<vertex x="-4.35" y="6.5"/>
+<vertex x="-2.45" y="6.5"/>
+<vertex x="-2.45" y="5"/>
+<vertex x="-2.95" y="5"/>
+</polygon>
+<polygon width="0.327" layer="29">
+<vertex x="-2.95" y="1.8"/>
+<vertex x="-5.45" y="1.8"/>
+<vertex x="-5.45" y="5.6"/>
+<vertex x="-4.35" y="5.6"/>
+<vertex x="-4.35" y="6.5"/>
+<vertex x="-2.45" y="6.5"/>
+<vertex x="-2.45" y="5"/>
+<vertex x="-2.95" y="5"/>
+</polygon>
+<polygon width="0.327" layer="29">
+<vertex x="2.95" y="1.8"/>
+<vertex x="5.45" y="1.8"/>
+<vertex x="5.45" y="5.6"/>
+<vertex x="4.35" y="5.6"/>
+<vertex x="4.35" y="6.5"/>
+<vertex x="2.45" y="6.5"/>
+<vertex x="2.45" y="5"/>
+<vertex x="2.95" y="5"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-2.95" y="1.8"/>
+<vertex x="-5.45" y="1.8"/>
+<vertex x="-5.45" y="5.6"/>
+<vertex x="-4.35" y="5.6"/>
+<vertex x="-4.35" y="6.5"/>
+<vertex x="-2.45" y="6.5"/>
+<vertex x="-2.45" y="5"/>
+<vertex x="-2.95" y="5"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="2.95" y="1.8"/>
+<vertex x="5.45" y="1.8"/>
+<vertex x="5.45" y="5.6"/>
+<vertex x="4.35" y="5.6"/>
+<vertex x="4.35" y="6.5"/>
+<vertex x="2.45" y="6.5"/>
+<vertex x="2.45" y="5"/>
+<vertex x="2.95" y="5"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="10104110">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<pin name="4" x="-10.16" y="7.62" visible="pin" length="short" direction="pas"/>
+<pin name="3" x="-10.16" y="5.08" visible="pin" length="short" direction="pas"/>
+<pin name="2" x="-10.16" y="2.54" visible="pin" length="short" direction="pas"/>
+<pin name="1" x="-10.16" y="0" visible="pin" length="short" direction="pas"/>
+<text x="0" y="-5.08" size="1.778" layer="94" rot="R90">USB Micro-B</text>
+<pin name="5" x="-10.16" y="10.16" visible="pin" length="short" direction="pas"/>
+<pin name="S" x="-5.08" y="-7.62" visible="pin" length="short" direction="pas" rot="R90"/>
+<text x="-7.62" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="UX60S">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<pin name="4" x="-10.16" y="7.62" visible="pin" length="short" direction="pas"/>
+<pin name="3" x="-10.16" y="5.08" visible="pin" length="short" direction="pas"/>
+<pin name="2" x="-10.16" y="2.54" visible="pin" length="short" direction="pas"/>
+<pin name="1" x="-10.16" y="0" visible="pin" length="short" direction="pas"/>
+<text x="0" y="-2.54" size="1.778" layer="94" rot="R90">USB Mini-B</text>
+<pin name="5" x="-10.16" y="10.16" visible="pin" length="short" direction="pas"/>
+<pin name="S" x="-5.08" y="-7.62" visible="pin" length="short" direction="pas" rot="R90"/>
+<text x="-7.62" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="10104110" prefix="X" uservalue="yes">
+<description>&lt;b&gt;10104110&lt;/b&gt; - Micro USB B Type Receptacle</description>
+<gates>
+<gate name="G$1" symbol="10104110" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="10104110-0001LF">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="S" pad="P$6 P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UX60S" prefix="X" uservalue="yes">
+<description>&lt;b&gt;UX60S Series&lt;/b&gt; - Mini-B Connectors, SMT mount receptacles meeting requirements of USB 2.0 Standard</description>
+<gates>
+<gate name="G$1" symbol="UX60S" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="C-MB-5ST" package="UX60SC-MB-5ST">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="S" pad="P$6 P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="A-MB-5ST" package="UX60SA-MB-5ST">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="S" pad="P$6 P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11163,6 +11420,8 @@ Source: www.kingbright.com</description>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
 <part name="K1" library="relay" deviceset="G6K" device="-2P"/>
 <part name="K3" library="relay" deviceset="G6K" device="-2P"/>
+<part name="X3" library="mibe" deviceset="10104110" device=""/>
+<part name="X4" library="mibe" deviceset="UX60S" device="C-MB-5ST"/>
 </parts>
 <sheets>
 <sheet>
@@ -11186,6 +11445,8 @@ Source: www.kingbright.com</description>
 <instance part="K3" gate="1" x="139.7" y="78.74" rot="R180"/>
 <instance part="K3" gate="2" x="124.46" y="81.28" rot="R180"/>
 <instance part="K3" gate="3" x="109.22" y="81.28" rot="R180"/>
+<instance part="X3" gate="G$1" x="137.16" y="121.92" rot="R90"/>
+<instance part="X4" gate="G$1" x="165.1" y="121.92" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11203,12 +11464,20 @@ Source: www.kingbright.com</description>
 <wire x1="96.52" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <junction x="109.22" y="104.14"/>
 <pinref part="K3" gate="3" pin="P"/>
+<pinref part="X3" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="109.22" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="109.22" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="X4" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="109.22" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
+<junction x="137.16" y="109.22"/>
 </segment>
 </net>
 <net name="GND-IN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
-<wire x1="116.84" y1="111.76" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="111.76" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="101.6" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="88.9" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
@@ -11220,6 +11489,14 @@ Source: www.kingbright.com</description>
 <pinref part="D2" gate="1" pin="A"/>
 <pinref part="K3" gate="1" pin="-"/>
 <pinref part="K3" gate="2" pin="P"/>
+<pinref part="X3" gate="G$1" pin="5"/>
+<wire x1="116.84" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="127" y1="101.6" x2="127" y2="111.76" width="0.1524" layer="91"/>
+<junction x="116.84" y="101.6"/>
+<pinref part="X4" gate="G$1" pin="5"/>
+<wire x1="127" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="101.6" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
+<junction x="127" y="101.6"/>
 </segment>
 </net>
 <net name="GND-OUT" class="0">
@@ -11260,19 +11537,37 @@ Source: www.kingbright.com</description>
 <net name="D--IN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="111.76" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="111.76" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="106.68" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="O"/>
 <wire x1="63.5" y1="91.44" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="106.68" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+<junction x="111.76" y="106.68"/>
+<pinref part="X4" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="106.68" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
+<junction x="134.62" y="106.68"/>
 </segment>
 </net>
 <net name="D+-IN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
-<wire x1="114.3" y1="111.76" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="111.76" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="104.14" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="K1" gate="3" pin="O"/>
 <wire x1="78.74" y1="88.9" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G$1" pin="3"/>
+<wire x1="114.3" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="104.14" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<junction x="114.3" y="104.14"/>
+<pinref part="X4" gate="G$1" pin="3"/>
+<wire x1="132.08" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="104.14" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
+<junction x="132.08" y="104.14"/>
 </segment>
 </net>
 <net name="D+-OUT" class="0">
