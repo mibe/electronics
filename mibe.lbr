@@ -228,13 +228,13 @@
 <wire x1="-7.62" y1="12.7" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
-<pin name="4" x="-10.16" y="7.62" length="short" direction="pas"/>
-<pin name="3" x="-10.16" y="5.08" length="short" direction="pas"/>
-<pin name="2" x="-10.16" y="2.54" length="short" direction="pas"/>
-<pin name="1" x="-10.16" y="0" length="short" direction="pas"/>
+<pin name="4" x="-10.16" y="7.62" visible="pin" length="short" direction="pas"/>
+<pin name="3" x="-10.16" y="5.08" visible="pin" length="short" direction="pas"/>
+<pin name="2" x="-10.16" y="2.54" visible="pin" length="short" direction="pas"/>
+<pin name="1" x="-10.16" y="0" visible="pin" length="short" direction="pas"/>
 <text x="0" y="-2.54" size="1.778" layer="94" rot="R90">USB Mini-B</text>
-<pin name="5" x="-10.16" y="10.16" length="short" direction="pas"/>
-<pin name="S" x="-5.08" y="-7.62" length="short" direction="pas" rot="R90"/>
+<pin name="5" x="-10.16" y="10.16" visible="pin" length="short" direction="pas"/>
+<pin name="S" x="-5.08" y="-7.62" visible="pin" length="short" direction="pas" rot="R90"/>
 <text x="-7.62" y="13.97" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
