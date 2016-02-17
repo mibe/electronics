@@ -319,7 +319,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="UX60S" prefix="X" uservalue="yes">
+<deviceset name="UX60S" prefix="X">
 <description>&lt;b&gt;UX60S Series&lt;/b&gt; - Mini-B Connectors, SMT mount receptacles meeting requirements of USB 2.0 Standard</description>
 <gates>
 <gate name="G$1" symbol="UX60S" x="-5.08" y="-5.08"/>
@@ -353,7 +353,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="10104110" prefix="X" uservalue="yes">
+<deviceset name="10104110" prefix="X">
 <description>&lt;b&gt;10104110&lt;/b&gt; - Micro USB B Type Receptacle</description>
 <gates>
 <gate name="G$1" symbol="10104110" x="-5.08" y="-2.54"/>
