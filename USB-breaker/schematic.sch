@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -9801,7 +9801,7 @@ general purpose rectifier, 1 A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="10104110" prefix="X" uservalue="yes">
+<deviceset name="10104110" prefix="X">
 <description>&lt;b&gt;10104110&lt;/b&gt; - Micro USB B Type Receptacle</description>
 <gates>
 <gate name="G$1" symbol="10104110" x="-5.08" y="-2.54"/>
@@ -9822,7 +9822,7 @@ general purpose rectifier, 1 A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="UX60S" prefix="X" uservalue="yes">
+<deviceset name="UX60S" prefix="X">
 <description>&lt;b&gt;UX60S Series&lt;/b&gt; - Mini-B Connectors, SMT mount receptacles meeting requirements of USB 2.0 Standard</description>
 <gates>
 <gate name="G$1" symbol="UX60S" x="-5.08" y="-5.08"/>
@@ -12407,9 +12407,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="U$3" library="mibe" deviceset="EXTERNAL_PUSH_BUTTON" device=""/>
 <part name="U$4" library="mibe" deviceset="EXTERNAL_SWITCH" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X7" device="/90"/>
-<part name="T1" library="transistor" deviceset="*-PNP-" device="TO92-EBC" technology="BC558B"/>
+<part name="T1" library="transistor" deviceset="*-PNP-" device="TO92-EBC" technology="BC558B" value="BC558B"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="2k7"/>
-<part name="T2" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="BC548"/>
+<part name="T2" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="BC548" value="BC548B"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="0207/10" value="8k2"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
 </parts>
@@ -12434,10 +12434,18 @@ connector</text>
 <instance part="K3" gate="1" x="139.7" y="66.04" rot="R180"/>
 <instance part="K3" gate="2" x="124.46" y="68.58" rot="R180"/>
 <instance part="K3" gate="3" x="109.22" y="68.58" rot="R180"/>
-<instance part="X3" gate="G$1" x="144.78" y="121.92" rot="R90"/>
-<instance part="X4" gate="G$1" x="170.18" y="121.92" rot="R90"/>
-<instance part="X2" gate="G$1" x="165.1" y="40.64" rot="MR180"/>
-<instance part="X1" gate="G$1" x="114.3" y="114.3" rot="R90"/>
+<instance part="X3" gate="G$1" x="144.78" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="114.3" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="X4" gate="G$1" x="170.18" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="156.21" y="114.3" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="X2" gate="G$1" x="170.18" y="40.64" smashed="yes" rot="MR180">
+<attribute name="NAME" x="170.18" y="31.75" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="X1" gate="G$1" x="114.3" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.41" y="114.3" size="1.778" layer="95" rot="R90"/>
+</instance>
 <instance part="SV1" gate="1" x="93.98" y="93.98" rot="MR90"/>
 <instance part="U$1" gate="G$1" x="43.18" y="15.24" smashed="yes">
 <attribute name="NAME" x="36.83" y="26.035" size="1.778" layer="95"/>
@@ -12570,7 +12578,7 @@ connector</text>
 </net>
 <net name="VCC_OUT" class="0">
 <segment>
-<wire x1="104.14" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="63.5" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="K3" gate="3" pin="O"/>
 <pinref part="X2" gate="G$1" pin="1"/>
@@ -12620,7 +12628,7 @@ connector</text>
 <segment>
 <wire x1="60.96" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="K1" gate="3" pin="P"/>
-<wire x1="71.12" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="40.64" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="60.96" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="3"/>
 <pinref part="JP1" gate="A" pin="6"/>
@@ -12632,7 +12640,7 @@ connector</text>
 <segment>
 <wire x1="45.72" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="P"/>
-<wire x1="68.58" y1="38.1" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="38.1" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="60.96" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="2"/>
 <pinref part="JP1" gate="A" pin="5"/>
@@ -12691,14 +12699,14 @@ connector</text>
 <junction x="121.92" y="111.76"/>
 <wire x1="177.8" y1="96.52" x2="177.8" y2="55.88" width="0.1524" layer="91"/>
 <junction x="177.8" y="96.52"/>
-<wire x1="177.8" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="55.88" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="55.88" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="S2"/>
-<wire x1="162.56" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="50.8" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
-<junction x="162.56" y="50.8"/>
+<wire x1="167.64" y1="50.8" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="50.8" x2="167.64" y2="48.26" width="0.1524" layer="91"/>
+<junction x="167.64" y="50.8"/>
 <pinref part="X2" gate="G$1" pin="S1"/>
-<wire x1="162.56" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -12727,7 +12735,7 @@ connector</text>
 <net name="GND_OUT" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="4"/>
-<wire x1="119.38" y1="43.18" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="43.18" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="K3" gate="2" pin="O"/>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="7"/>
