@@ -12421,6 +12421,45 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <text x="86.36" y="88.9" size="1.778" layer="97" rot="R90">Front panel
 connector</text>
 <text x="78.74" y="12.7" size="1.778" layer="97" rot="R180">External control</text>
+<polygon width="0.508" layer="97">
+<vertex x="95.650653125" y="11.2066875" curve="9.499992"/>
+<vertex x="96.293428125" y="11.537740625"/>
+<vertex x="97.88945" y="10.23613125"/>
+<vertex x="98.98386875" y="11.33055"/>
+<vertex x="97.682259375" y="12.926571875" curve="18.999981"/>
+<vertex x="98.233734375" y="14.257946875"/>
+<vertex x="100.28266875" y="14.466128125"/>
+<vertex x="100.28266875" y="16.013871875"/>
+<vertex x="98.233734375" y="16.222053125" curve="18.999981"/>
+<vertex x="97.682259375" y="17.553428125"/>
+<vertex x="98.98386875" y="19.14945"/>
+<vertex x="97.88945" y="20.24386875"/>
+<vertex x="96.293428125" y="18.942259375" curve="18.999981"/>
+<vertex x="94.962053125" y="19.493734375"/>
+<vertex x="94.753871875" y="21.54266875"/>
+<vertex x="93.206128125" y="21.54266875"/>
+<vertex x="92.997946875" y="19.493734375" curve="18.999981"/>
+<vertex x="91.666571875" y="18.942259375"/>
+<vertex x="90.07055" y="20.24386875"/>
+<vertex x="88.97613125" y="19.14945"/>
+<vertex x="90.277740625" y="17.553428125" curve="18.999981"/>
+<vertex x="89.726265625" y="16.222053125"/>
+<vertex x="87.67733125" y="16.013871875"/>
+<vertex x="87.67733125" y="14.466128125"/>
+<vertex x="89.726265625" y="14.257946875" curve="18.999981"/>
+<vertex x="90.277740625" y="12.926571875"/>
+<vertex x="88.97613125" y="11.33055"/>
+<vertex x="90.07055" y="10.23613125"/>
+<vertex x="91.666571875" y="11.537740625" curve="9.499992"/>
+<vertex x="92.309346875" y="11.2066875"/>
+<vertex x="93.2206125" y="13.406675" curve="-67.500044"/>
+<vertex x="91.995625" y="15.24" curve="-247.500015"/>
+<vertex x="94.7393875" y="13.406675"/>
+</polygon>
+<text x="90.932" y="7.62" size="1.778" layer="97">OSHW</text>
+<text x="140.97" y="20.32" size="1.778" layer="97">(C) 2016 Michael Bemmerl</text>
+<text x="104.14" y="7.62" size="1.778" layer="97">License: CC BY 3.0 DE</text>
+<text x="104.14" y="15.24" size="3.556" layer="97">USB-Breaker</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -12466,7 +12505,7 @@ connector</text>
 <instance part="T2" gate="G$1" x="40.64" y="114.3"/>
 <instance part="R4" gate="G$1" x="22.86" y="114.3"/>
 <instance part="R5" gate="G$1" x="33.02" y="104.14" rot="R90"/>
-<instance part="C2" gate="G$1" x="129.54" y="86.36"/>
+<instance part="C2" gate="G$1" x="132.08" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -12500,8 +12539,8 @@ connector</text>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="58.42" y1="55.88" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="129.54" y1="88.9" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="88.9" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
 <junction x="109.22" y="91.44"/>
 </segment>
 <segment>
@@ -12521,9 +12560,9 @@ connector</text>
 <wire x1="116.84" y1="101.6" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 <junction x="124.46" y="76.2"/>
-<wire x1="129.54" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="76.2" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="76.2" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="76.2" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
@@ -12574,8 +12613,8 @@ connector</text>
 <wire x1="12.7" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
 <junction x="33.02" y="93.98"/>
 <pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="129.54" y1="81.28" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<junction x="129.54" y="76.2"/>
+<wire x1="132.08" y1="81.28" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<junction x="132.08" y="76.2"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
@@ -12815,6 +12854,11 @@ connector</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,91.971,66.571,FRAME1,,,,,"/>
+<approved hash="113,1,95.4447,93.98,SV1,,,,,"/>
+<approved hash="113,1,64.6388,20.0829,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
