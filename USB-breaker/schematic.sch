@@ -12718,7 +12718,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="330"/>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
 <part name="K1" library="relay" deviceset="G6K" device="-2P"/>
-<part name="K3" library="relay" deviceset="G6K" device="-2P"/>
+<part name="K2" library="relay" deviceset="G6K" device="-2P"/>
 <part name="X3" library="mibe" deviceset="10104110" device=""/>
 <part name="X4" library="mibe" deviceset="UX60S" device="C-MB-5ST"/>
 <part name="X2" library="con-berg" deviceset="PN87520-S" device=""/>
@@ -12797,9 +12797,9 @@ connector</text>
 <instance part="K1" gate="1" x="30.48" y="66.04"/>
 <instance part="K1" gate="2" x="45.72" y="63.5"/>
 <instance part="K1" gate="3" x="60.96" y="63.5"/>
-<instance part="K3" gate="1" x="139.7" y="66.04" rot="R180"/>
-<instance part="K3" gate="2" x="124.46" y="68.58" rot="R180"/>
-<instance part="K3" gate="3" x="109.22" y="68.58" rot="R180"/>
+<instance part="K2" gate="1" x="139.7" y="66.04" rot="R180"/>
+<instance part="K2" gate="2" x="124.46" y="68.58" rot="R180"/>
+<instance part="K2" gate="3" x="109.22" y="68.58" rot="R180"/>
 <instance part="X3" gate="G$1" x="144.78" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.81" y="114.3" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -12853,7 +12853,7 @@ connector</text>
 <wire x1="109.22" y1="111.76" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="109.22" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
 <junction x="109.22" y="109.22"/>
-<pinref part="K3" gate="3" pin="P"/>
+<pinref part="K2" gate="3" pin="P"/>
 <pinref part="X3" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="91.44" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
@@ -12906,8 +12906,8 @@ connector</text>
 <wire x1="149.86" y1="76.2" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 <junction x="139.7" y="76.2"/>
 <pinref part="D2" gate="1" pin="A"/>
-<pinref part="K3" gate="1" pin="-"/>
-<pinref part="K3" gate="2" pin="P"/>
+<pinref part="K2" gate="1" pin="-"/>
+<pinref part="K2" gate="2" pin="P"/>
 <pinref part="X3" gate="G$1" pin="5"/>
 <wire x1="116.84" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="101.6" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
@@ -12968,7 +12968,7 @@ connector</text>
 <segment>
 <wire x1="104.14" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="63.5" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="K3" gate="3" pin="O"/>
+<pinref part="K2" gate="3" pin="O"/>
 <pinref part="X2" gate="G$1" pin="1"/>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="104.14" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
@@ -13063,7 +13063,7 @@ connector</text>
 <wire x1="149.86" y1="63.5" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
 <junction x="139.7" y="53.34"/>
-<pinref part="K3" gate="1" pin="+"/>
+<pinref part="K2" gate="1" pin="+"/>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="109.22" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <junction x="73.66" y="86.36"/>
@@ -13116,7 +13116,7 @@ connector</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="60.96" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="K3" gate="3" pin="S"/>
+<pinref part="K2" gate="3" pin="S"/>
 <wire x1="114.3" y1="55.88" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13124,7 +13124,7 @@ connector</text>
 <segment>
 <pinref part="X2" gate="G$1" pin="4"/>
 <wire x1="119.38" y1="43.18" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="K3" gate="2" pin="O"/>
+<pinref part="K2" gate="2" pin="O"/>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="7"/>
 <wire x1="119.38" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
@@ -13193,9 +13193,21 @@ connector</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,86.36,27.94,H1,MOUNT,,,,"/>
+<approved hash="101,1,96.52,27.94,H2,MOUNT,,,,"/>
+<approved hash="101,1,106.68,27.94,H3,MOUNT,,,,"/>
+<approved hash="101,1,116.84,27.94,H4,MOUNT,,,,"/>
 <approved hash="113,1,91.971,66.571,FRAME1,,,,,"/>
 <approved hash="113,1,95.4447,93.98,SV1,,,,,"/>
 <approved hash="113,1,64.6388,20.0829,JP1,,,,,"/>
+<approved hash="115,1,35.56,17.78,GND_IN,,,,,"/>
+<approved hash="115,1,116.84,106.68,GND_IN,,,,,"/>
+<approved hash="115,1,33.02,22.86,VCC_IN,,,,,"/>
+<approved hash="115,1,109.22,110.49,VCC_IN,,,,,"/>
+<approved hash="115,1,26.67,10.16,LED,,,,,"/>
+<approved hash="115,1,93.98,78.74,LED,,,,,"/>
+<approved hash="115,1,8.89,25.4,EXTERNAL_ENABLE,,,,,"/>
+<approved hash="115,1,12.7,114.3,EXTERNAL_ENABLE,,,,,"/>
 </errors>
 </schematic>
 </drawing>
