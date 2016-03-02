@@ -9692,8 +9692,8 @@ general purpose rectifier, 1 A</description>
 <wire x1="3.85" y1="1.6" x2="3.85" y2="6.5" width="0.127" layer="51"/>
 <wire x1="-6.4" y1="0" x2="6.4" y2="0" width="0.127" layer="51" style="shortdash"/>
 <text x="4.8" y="-0.8" size="0.5" layer="51">PCB Edge</text>
-<text x="-4" y="7.2" size="1.27" layer="21">&gt;NAME</text>
-<text x="7.2" y="0.8" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
+<text x="-4" y="7.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.2" y="0.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="UX60SA-MB-5ST">
 <smd name="P$1" x="-1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
