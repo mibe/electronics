@@ -9906,7 +9906,7 @@ general purpose rectifier, 1 A</description>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
 <connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="S" pad="P$6 P$7"/>
+<connect gate="G$1" pin="S" pad="P$6 P$7" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9927,7 +9927,7 @@ general purpose rectifier, 1 A</description>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
 <connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="S" pad="P$6 P$7"/>
+<connect gate="G$1" pin="S" pad="P$6 P$7" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
