@@ -12709,6 +12709,12 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="USB data" width="0.4064" drill="0">
+<clearance class="1" value="0.254"/>
+</class>
+<class number="2" name="Power" width="0.508" drill="0">
+<clearance class="2" value="0.254"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="DINA5_L" device=""/>
@@ -12848,7 +12854,7 @@ connector</text>
 <busses>
 </busses>
 <nets>
-<net name="VCC_IN" class="0">
+<net name="VCC_IN" class="2">
 <segment>
 <wire x1="109.22" y1="111.76" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="109.22" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
@@ -12892,7 +12898,7 @@ connector</text>
 <junction x="25.4" y="22.86"/>
 </segment>
 </net>
-<net name="GND_IN" class="0">
+<net name="GND_IN" class="2">
 <segment>
 <wire x1="116.84" y1="111.76" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="101.6" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
@@ -12976,7 +12982,7 @@ connector</text>
 <junction x="104.14" y="35.56"/>
 </segment>
 </net>
-<net name="D-_IN" class="0">
+<net name="D-_IN" class="1">
 <segment>
 <wire x1="111.76" y1="111.76" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="106.68" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
@@ -12994,7 +13000,7 @@ connector</text>
 <pinref part="X1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="D+_IN" class="0">
+<net name="D+_IN" class="1">
 <segment>
 <wire x1="114.3" y1="111.76" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="104.14" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
