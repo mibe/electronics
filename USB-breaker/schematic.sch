@@ -12970,7 +12970,7 @@ connector</text>
 <wire x1="30.48" y1="15.24" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC_OUT" class="0">
+<net name="VCC_OUT" class="2">
 <segment>
 <wire x1="104.14" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="63.5" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
@@ -13126,7 +13126,7 @@ connector</text>
 <wire x1="114.3" y1="55.88" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND_OUT" class="0">
+<net name="GND_OUT" class="2">
 <segment>
 <pinref part="X2" gate="G$1" pin="4"/>
 <wire x1="119.38" y1="43.18" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
