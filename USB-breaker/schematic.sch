@@ -9655,8 +9655,8 @@ general purpose rectifier, 1 A</description>
 <wire x1="-3.1" y1="-1.3" x2="-3.1" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="-0.7" x2="-3.9" y2="-1.3" width="0.127" layer="51"/>
 <wire x1="3.9" y1="-1.3" x2="3.75" y2="-0.7" width="0.127" layer="51"/>
-<text x="-3.25" y="6.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.15" y="0.65" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-3.885" y="5.865" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="6.515" y="0.65" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 <package name="UX60SC-MB-5ST">
 <smd name="P$1" x="-1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
@@ -9692,8 +9692,8 @@ general purpose rectifier, 1 A</description>
 <wire x1="3.85" y1="1.6" x2="3.85" y2="6.5" width="0.127" layer="51"/>
 <wire x1="-6.4" y1="0" x2="6.4" y2="0" width="0.127" layer="51" style="shortdash"/>
 <text x="4.8" y="-0.8" size="0.5" layer="51">PCB Edge</text>
-<text x="-4" y="7.2" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.2" y="0.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-4" y="7.2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="7.2" y="0.8" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 <package name="UX60SA-MB-5ST">
 <smd name="P$1" x="-1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
@@ -9731,8 +9731,8 @@ general purpose rectifier, 1 A</description>
 <wire x1="3.85" y1="1.6" x2="3.85" y2="6.5" width="0.127" layer="51"/>
 <wire x1="-6.4" y1="0" x2="6.4" y2="0" width="0.127" layer="51" style="shortdash"/>
 <text x="4.8" y="-0.8" size="0.5" layer="51">PCB Edge</text>
-<text x="-4" y="7.2" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.2" y="0.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-4" y="7.2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="7.2" y="0.8" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <smd name="P$7" x="4.8" y="3.2" dx="1" dy="1" layer="1"/>
 <polygon width="0.127" layer="1">
 <vertex x="2.95" y="1.8"/>
@@ -9940,7 +9940,7 @@ general purpose rectifier, 1 A</description>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
 <connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="S" pad="P$6 P$7"/>
+<connect gate="G$1" pin="S" pad="P$6 P$7" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
