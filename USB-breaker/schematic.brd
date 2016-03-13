@@ -14,14 +14,14 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -124,6 +124,58 @@
 <wire x1="50.25" y1="30" x2="41.25" y2="30" width="0" layer="20"/>
 <hole x="21.75" y="22.75" drill="7"/>
 <hole x="33.75" y="22.75" drill="4.25"/>
+<text x="30.48" y="11.43" size="2.25" layer="21" ratio="10">USB-Breaker</text>
+<text x="1.27" y="36.83" size="1.27" layer="21" ratio="10">rev.
+16/1</text>
+<text x="51.435" y="0.635" size="1" layer="21" ratio="10">top</text>
+<text x="53.975" y="0.635" size="1" layer="22" ratio="10" rot="MR0">bottom</text>
+<text x="50.165" y="1.905" size="1.27" layer="22" ratio="10" rot="MR90">front panel</text>
+<text x="13.97" y="11.43" size="1.27" layer="21" ratio="10">external
+interface</text>
+<text x="13.335" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">GND_OUT</text>
+<text x="15.875" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">D+_OUT</text>
+<text x="18.415" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">D-_OUT</text>
+<text x="20.955" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">VCC_OUT</text>
+<text x="23.495" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">ENABLE</text>
+<text x="26.035" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">GND_IN</text>
+<text x="30.48" y="11.43" size="1.27" layer="22" ratio="10" rot="MR90">VCC_IN</text>
+<polygon width="0.2" layer="21">
+<vertex x="5.869284375" y="9.5245" curve="9.499997"/>
+<vertex x="6.172959375" y="9.6809"/>
+<vertex x="6.926984375" y="9.06596875"/>
+<vertex x="7.44403125" y="9.583015625"/>
+<vertex x="6.8291" y="10.337040625" curve="18.999982"/>
+<vertex x="7.0896375" y="10.9660375"/>
+<vertex x="8.0576375" y="11.064390625"/>
+<vertex x="8.0576375" y="11.795609375"/>
+<vertex x="7.0896375" y="11.8939625" curve="18.999982"/>
+<vertex x="6.8291" y="12.522959375"/>
+<vertex x="7.44403125" y="13.276984375"/>
+<vertex x="6.926984375" y="13.79403125"/>
+<vertex x="6.172959375" y="13.1791" curve="18.999982"/>
+<vertex x="5.5439625" y="13.4396375"/>
+<vertex x="5.445609375" y="14.4076375"/>
+<vertex x="4.714390625" y="14.4076375"/>
+<vertex x="4.6160375" y="13.4396375" curve="18.999982"/>
+<vertex x="3.987040625" y="13.1791"/>
+<vertex x="3.233015625" y="13.79403125"/>
+<vertex x="2.71596875" y="13.276984375"/>
+<vertex x="3.3309" y="12.522959375" curve="18.999982"/>
+<vertex x="3.0703625" y="11.8939625"/>
+<vertex x="2.1023625" y="11.795609375"/>
+<vertex x="2.1023625" y="11.064390625"/>
+<vertex x="3.0703625" y="10.9660375" curve="18.999982"/>
+<vertex x="3.3309" y="10.337040625"/>
+<vertex x="2.71596875" y="9.583015625"/>
+<vertex x="3.233015625" y="9.06596875"/>
+<vertex x="3.987040625" y="9.6809" curve="9.499997"/>
+<vertex x="4.290715625" y="9.5245"/>
+<vertex x="4.721234375" y="10.5638625" curve="-67.500031"/>
+<vertex x="4.1425" y="11.43" curve="-247.500192"/>
+<vertex x="5.438765625" y="10.5638625"/>
+</polygon>
+<text x="2.8575" y="6.985" size="1.27" layer="21" ratio="10">OSHW</text>
+<text x="30.48" y="8.89" size="1.27" layer="21" ratio="10">http://michis-pla.net</text>
 </plain>
 <libraries>
 <library name="resistor">
@@ -1382,8 +1434,8 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <wire x1="-3.1" y1="-1.3" x2="-3.1" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="-0.7" x2="-3.9" y2="-1.3" width="0.127" layer="51"/>
 <wire x1="3.9" y1="-1.3" x2="3.75" y2="-0.7" width="0.127" layer="51"/>
-<text x="-3.25" y="6.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.15" y="0.65" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-3.885" y="5.865" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="6.515" y="0.65" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 <package name="UX60SC-MB-5ST">
 <smd name="P$1" x="-1.6" y="6.1" dx="1.4" dy="0.5" layer="1" rot="R90"/>
@@ -1419,8 +1471,8 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <wire x1="3.85" y1="1.6" x2="3.85" y2="6.5" width="0.127" layer="51"/>
 <wire x1="-6.4" y1="0" x2="6.4" y2="0" width="0.127" layer="51" style="shortdash"/>
 <text x="4.8" y="-0.8" size="0.5" layer="51">PCB Edge</text>
-<text x="-4" y="7.2" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.2" y="0.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-4" y="7.2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="7.2" y="0.8" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1777,7 +1829,7 @@ Low profile connectors, straight&lt;p&gt;
 <clearance class="2" value="0.254"/>
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1795,22 +1847,22 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="40mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msDrill" value="12mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -1854,7 +1906,7 @@ design rules under a new name.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
@@ -1954,49 +2006,86 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="resistor" package="0207/10" value="120" x="34.29" y="43.18" rot="R180"/>
+<element name="R1" library="resistor" package="0207/10" value="120" x="34.29" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.623" y="42.291" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="36.5506" y="43.815" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
 <element name="C1" library="resistor" package="E3,5-8" value="470µ" x="43.18" y="36.195" rot="R270"/>
-<element name="D1" library="diode" package="DO41-10" value="1N4004" x="48.26" y="43.18"/>
+<element name="D1" library="diode" package="DO41-10" value="1N4004" x="48.26" y="43.18" smashed="yes">
+<attribute name="NAME" x="46.228" y="40.386" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="46.228" y="40.386" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="R2" library="resistor" package="0207/10" value="330" x="28.575" y="18.415" rot="R270"/>
-<element name="D2" library="diode" package="DO41-10" value="1N4004" x="34.29" y="40.005"/>
-<element name="K1" library="relay" package="G6K-2P" value="G6K-2P" x="51.435" y="36.83" rot="R270">
+<element name="D2" library="diode" package="DO41-10" value="1N4004" x="34.29" y="40.005" smashed="yes">
+<attribute name="NAME" x="32.258" y="37.211" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="32.258" y="37.211" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="K1" library="relay" package="G6K-2P" value="G6K-2P" x="51.435" y="36.83" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="89C6482" x="-0.635" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="G6K-2P DC3" x="-0.635" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="OMRON COMPONENTS USA" x="-0.635" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="3937276" x="-0.635" y="0" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="55.245" y="33.02" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="49.53" y="38.1" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="K2" library="relay" package="G6K-2P" value="G6K-2P" x="31.75" y="33.02" rot="R270">
+<element name="K2" library="relay" package="G6K-2P" value="G6K-2P" x="31.75" y="33.02" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="89C6482" x="-20.32" y="-13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="G6K-2P DC3" x="-20.32" y="-13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="OMRON COMPONENTS USA" x="-20.32" y="-13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="3937276" x="-20.32" y="-13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="35.56" y="29.21" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="29.845" y="34.29" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="X3" library="mibe" package="10104110-0001LF" value="10104110" x="67.5" y="35.06" rot="R90"/>
 <element name="X4" library="mibe" package="UX60SC-MB-5ST" value="UX60SC-MB-5ST" x="68.77" y="11" rot="R90"/>
-<element name="X2" library="con-berg" package="PN87520-S" value="PN87520-S" x="8.44" y="22.75" rot="R270">
+<element name="X2" library="con-berg" package="PN87520-S" value="PN87520-S" x="8.44" y="22.75" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="-2.99" y="-19.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="-2.99" y="-19.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="-2.99" y="-19.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-2.99" y="-19.16" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="13.52" y="30.37" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="-1.72" y="13.606" size="1.27" layer="27"/>
 </element>
-<element name="X1" library="con-berg" package="PN61729-S" value="PN61729-S" x="59.1" y="22.75" rot="R90">
+<element name="X1" library="con-berg" package="PN61729-S" value="PN61729-S" x="59.1" y="22.75" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="70.53" y="45.61" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="70.53" y="45.61" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="70.53" y="45.61" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="70.53" y="45.61" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="52.75" y="16.4" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="67.99" y="30.37" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="SV1" library="con-harting-ml" package="ML6" value="" x="41.91" y="6.35" rot="MR0">
+<element name="SV1" library="con-harting-ml" package="ML6" value="" x="41.91" y="6.35" smashed="yes" rot="MR0">
 <attribute name="OC_NEWARK" value="unknown" x="20.32" y="-34.29" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="" x="20.32" y="-34.29" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="20.32" y="-34.29" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="20.32" y="-34.29" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="49.53" y="11.43" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="41.275" y="11.43" size="1.778" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="JP1" library="pinhead" package="1X07/90" value="" x="21.59" y="5.08" rot="R180"/>
-<element name="T1" library="transistor" package="TO92-EBC" value="BC558B" x="24.13" y="40.64" rot="R180"/>
-<element name="R3" library="resistor" package="0207/10" value="2k7" x="19.05" y="38.1"/>
-<element name="T2" library="transistor" package="TO92-CBE" value="BC548B" x="16.51" y="41.91"/>
-<element name="R4" library="resistor" package="0207/10" value="8k2" x="19.05" y="34.925" rot="R180"/>
-<element name="R5" library="resistor" package="0207/10" value="10k" x="19.05" y="31.75" rot="R180"/>
+<element name="JP1" library="pinhead" package="1X07/90" value="" x="21.59" y="5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.385" y="3.81" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="10.795" y="8.89" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="T1" library="transistor" package="TO92-EBC" value="BC558B" x="24.13" y="40.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="27.94" y="38.862" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="26.67" y="45.212" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R3" library="resistor" package="0207/10" value="2k7" x="19.05" y="38.1" smashed="yes">
+<attribute name="NAME" x="10.872" y="36.195" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="16.7894" y="37.465" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="T2" library="transistor" package="TO92-CBE" value="BC548B" x="16.51" y="41.91" smashed="yes">
+<attribute name="NAME" x="19.05" y="43.688" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="13.97" y="38.608" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R4" library="resistor" package="0207/10" value="8k2" x="19.05" y="34.925" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.208" y="35.56" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="21.3106" y="35.56" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R5" library="resistor" package="0207/10" value="10k" x="19.05" y="31.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.208" y="33.655" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="21.3106" y="32.385" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
 <element name="C2" library="resistor" package="E2,5-6" value="4u7" x="55.88" y="10.795" rot="R90"/>
 <element name="H1" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="8.75" y="3.25" locked="yes"/>
 <element name="H2" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="8.75" y="42.25" locked="yes"/>
@@ -2402,4 +2491,10 @@ design rules under a new name.</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
