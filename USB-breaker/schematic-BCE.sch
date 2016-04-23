@@ -12140,7 +12140,7 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="DINA5_L" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0207/10" value="120"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0207/10" value="100"/>
 <part name="C1" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="470µ"/>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="330"/>
