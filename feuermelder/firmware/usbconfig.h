@@ -106,7 +106,7 @@ section at the end of this file).
  * (e.g. HID), but never want to send any data. This option saves a couple
  * of bytes in flash memory and the transmit buffers in RAM.
  */
-#define USB_CFG_INTR_POLL_INTERVAL      100
+#define USB_CFG_INTR_POLL_INTERVAL      10
 /* If you compile a version with endpoint 1 (interrupt-in), this is the poll
  * interval. The value is in milliseconds and must not be less than 10 ms for
  * low speed devices.
@@ -227,7 +227,7 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
  * with libusb: 0x16c0/0x5dc.  Use this VID/PID pair ONLY if you understand
  * the implications!
  */
-#define  USB_CFG_DEVICE_ID       0xc1, 0xc0
+#define  USB_CFG_DEVICE_ID       0x01, 0x00 /* Test PID */
 /* This is the ID of the product, low byte first. It is interpreted in the
  * scope of the vendor ID. If you have registered your own VID with usb.org
  * or if you have licensed a PID from somebody else, define it here. Otherwise
@@ -251,8 +251,8 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
  * obdev's free shared VID/PID pair. See the file USB-IDs-for-free.txt for
  * details.
  */
-#define USB_CFG_DEVICE_NAME     'c', 'o', 'o', 'k', 'i', 'e', '-', 'm', 'o', 'u', 's', 'e'
-#define USB_CFG_DEVICE_NAME_LEN 12
+#define USB_CFG_DEVICE_NAME     'F', 'e', 'u', 'e', 'r', 'm', 'e', 'l', 'd', 'e', 'r'
+#define USB_CFG_DEVICE_NAME_LEN 11
 /* Same as above for the device name. If you don't want a device name, undefine
  * the macros. See the file USB-IDs-for-free.txt before you assign a name if
  * you use a shared VID/PID.
@@ -279,7 +279,7 @@ extern void hadUsbReset(void); // define the function for usbdrv.c
  * HID class is 3, no subclass and protocol required (but may be useful!)
  * CDC class is 2, use subclass 2 and protocol 1 for ACM
  */
-#define USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH    52
+#define USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH    35
 /* Define this to the length of the HID report descriptor, if you implement
  * an HID device. Otherwise don't define it or define it to 0.
  * If you use this define, you must add a PROGMEM character array named
