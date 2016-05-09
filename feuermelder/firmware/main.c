@@ -188,11 +188,10 @@ uchar	usbFunctionSetup(uchar data[8])
 {
 usbRequest_t    *rq = (void *)data;
 
-    usbMsgPtr = reportBuffer;
     if((rq->bmRequestType & USBRQ_TYPE_MASK) == USBRQ_TYPE_CLASS){    /* class request type */
         if(rq->bRequest == USBRQ_HID_GET_REPORT){  /* wValue: ReportType (highbyte), ReportID (lowbyte) */
             /* we only have one report type, so don't look at wValue */
-            buildReport(keyPressed());
+			usbMsgPtr = (void *)&reportBuffer;
             return sizeof(reportBuffer);
         }else if(rq->bRequest == USBRQ_HID_GET_IDLE){
             usbMsgPtr = &idleRate;
