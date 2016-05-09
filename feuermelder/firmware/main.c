@@ -145,6 +145,8 @@ const PROGMEM char usbHidReportDescriptor[35] = {   /* USB report descriptor */
 #define KEY_8       37
 #define KEY_9       38
 #define KEY_0       39
+#define KEY_ESCAPE  41
+#define KEY_DELETE  76
 
 #define KEY_F1      58
 #define KEY_F2      59
@@ -159,31 +161,27 @@ const PROGMEM char usbHidReportDescriptor[35] = {   /* USB report descriptor */
 #define KEY_F11     68
 #define KEY_F12     69
 
-static const uchar  keyReport[NUM_KEYS + 1][2] PROGMEM = {
-/* none */  {0, 0},                     /* no key pressed */
-/*  1 */    {MOD_SHIFT_LEFT, KEY_A},
-/*  2 */    {MOD_SHIFT_LEFT, KEY_B},
-/*  3 */    {MOD_SHIFT_LEFT, KEY_C},
-/*  4 */    {MOD_SHIFT_LEFT, KEY_D},
-/*  5 */    {MOD_SHIFT_LEFT, KEY_E},
-/*  6 */    {MOD_SHIFT_LEFT, KEY_F},
-/*  7 */    {MOD_SHIFT_LEFT, KEY_G},
-/*  8 */    {MOD_SHIFT_LEFT, KEY_H},
-/*  9 */    {MOD_SHIFT_LEFT, KEY_I},
-/* 10 */    {MOD_SHIFT_LEFT, KEY_J},
-/* 11 */    {MOD_SHIFT_LEFT, KEY_K},
-/* 12 */    {MOD_SHIFT_LEFT, KEY_L},
-/* 13 */    {MOD_SHIFT_LEFT, KEY_M},
-/* 14 */    {MOD_SHIFT_LEFT, KEY_N},
-/* 15 */    {MOD_SHIFT_LEFT, KEY_O},
-/* 16 */    {MOD_SHIFT_LEFT, KEY_P},
-/* 17 */    {MOD_SHIFT_LEFT, KEY_Q},
-};
+#define HOTKEY_NONE    0
+#define HOTKEY_CSE     1
+#define HOTKEY_CAD     2
 
 static void buildReport(uchar key)
 {
-/* This (not so elegant) cast saves us 10 bytes of program memory */
-    *(int *)reportBuffer = pgm_read_word(keyReport[key]);
+	if (key == HOTKEY_CSE)
+	{
+		reportBuffer[0] = MOD_CONTROL_LEFT | MOD_SHIFT_LEFT;
+		reportBuffer[1] = KEY_ESCAPE;
+	}
+	else if (key == HOTKEY_CAD)
+	{
+		reportBuffer[0] = MOD_CONTROL_LEFT | MOD_ALT_LEFT;
+		reportBuffer[1] = KEY_DELETE;
+	}
+	else
+	{
+		reportBuffer[0] = 0;
+		reportBuffer[1] = 0;
+	}
 }
 
 uchar	usbFunctionSetup(uchar data[8])
