@@ -28,36 +28,28 @@
  */
 #define SWITCH_PIN PB4
 
+#define BUTTON_PIN PB3
 
-/* The following function returns an index for the first key pressed. It
- * returns 0 if no key is pressed.
- */
-static uchar    keyPressed(void)
+#define HOTKEY_NONE    0
+#define HOTKEY_CSE     1
+#define HOTKEY_CAD     2
+
+#define STATE_STANDBY          0
+#define STATE_KEY_PRESSED      1
+#define STATE_WAIT_FOR_RELEASE 2
+#define STATE_WAITING          3
+
+static uchar getKeyPressed(void)
 {
-// uchar   i, mask, x;
-
-    // x = PINB;
-    // mask = 1;
-    // for(i=0;i<6;i++){
-        // if((x & mask) == 0)
-            // return i + 1;
-        // mask <<= 1;
-    // }
-    // x = PINC;
-    // mask = 1;
-    // for(i=0;i<6;i++){
-        // if((x & mask) == 0)
-            // return i + 7;
-        // mask <<= 1;
-    // }
-    // x = PIND;
-    // mask = 1 << 3;
-    // for(i=0;i<5;i++){
-        // if((x & mask) == 0)
-            // return i + 13;
-        // mask <<= 1;
-    // }
-    return 0;
+	if (!(PINB & _BV(BUTTON_PIN)))
+	{
+		if (!(PINB & _BV(SWITCH_PIN)))
+			return HOTKEY_CSE;
+		else
+			return HOTKEY_CAD;
+	}
+	else
+		return HOTKEY_NONE;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -161,10 +153,6 @@ const PROGMEM char usbHidReportDescriptor[35] = {   /* USB report descriptor */
 #define KEY_F11     68
 #define KEY_F12     69
 
-#define HOTKEY_NONE    0
-#define HOTKEY_CSE     1
-#define HOTKEY_CAD     2
-
 static void buildReport(uchar key)
 {
 	if (key == HOTKEY_CSE)
@@ -261,13 +249,15 @@ void hadUsbReset(void)
 
 int	main(void)
 {
-uchar   key, lastKey = 0, keyDidChange = 0;
+uchar   key = HOTKEY_NONE;
+uchar   state = STATE_STANDBY;
 uchar   idleCounter = 0;
 
 	wdt_enable(WDTO_2S);
     
-	// Activate the pull-up on the switch pin
+	// Activate the pull-up on the switch & button pin
 	PORTB |= _BV(SWITCH_PIN);
+	PORTB |= _BV(BUTTON_PIN);
 
 	odDebugInit();
 	usbInit();
@@ -276,29 +266,49 @@ uchar   idleCounter = 0;
 	for(;;){	/* main event loop */
 		wdt_reset();
 		usbPoll();
-        key = keyPressed();
-        if(lastKey != key){
-            lastKey = key;
-            keyDidChange = 1;
-        }
-        if(TIFR & (1<<TOV0)){   /* 22 ms timer */
-            TIFR = 1<<TOV0;
-            if(idleRate != 0){
-                if(idleCounter > 4){
-                    idleCounter -= 5;   /* 22 ms in units of 4 ms */
-                }else{
-                    idleCounter = idleRate;
-                    keyDidChange = 1;
-                }
-            }
-        }
-        if(keyDidChange && usbInterruptIsReady()){
-            keyDidChange = 0;
-            /* use last key and not current key status in order to avoid lost
-               changes in key status. */
-            buildReport(lastKey);
+
+		if (usbInterruptIsReady())
+		{
+			// State standby - waiting for someone to push the button
+			if (state == STATE_STANDBY)
+			{
+				key = getKeyPressed();
+
+				// When the button is pressed, build the HID report for the
+				// corresponding key and set state to key pressed
+				if (key != HOTKEY_NONE)
+				{
+					buildReport(key);
+					state = STATE_KEY_PRESSED;
+				}
+			}
+			// State key pressed - release the key
+			else if (state == STATE_KEY_PRESSED)
+			{
+				// Release the keys by sending a zero report.
+				buildReport(HOTKEY_NONE);
+				state = STATE_WAIT_FOR_RELEASE;
+			}
+			// State wait for release - wait until the button is released
+			else if (state == STATE_WAIT_FOR_RELEASE)
+			{
+				if (getKeyPressed() == HOTKEY_NONE)
+				{
+					state = STATE_WAITING;
+					idleCounter = 10;
+				}
+			}
+			// State waiting - poor man's debouncing :-|
+			else if (state == STATE_WAITING)
+			{
+				if (idleCounter == 0)
+					state = STATE_STANDBY;
+				else
+					idleCounter--;
+			}
+
             usbSetInterrupt(reportBuffer, sizeof(reportBuffer));
-        }
+		}
 	}
 	return 0;
 }
