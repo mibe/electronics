@@ -23,22 +23,34 @@
  */
 #define SWITCH_PIN PB4
 
+// Pin, onto which the push button is wired to.
 #define BUTTON_PIN PB3
 
+// No key pressed
 #define HOTKEY_NONE    0
+// Ctrl+Shift+Escape pressed
 #define HOTKEY_CSE     1
+// Ctrl+Alt+Delete pressed
 #define HOTKEY_CAD     2
 
+// No push button pressed
 #define STATE_STANDBY          0
+// Push button was pressed and report sent
 #define STATE_KEY_PRESSED      1
+// Waiting for release of push button
 #define STATE_WAIT_FOR_RELEASE 2
+// Waiting for standby state
 #define STATE_WAITING          3
 
+/* Returns which hotkey is pressed, if any.
+*/
 static uchar getKeyPressed(void)
 {
+	// Check if the button is pressed. This signal is low-active.
 	if (!(PINB & _BV(BUTTON_PIN)))
 	{
-		if (!(PINB & _BV(SWITCH_PIN)))
+		// The switch state defines which hotkey should be sent.
+		if (PINB & _BV(SWITCH_PIN))
 			return HOTKEY_CSE;
 		else
 			return HOTKEY_CAD;
@@ -94,6 +106,8 @@ const PROGMEM char usbHidReportDescriptor[35] = {   /* USB report descriptor */
 #define KEY_ESCAPE  41
 #define KEY_DELETE  76
 
+/* Build HID report depending on given hotkey. This will set the reportBuffer array.
+*/
 static void buildReport(uchar key)
 {
 	if (key == HOTKEY_CSE)
@@ -113,7 +127,7 @@ static void buildReport(uchar key)
 	}
 }
 
-uchar	usbFunctionSetup(uchar data[8])
+uchar usbFunctionSetup(uchar data[8])
 {
 	usbRequest_t    *rq = (void *)data;
 
@@ -190,6 +204,7 @@ void hadUsbReset(void)
 
 int main(void)
 {
+	// Default hotkey is none and state is standby.
 	uchar   key = HOTKEY_NONE;
 	uchar   state = STATE_STANDBY;
 	uchar   idleCounter = 0;
