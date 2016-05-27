@@ -4,6 +4,24 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #883 - Orange Pi One vs Raspberry Pi 2
+http://youtu.be/TEyU1zSqFwU
+# eevBLAB #22 - Ebay is BROKEN!
+http://youtu.be/4ik7AGGN8-o
+# EEVblog #882 - Dumpster Dive Apple Xserve Computers
+http://youtu.be/MFSyGFXbsPk
+# EEVblog #881 - Fontus Self Filling Water Bottle BUSTED!
+http://youtu.be/BhnoSREmWVY
+# EEVblog #880 - Mailbag
+http://youtu.be/5bWEiyx6Bns
+# EEVblog #879 - R&S HMO1202 Scope Bandwidth Hack Investigation
+http://youtu.be/3THvWEKGOwE
+# EEVblog #878 - Oscilloscope High Res vs Average Modes
+http://youtu.be/036Ems1z-o0
+# EEVblog #877 - Solar Analytics Home Energy Monitoring Installation
+http://youtu.be/dEqlOj6_m0Q
+# EEVblog #876 - NI VirtualBench Review
+http://youtu.be/OScKr-VwaqU
 # EEVblog #875 - NI VirtualBench Teardown
 http://youtu.be/3sSu-N1zkqQ
 # EEVblog #874 - World's Oldest Electronics Hobbyist!
