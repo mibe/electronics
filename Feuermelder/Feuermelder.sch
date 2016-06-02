@@ -11466,7 +11466,7 @@ to the USB host.</text>
 <busses>
 </busses>
 <nets>
-<net name="N$2" class="0">
+<net name="USB_VCC" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
 <pinref part="D1" gate="1" pin="A"/>
@@ -11480,7 +11480,7 @@ to the USB host.</text>
 <wire x1="38.1" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="USB_D-" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="83.82" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
@@ -11489,7 +11489,7 @@ to the USB host.</text>
 <wire x1="40.64" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="USB_D+" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="27.94" y1="93.98" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
@@ -11510,7 +11510,7 @@ to the USB host.</text>
 <pinref part="U1" gate="G$1" pin="(AREF)PB0"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="3V6" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="96.52" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
@@ -11535,12 +11535,12 @@ to the USB host.</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="76.2" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="(OCP)PB1"/>
-<wire x1="114.3" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="76.2" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="(ADC1)PB2"/>
+<wire x1="114.3" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="USB_GND" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
 <wire x1="27.94" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
