@@ -6,7 +6,7 @@ This tool is mainly used for developing USB devices: A reset is now possible wit
 ## BOM
 
 ### PCB
-See the BOM-PCB.csv file. Short summary:
+See the ```BOM-PCB.csv``` file. Short summary:
 
 * 2 capacitors
 * 2 diodes
@@ -22,6 +22,9 @@ See the BOM-PCB.csv file. Short summary:
 * SPST switch (on/off switch)
 * Push button, normally open
 * Some wires
+
+## Enclosure
+The top half of the case is used as front panel, where the controls and indicator LED are mounted. See ```drilling plan.pdf``` for a drawing of the drill holes. 
 
 ## Limitations
 This tool is not designed to work with high-current USB devices. It is designed for a standard USB device with draws 500 mA at maximum. Don't hook up a device which draws more current (like a phone, charger, fan or vacuum cleaner)! The rated load of the relay contacts is 1 A, though.
