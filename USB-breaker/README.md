@@ -22,6 +22,8 @@ See the ```BOM-PCB.csv``` file. Short summary:
 * SPST switch (on/off switch)
 * Push button, normally open
 * Some wires
+* Four 5 mm spacer bolts
+* Four M3 5 mm screws
 
 ## Enclosure
 The top half of the case is used as front panel, where the controls and indicator LED are mounted. See ```drilling plan.pdf``` for a drawing of the drill holes. 
