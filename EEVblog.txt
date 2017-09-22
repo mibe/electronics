@@ -4,6 +4,412 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB #36 - Demonetised!
+http://youtu.be/ULtjwGN2olM
+# EEVblog #1025 - Minute Physics + Bill Nye Promoting Rayton Solar
+http://youtu.be/dxRsxmDcIYs
+# EEVblog #b10000000000 - 1K Micro Magic
+http://youtu.be/C1on-LaIsCA
+# EEVblog #1023 - Rigol DL3021 Electronic Load Teardown
+http://youtu.be/Tk_3rYKWIIg
+# EEVblog #1022 - How To Find A $50 Oscilloscope On Ebay - REDUX
+http://youtu.be/rTPhuRQBmLQ
+# More Rohde and Schwarz Scope Winners!
+http://youtu.be/vmZoMdaczO0
+# EEVblog #1021 - Retro Radio Shack TRS-80 Color Computer
+http://youtu.be/7t_Zdpf8p_o
+# EEVblog #1020 - Is A $7 LCR / Component Tester Any Good?
+http://youtu.be/7Br3L1B80ow
+# EEVblog #1019 - Mailbag
+http://youtu.be/WyV06NfWzoQ
+# EEVacademy #6 - PID Controllers Explained
+http://youtu.be/VVOi2dbtxC0
+# EEVacademy #5 - Digital Logic Datasheets Explained
+http://youtu.be/sr1DOHnJi8I
+# EEVblog #1018 - ZeroPlus Logic Analysers
+http://youtu.be/ttvgJqbCXRs
+# EEVblog #1017 - Enter The World Of Atto Amps
+http://youtu.be/LI_5ANmkVqo
+# eevBLAB #34 - A Proposal For Youtube
+http://youtu.be/8C0G_UUyUg0
+# EEVblog #1016 - Crude Multimeter High Voltage Overload Testing
+http://youtu.be/Ru2rb7bFhag
+# EEVblog #1015 - Beware Evil (But Clever) DC Jacks!
+http://youtu.be/ix2fR-rh1vc
+# eevBLAB #33 - Why Gold Plated Probes Matter
+http://youtu.be/uV9mW0rpRxg
+# EEVblog #1014 - Masterlock Bluetooth Padlock Teardown
+http://youtu.be/zRdovnGruqk
+# Rohde & Schwarz RTB2004 Giveaway Winner!
+http://youtu.be/GK462ztpfDk
+# EEVblog #1013 - Mailbag
+http://youtu.be/GEQjhRCCWsU
+# EEVblog #1012 - Best Bargain Ebay Bench Meter? - Fluke 8842A
+http://youtu.be/X4_iRB2DIW8
+# EEVblog #1011 - Retro Teardown - World's First HD DVD Player
+http://youtu.be/HsX9MJK9i4Y
+# EEVblog #1010 - Zyntony Ra LED Strap Light Teardown
+http://youtu.be/0eKCalM4ueM
+# EEVblog #1009 - Voltage vs Power vs Energy
+http://youtu.be/YdbhnmA4M9g
+# EEVacademy #4 -  I²C (I2C) Bit Banging
+http://youtu.be/fm13tIe5wSc
+# EEVblog #1008 - Mystery Teardown
+http://youtu.be/ZdgsgT2SxCA
+# EEVblog #1007 - Is a $25 Multimeter Any Good?
+http://youtu.be/xdGQEVdxmQQ
+# EEVblog #1006 - Trezor Bitcoin Hardware Wallet Teardown
+http://youtu.be/BzxGoJdd8a4
+# EEVacademy #3 - Bit Banging & SPI Tutorial
+http://youtu.be/9hMsNOwY5AQ
+# EEVblog #1005 - Keithley 2302 Battery Simulator Teardown
+http://youtu.be/5LK8wduZsy0
+# EEVblog #1004 - Owon XDS3202A 14bit Oscilloscope Teardown
+http://youtu.be/-F4H-zC_i0s
+# Rohde & Schwarz RTB2004 Oscilloscope Giveaway
+http://youtu.be/er3lc0_ahcY
+# EEVblog #1003 - Mailbag
+http://youtu.be/qmxpZmrMucM
+# EEVblog #1002 - Trump's Solar Freakin' Wall DEBUNKED!
+http://youtu.be/AloQRY1ZOc0
+# EEVblog #1001 - uBeam Ultrasonic Wireless Charging DEBUNKED!
+http://youtu.be/A8dqzVlhFkA
+# EEVblog #1000 - Fundamental Mailbag Retro Teardown Shootouts are Bullshit
+http://youtu.be/-IOmRGjVELU
+# EEVblog #999 - Youtube Silver Award Live Subscription Counter!
+http://youtu.be/LkUkSgbINvs
+# EEVblog #998 - How To Program ESP8266 WiFi With Arduino
+http://youtu.be/Q6NBnPfPhWE
+# EEVblog #997 - How To Solder Surface Mount Components
+http://youtu.be/hoLf8gvvXXU
+# EEVblog #996 - What Is The CE Mark On A Product?
+http://youtu.be/f0uvS80YIGU
+# WARNING! - Youtube Content ID Phishing SCAM!
+http://youtu.be/1H7IfwAC_rg
+# OWON 14bit XDS3202A Oscilloscope Unboxing & First Impressions
+http://youtu.be/ByUiOk00K0U
+# EEVblog #995 - Power Supply Sequencing
+http://youtu.be/pj9EJCKqiT4
+# RF Test Chips Under The Microscope
+http://youtu.be/-JDsRZ4nmbo
+# EEVblog #994 - CERN/Fermilab Particle Accelerator Boards!
+http://youtu.be/0DmzxUM-9v0
+# EEVblog #993 - Mailbag
+http://youtu.be/JJPaQ9F9nFg
+# EEVblog #992 (Part 2) - How To Clean & Service A Microscope
+http://youtu.be/vuZgm0mAIPA
+# So Much Stuff On EEVblog2 !
+http://youtu.be/Xd6fww7Xb10
+# EEVblog #992 - Olympus BHM Wafer Inspection Microscope
+http://youtu.be/hfUHRIYuDkI
+# The Signal Path Discussion - Engineering & RF (3/3)
+http://youtu.be/tjdae8oqYMQ
+# The Signal Path Discussion - Science, Debunking & Education (2/3)
+http://youtu.be/2xy_kqOufv8
+# The Signal Path Discussion - Youtube & Bell Labs (1/3)
+http://youtu.be/g3y_Vr8ZJ7w
+# EEVblog #991 - Mailbag
+http://youtu.be/zdLENNhQEJ4
+# EEVblog #990 - Getting The PCB Manufactured (Nixie PART 5)
+http://youtu.be/JCXgRyA_-Is
+# EEVblog Meetup Highlights
+http://youtu.be/znYVJGfHj9Q
+# EEVblog #989 - FLIR ETS320 Thermal Camera Teardown
+http://youtu.be/8gJxII4UvSA
+# EEVblog #988 - FLIR ETS320 Benchtop Thermal Camera Review
+http://youtu.be/NznO-DVfLd0
+# EEVblog #987 - Keysight U1272A Multimeter EMC Followup
+http://youtu.be/DizSMQSLuJc
+# My New Youtube Channel BANNED!
+http://youtu.be/YWo9xDKXKq4
+# EEVacademy - Digital Logic Boolean & Demorgan's Theorems
+http://youtu.be/hFvqEfZfMtA
+# IMPORTANT! - New Channel Announcement! (Voyager 2 Videos)
+http://youtu.be/J3xHTgPE1TA
+# Voyager 2 Contact Teaser Trailer!
+http://youtu.be/bjYSH_J33rE
+# Electronics Podcast
+http://youtu.be/0JQlRXFi0Tc
+# ANNOUNCEMENT: EEVblog Meetup!
+http://youtu.be/Grf4dxOS1vU
+# EEVblog #986 - Mailbag
+http://youtu.be/n-pZHhqP4XU
+# EEVblog #985 - Siglent SDS1202X-E Oscilloscope Teardown
+http://youtu.be/slBXLf4YKtA
+# EEVblog #983 - PART 2: Piezoelectric Oscilloscope Issue Followup
+http://youtu.be/0Iv2TnI0C98
+# EEVblog #984 - World's Best Dumpster Find! ($300k!)
+http://youtu.be/d_S9YsD9Y0c
+# eevBLAB #32 - Youtube Restricted Mode Followup
+http://youtu.be/hrj9IAHWKkw
+# eevBLAB #31 - Youtube Restricted Mode Comments WTF?!
+http://youtu.be/0Yr8sF6osyM
+# EEVblog #983 - A Shocking Oscilloscope Problem!
+http://youtu.be/WE9pYUVvr00
+# EEVblog #982 - HP54616B 500MHz Oscilloscope REPAIR
+http://youtu.be/_x8ii58-W_Y
+# EEVblog #981 - Introduction To Digital Logic
+http://youtu.be/7bVnsXHO6Uw
+# EEVblog #980 - RoboMaid Automated Vacuum Cleaner Teardown
+http://youtu.be/NJvBQoIb5lg
+# EEVblog #979 - Mailbag
+http://youtu.be/2t1Odn5dTD0
+# EEVblog #978 - Keysight 1000X Oscilloscope Hacked!
+http://youtu.be/eeds2QsUa_w
+# EEVblog #977 - Keysight 1000X Hacking - Part 1
+http://youtu.be/YC6JCVHk80c
+# IMPORTANT: Audience Survey & Changes
+http://youtu.be/hBs8L8J2OIo
+# Product & Circuit Design Brainstorming
+http://youtu.be/p5jpxZbGp0Y
+# LIVE Show Giveaway
+http://youtu.be/zgE6_x4rM5k
+# EEVblog #976 - Keysight 1000 X-Series Oscilloscope Teardown
+http://youtu.be/9KcOQsVxtoU
+# EEVblog #975 - Human vs Autorouter
+http://youtu.be/sffuvnGhano
+# EEVblog #974 - PCB Layout Walkthrough
+http://youtu.be/JrH_itjMDjo
+# eevBLAB #30  - Popular Science FAIL! (WaterSeer Debunk)
+http://youtu.be/WyPBIzJQB_o
+# EEVblog #973 - Hioki Multimeter Review & Clamp Meter Teardown
+http://youtu.be/D8Rom9Owsyo
+# Adventures in AVR ISP Programming
+http://youtu.be/MWHamD1Hj58
+# eevBLAB #29 - How To Search For An Enclosure
+http://youtu.be/--oKMQITODc
+# Sneak Peek: NEW Keysight 1000 X-Series Oscilloscope
+http://youtu.be/N63dJHbCdbk
+# EEVblog #972 - Operating Chips Outside Their Spec
+http://youtu.be/gVfJTZG6h9o
+# EEVblog #971 - Zero Standby Power TV - BUSTED!
+http://youtu.be/1vYJq4GeXPM
+# EEVblog #970 - Mailbag
+http://youtu.be/2QtLAsV5ocg
+# EEVblog #970 - Mailbag
+http://youtu.be/2QtLAsV5ocg
+# eevBLAB #28 - How To Get A Product Designed
+http://youtu.be/m1qmf72o2Hw
+# EEVblog #969 - Vintage $80k NLE Video Editor Teardown
+http://youtu.be/8ayBKoxX9Eg
+# EEVblog #968 - Mystery EDA Package
+http://youtu.be/teiCblSrAsY
+# EEVblog #967 - Mystery Teardown
+http://youtu.be/MWn3kaUeqRw
+# Youtube Notification Experiment
+http://youtu.be/l7hXq5LWn60
+# EEVblog #966 - CPM700 Counter Surveillance Monitor Repair
+http://youtu.be/IsTOYXCDTMk
+# EEVblog #965 - The (Autodesk) Eagle Has Crashed
+http://youtu.be/0U8he-5Bqtw
+# EEVblog #964 - Mailbag
+http://youtu.be/5SFnZIZa_ZI
+# eevRANT: Lily Drones Folds. A $45M FAIL!
+http://youtu.be/Iap43M40F80
+# eevRANT: Refuting Bullshit
+http://youtu.be/CuGNOP0Ubvo
+# EEVblog #963 - Batteriser / Batteroo Passive Toy Test!
+http://youtu.be/Tl90m2KHbNk
+# LIVE Testing of the Batteriser
+http://youtu.be/9DjABCJN2M8
+# LIVE Unboxing of the Batteriser! (Batteroo)
+http://youtu.be/cAsUI2YhqN4
+# EEVblog #962 - Hacking A Calculator Into A Counter
+http://youtu.be/U8DnuSo8SV4
+# EEVblog #961 - Monkey Debouncing
+http://youtu.be/Nj-Q8FQxHhU
+# EEVblog #960 - Mystery Merry Mailbag Teardown
+http://youtu.be/oFTPTmZ7pDU
+# EEVblog #959 - How Much I Make On Youtube Revealed
+http://youtu.be/R8qdOAEQnps
+# EEVblog #958 - Mailbag
+http://youtu.be/yNQCaSNIrEM
+# EEVblog #957 - How To Measure DC-DC Converter Efficiency
+http://youtu.be/li0XKnpOZyM
+# EEVblog #956 - Countersurveillance Monitor Teardown
+http://youtu.be/nWG_neR0CME
+# EEVblog #955 - World's First Portable Computer Teardown
+http://youtu.be/SJZ3zetpNOI
+# EEVblog #954 - How To Setup An Electronics Lab For $300
+http://youtu.be/HicV3Z6XLFA
+# EEVblog #953 - What Is Schematic ERC?
+http://youtu.be/7cLWz1jZd2Q
+# EEVblog #952 - Nixie Tube Display Project - Part 3
+http://youtu.be/ggVu_U-CsAk
+# EEVblog #951 - Mailbag
+http://youtu.be/t-vNo6H5gww
+Altium Giveaway + Live Show
+http://youtu.be/y8y_oNcLvdg
+# EEVblog #950 - Nixie Tube Display Project - Part 2
+http://youtu.be/hkbPJONJLfs
+# EEVblog #949 - Australian Made Vintage Laptop Teardown!
+http://youtu.be/st7H_vqSaQc
+# EEVblog #948 - Nixie Tube Display Project - Part 1
+http://youtu.be/7uogKucrPks
+# EEVblog #947 - Chronos High Speed Camera Review
+http://youtu.be/rxYxTqALycM
+# EEVblog #946 - Apple (Raspberry) Pi Cluster - PART 2
+http://youtu.be/gzbTXQlxuyo
+# EEVblog #945 - Thermal Powered Smartwatches Are GIMMICKS!
+http://youtu.be/y4OeOQtiW0w
+# EEVblog #944 - Has the Future Arrived Yet? - Part 2
+http://youtu.be/S4HCQ3bkuZc
+# EEVblog #944 - Has the Future Arrived Yet? - Part 1
+http://youtu.be/aOOHVHhHS8E
+# EEVblog #943 - How EEVblog Does Video Editing
+http://youtu.be/yMkILHd_RZ0
+# EEVblog #942 - Mystery Monday Teardown
+http://youtu.be/IpdJEo9r-HQ
+# EEVblog #941 - The Amazing Schmitt Trigger
+http://youtu.be/Ht48vv0rQYk
+# EEVblog #940 - Mailbag
+http://youtu.be/koADGUyOWp4
+# EEVsmoke #2 - Magic Smoke Captured!
+http://youtu.be/SoeVNaz7KGc
+# EEVblog #939 - How Is A PCB Manufactured?
+http://youtu.be/rEB0pl8a5C0
+# EEVblog #938 - Tesla Solar Roofs -  Are They Viable?
+http://youtu.be/h6FXy_LQXrs
+# EEVblog #937 - Retro Canon Still Camera Teardown!
+http://youtu.be/4H9xmJ9-7q0
+# EEVblog #936 - Mailbag
+http://youtu.be/P0IGfGu6yKI
+# EEVsmoke #1 - Magic Component Smoke
+http://youtu.be/U_QoWa6qXeo
+# EEVblog #935 - Solar Roadways Installation BUSTED!
+http://youtu.be/GtkbioiQHmA
+# New Dumpster Diving Monitor Score
+http://youtu.be/8blgmbXfDEc
+# EEVblog #934 - Raspberry Pi Supercomputer Cluster PART 1
+http://youtu.be/KI7YLXhovb8
+# eevBLAB #27 - Paid Blog Offers
+http://youtu.be/kEp4k8TGzeI
+# EEVblog #933 - Keysight U1272A EMC Issue
+http://youtu.be/DVXPGj0Pjyc
+# eevBLAB #26 - Youtube End Screen Feature FAIL
+http://youtu.be/cmANDi1AcTs
+# EEVblog #932 - How Does A HV Differential Probe Work?
+http://youtu.be/GOlgaEK2Hsk
+# EEVblog #931 - Designing A Better Multimeter PART 2
+http://youtu.be/xSEYPP5Xsi0
+# EEVBlog #930 - Mailbag
+http://youtu.be/MWx8KDufnZY
+# EEVblog #929 - Designing A Better Multimeter
+http://youtu.be/jx0dryLmUEQ
+# EEVblog #928 - Jaycar DMX RGB LED Lights Teardown
+http://youtu.be/QqPJJLkm46U
+# EEVblog #927 - Insane Jaycar Dumpster Sale!
+http://youtu.be/uhxA6c28Lds
+# EEVblog #926 - Introduction To The Oscilloscope
+http://youtu.be/Iq4QlfH-oqk
+# EEVblog #925 - Panasonic CF-U1 ToughBook Teardown
+http://youtu.be/O3N9DqkVNFI
+# EEVblog #924 - Hovering Delorean!
+http://youtu.be/OOoruKxi7s0
+# EEVblog #923 - World's Fastest Solar Electric Car
+http://youtu.be/Uob1PWH9Uo0
+# EEVblog #922 - Mailbag
+http://youtu.be/Ag1w5XzB3ac
+# Announcement: Sydney Electronex Show
+http://youtu.be/lTGnOxXeOdY
+# EEVblog #921 - Open Source Hardware Problems Solved!
+http://youtu.be/5wrSXCBdalc
+# EEVblog #920 - World's First Transistor Watch!
+http://youtu.be/UILl6PFbOzA
+# eevBLAB #25 - IEEE Maker Contest Extreme FAIL!
+http://youtu.be/KpXvt8HRdoU
+# EEVblog #919 - How To Charge Li-Ion/LiPo Batteries With A Power Supply
+http://youtu.be/jNmlxBXEqW0
+# EEVblog #918 - REPAIR: Sony Pyxis GPS
+http://youtu.be/az4B2o4Kcsc
+# EEVblog #917 - Mailbag
+http://youtu.be/KB-fUf3pc94
+# EEVblog #916 - Work Bench Lighting From A Dumpster LCD TV
+http://youtu.be/jb7ZzW03lW4
+# EEVblog #915 - Dumpster Dive LCD TV Salvage
+http://youtu.be/BjGdyajiSzM
+# EEVblog #914 - Sony VAIO UX Micro PC Teardown
+http://youtu.be/FGIGUBYJLn8
+# EEVblog #913 - Mailbag
+http://youtu.be/pMqn2o55BmM
+# EEVblog #912 - BM235 Multimeter Reverse Engineering
+http://youtu.be/UKIzhz0XLaQ
+# EEVblog #911 - 2016 Sydney Maker Faire Part 2
+http://youtu.be/5B488t3mo5w
+# EEVblog #911 - 2016 Sydney Maker Faire
+http://youtu.be/5fUOVNA1n9k
+# RFID/NFC Bio Payments
+http://youtu.be/m9HIYOK_8K4
+# Large Hadron Collider LHC Exhibition Tour
+http://youtu.be/kkthGHl4CEc
+# EEVblog #910 - Indiana Jones Train Set Update
+http://youtu.be/DLSC3m7gPoM
+# 2016 Sydney Maker Faire Announcement
+http://youtu.be/D34kf9WJ76U
+# EEVblog #909 - Heart Defibrillator Teardown
+http://youtu.be/n47u2YQytjo
+# EEVblog #908 - Zener Diodes
+http://youtu.be/O0ifJ4oVdG4
+# EEVblog #907 - RETRO Teardown: Sony Video Walkman
+http://youtu.be/VyAvd_38yD4
+# Multimeter Winner + Bio Teardown
+http://youtu.be/33ETKOr7Yf8
+# Surgery Update
+http://youtu.be/bOQ3zrWFHd8
+# EEVcomments #1
+http://youtu.be/lgtooEtk9R4
+# EEVblog #906 - Mailbag
+http://youtu.be/0ZWSOx-T6lg
+# EEVblog #905 - REPAIR: HP85 Vintage Computer
+http://youtu.be/14KncLx5frg
+# EEVblog #904 - Hewlett Packard HP85 Professional Computer
+http://youtu.be/yac6YByAcRc
+# EEVblog #903 - HP85 Vintage Computer Teardown
+http://youtu.be/l5SzKM7g5Ds
+# EEVblog #902 - Solar Roadways Route 66 BUSTED!
+http://youtu.be/_S6kowyvreY
+# EEVblog #901 PART 2 - RPi 3 Photoflash WiFi Problem
+http://youtu.be/_D_fi_ck9Vo
+# EEVblog #901 - Raspberry Pi 3 Photoflash Problem
+http://youtu.be/dDcsTnqVgWc
+# EEVblog #900 - STM32 ARM Development Board
+http://youtu.be/mkx4qZCCHqI
+# eevBLAB #24 - PCB Wars! Altium Circuit Studio vs Autodesk Eagle
+http://youtu.be/FfsPL0pIpxw
+# EEVblog #899 - Extreme Mailbag!
+http://youtu.be/boahAP3Sf4s
+# EEVblog #898 - LCD Contrast Experiments
+http://youtu.be/rOdjN8ROrNI
+# EEVblog #897 - Radiation Effects On Space Electronics
+http://youtu.be/7JwNmdV2QPs
+# EEVblog #896 - Space Electronics
+http://youtu.be/nJLOZDPTp3I
+# Juno Live Again
+http://youtu.be/CLYKwFMW9J0
+# Juno Live
+http://youtu.be/nV43vM9VcUA
+# Juno Orbital Insertion Live
+http://youtu.be/38uFiWzcDnc
+# Juno Jupiter Live
+http://youtu.be/ib80yjc9VlM
+# EEVblog #895 - BEC Pro Model Airplane Regulator Testing
+http://youtu.be/8ldLaDN8SQs
+# EEVblog #894 - Keysight U1461A Insulation Resistance Multimeter Teardown
+http://youtu.be/wpEXm8bFlX0
+# EEVblog #893 - Mailbag
+http://youtu.be/ZE3zf2lGyt8
+# EEVblog #892 - Siglent SSA3021X Spectrum Analyser Teardown
+http://youtu.be/-8fr_otW0q4
+# EEVblog #891 - Siglent SSA3021X vs Rigol DSA815 Spectrum Analyser
+http://youtu.be/gkLciTsjGZg
+# EEVblog #890 - ArmourCard Active RFID Jamming Teardown
+http://youtu.be/rnOuEFR6qoM
+# EEVblog #889 - Credit Card RFID/NFC Theft Protection Tested
+http://youtu.be/kp63MZ6RudE
+# eevSTREAM: Lab Rearrangement Part 2
+http://youtu.be/rQRakYpb8-g
+# eevSTREAM: Lab Rearrangement Part 1
+http://youtu.be/DwLEFKu2XWg
 # eevBLAB #23 - Interorbital Systems TubeSat vs Australia Post
 http://youtu.be/shSoVLSPbaQ
 # EEVblog #888 - Mailbag

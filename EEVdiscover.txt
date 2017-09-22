@@ -1,0 +1,22 @@
+# PS: "youtube-dl --get-id -e https://www.youtube.com/channel/UCkGvUEt8iQLmq3aJIMjT2qQ/videos | Tee-Object -file list.txt"
+# ^(.+ .+)$		# \1
+# ^(.{11})$		http://youtu.be/\1
+# Á				µ
+# õ				ä
+
+# How To Prove We Landed On The Moon (Apollo 17)
+http://youtu.be/oYPmitSg268
+# NASA Canberra Deep Space Network - Behind The Scenes PART2
+http://youtu.be/SyMSqCKEztc
+# NASA Canberra Deep Space Network - Behind The Scenes
+http://youtu.be/wcav5TcumiE
+# Voyager 2 - Canberra Deep Space Tracking Network (PART 3)
+http://youtu.be/sP_hleOXTaU
+# Australian Synchrotron - How It Works
+http://youtu.be/n77jhaLOARc
+# Analog TV Transmission Facility Tour
+http://youtu.be/YOgMqf2NVDA
+# How To Contact The Voyager 2 Probe (PART 1)
+http://youtu.be/FzRP1qdwPKw
+# Pinging The Voyager 2 Probe (PART 2)
+http://youtu.be/1rCrfQUcXDI
