@@ -12,5 +12,8 @@ An automatic clicking mouse for the game Cookie Clicker
 ## Feuermelder
 A USB "keyboard" disguised in the form of a fire call point to open the Windows Taskmanager
 
+## uCurrentCase
+A case for Dave Jones' µCurrent GOLD
+
 ## USB-breaker
 A tool to shortly disconnect a USB device from the USB bus
