@@ -4,6 +4,84 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB  #43 - Kickstarter Vultures
+http://youtu.be/4tcC_TdhzUU
+# EEVblog #1048 - Ledger Nano S Crypto Hardware Wallet
+http://youtu.be/SKWYO3Qh79A
+# EEVblog #1047 - Solar Roadways FINALLY BUSTED! (Colas Wattway)
+http://youtu.be/rpwx-8s1M38
+# ANNOUNCEMENT: Guest Videos Request
+http://youtu.be/EOCj0ZtFmMg
+# eevBLAB #42 - Patreon FAIL!
+http://youtu.be/LDt_WXnEnw0
+# EEVblog #1046 - Mysterious Digital Voltage Doubling
+http://youtu.be/pW4HjuH1QRY
+# EEVblog #1045 - How To Drive an LCD
+http://youtu.be/ZP0KxZl5N2o
+# Demonstrating Creation of a Xamarin C# Multiplatform Calculator App
+http://youtu.be/-_rqzsJy_Qs
+# ANNOUNCEMENT: 121GW Multimeter on Kickstarter!
+http://youtu.be/fWhnT8FVR5Y
+# eevBLAB #41 - VidMe Is Shutting Down!
+http://youtu.be/Gwp645Vv8Bs
+# EEVblog #1044 - LCD Technology Tutorial
+http://youtu.be/mo4_5vG8bbU
+# EEVblog #1043 - Mailbag
+http://youtu.be/zy_Qlx_djCU
+# eevBLAB #40 - Let's Talk About My Content
+http://youtu.be/EMPRf2K0qSM
+# EEVblog #1042 - Siglent's $499 SDS1104X-E 4CH Oscilloscope Teardown
+http://youtu.be/Kay4Jk2DHuE
+# MCAD Shootout! - Rhino vs Solidworks vs OnShape
+http://youtu.be/xTZpGM2P9u4
+# EEVblog #1041 - Keysight Calibration Lab Tour
+http://youtu.be/5CiR3cZGZS8
+# EEVblog #1040 - Caesium Beam Frequency Standards
+http://youtu.be/2J9Y1-gxxhE
+# EEVblog #1039 - Keysight Metrology Standards Lab
+http://youtu.be/M0dZgP0SieE
+# EEVblog #1038 - Uni-T UPO2104CS Oscilloscope Teardown
+http://youtu.be/ywewix7DlpI
+# EEVblog #1037 - Solving Ceramic Capacitor Cracking
+http://youtu.be/QgKY5QWehME
+# EEVblog #1036 - PSU Fire PCB Repair
+http://youtu.be/VwdnGbI5ls8
+# EEVblog #1035 - Flaming DIY Power Supply!
+http://youtu.be/Q2rvAoO-MIA
+# EEVblog #1034 - Mailbag
+http://youtu.be/WvaGXF-prz8
+# eevBLAB #39 - Youtube Alternatives
+http://youtu.be/rEOBcUW2Nf8
+# EEVblog #1033 - Sony WatchCam Pocket Flat CRT Monitor Teardown
+http://youtu.be/65ENph8sV-0
+# eevBLAB #38 - Digikey & The US Government Watchlist!
+http://youtu.be/jtTwxs8dlnQ
+# EEVblog #1032 Part 5 - John Kenny Keysight Interview
+http://youtu.be/aVBmnVKDJQg
+# EEVblog #1032  Part 4 - John Kenny Keysight Interview
+http://youtu.be/DD7unrTrVdc
+# EEVblog #1032 Part 3 - John Kenny Keysight Interview
+http://youtu.be/fpstmpm_rFM
+# EEVblog #1032 Part 2 - John Kenny Keysight Interview
+http://youtu.be/ewtdnzlv0Rg
+# EEVblog #1032 Part 1 - John Kenny Keysight Interview
+http://youtu.be/WoRJOCdNahc
+# EEVacademy #7 - Designing Combinatorial Digital Logic Circuits
+http://youtu.be/rfaCFEqk05M
+# EEVblog #1031 - $25 DPS3003 PSU Module Characterisation
+http://youtu.be/qWAqSSLwBtw
+# EEVblog #1030 - $20 DIY Bench Power Supply!
+http://youtu.be/Cw2AjcczHg4
+# EEVblog #1029 - BGA PCB Fanout
+http://youtu.be/_1dr5FWYDgE
+# EEVblog #1028 - What's All This PC/104 Stuff Anyhow?
+http://youtu.be/6ad0KP5EvpU
+# eevBLAB #37 - Youtube Copyright Trolls
+http://youtu.be/b_Syp2uyqtE
+# EEVblog #1027 -  Implantable NeuroStimulator Teardown
+http://youtu.be/sNW3Xqtgkus
+# EEVblog #1026 - Mystery Dumpster Diving PC
+http://youtu.be/K0zXjiSCv5I
 # eevBLAB #36 - Demonetised!
 http://youtu.be/ULtjwGN2olM
 # EEVblog #1025 - Minute Physics + Bill Nye Promoting Rayton Solar
