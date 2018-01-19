@@ -4,6 +4,20 @@
 # Á				µ
 # õ				ä
 
+# Guest Video: - Kaizer Power Electronics - Sony BVP-7AP Vintage Video Camera Teardown
+http://youtu.be/dFAuPuHiECE
+# Guest Video: Kerry Wong - HP493A 8GHz Microwave RF Amplifier Teardown
+http://youtu.be/XqakD0dXdjM
+# Guest Video: Brian Lough - ESP8266 Libraries
+http://youtu.be/yabl87SD-3M
+# Guest Video: The Defpom - Fluke Calibrator Repair
+http://youtu.be/XRyDyOANQhc
+# Guest Video: Voltlog #142 - Mailbag
+http://youtu.be/-9l41zNWlxY
+# Guest Video: Bob DuHamel - How Opamp Virtual Grounds Work
+http://youtu.be/HbMnQdRzD8A
+# Guest Video: TGSoapbox - RF Crystal Detectors
+http://youtu.be/EVcxrYnY1ok
 # Guest Video: TannerTech Designing a Frequency Counter
 http://youtu.be/NvIv-0-R6qQ
 # Guest Video: Electronoobs - Building a POV Display
