@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1054 - How an Analog PC Joystick Works
+http://youtu.be/hMBbnWjbUAU
 # EEVblog #1053 - The Biggest 80's Computer FAIL - IBM PC Jr
 http://youtu.be/XRc7Qxf4ltM
 # EEVblog #1052 - BEWARE Crap Banana Plugs!
