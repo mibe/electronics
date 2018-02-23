@@ -4,6 +4,20 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB #45 - WIRED Job Ad & Tech Journalism
+http://youtu.be/n0jSPmWlUU8
+# EEVblog #1059 - Quick 861DW Hot Air Waveform Measurement
+http://youtu.be/Z7sCNTG1lGs
+# EEVblog #1058 - Quick 861DW Hot Air Rework Station Review
+http://youtu.be/N_yHkrVYrBE
+# EEVblog #1057 -  µCurrent Murphy
+http://youtu.be/1VlKoR0ldIE
+# eevBLAB #44 - Sonos Deliberately Bricking Products!
+http://youtu.be/Ac1zZo7wLo8
+# EEVblog #1056 - Digilent Open Scope MZ Review
+http://youtu.be/d8i125NSaqE
+# EEVblog #1055 - How to Design a Custom LCD
+http://youtu.be/ZYvxgl-9tNM
 # EEVblog #1054 - How an Analog PC Joystick Works
 http://youtu.be/hMBbnWjbUAU
 # EEVblog #1053 - The Biggest 80's Computer FAIL - IBM PC Jr

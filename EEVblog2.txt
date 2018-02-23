@@ -4,6 +4,24 @@
 # Á				µ
 # õ				ä
 
+# C++ for the Embedded Programmer
+http://youtu.be/A_saS93Clgk
+# EEVblog2 LIVE
+http://youtu.be/-zmYkEsc5bw
+# 121GW Range Switch Cycling Test Jig
+http://youtu.be/QSmiMlWEpy0
+# µCurrent Opamp Divider Input Bypass Testing
+http://youtu.be/n7XX75S98e8
+# Yet another dumpster dive i7 machine!
+http://youtu.be/Lhmg1jUNxVc
+# µCurrent Offset Voltage Fix
+http://youtu.be/l2LBkXxN81Y
+# Making robots for Mars with NASA scientist Dave Lavery
+http://youtu.be/r7LbLwnYVZE
+# IBM PC jr 512KB Memory Sidecar Teardown
+http://youtu.be/VmPo0XPuKWM
+# 121GW Ohms Autoranging Speed Update
+http://youtu.be/uUCQuIp_hzU
 Out-take
 http://youtu.be/cuVrQEznlXE
 # Dumpster Dive - HP Envy Touch PC Repair
