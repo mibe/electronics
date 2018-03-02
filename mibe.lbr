@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -427,8 +427,8 @@
 <wire x1="2.5" y1="1.6" x2="2.5" y2="1.35" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-1.6" x2="2.5" y2="-1.35" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-1.6" x2="-2.5" y2="-1.35" width="0.127" layer="21"/>
-<text x="-2.5" y="2" size="1" layer="21">&gt;Name</text>
-<text x="-2.5" y="-3" size="1" layer="21">&gt;Value</text>
+<text x="-2.5" y="2" size="1" layer="25">&gt;Name</text>
+<text x="-2.5" y="-3" size="1" layer="27">&gt;Value</text>
 <wire x1="-0.25" y1="0.5" x2="0.25" y2="0.5" width="0.127" layer="51"/>
 <wire x1="0.25" y1="0.5" x2="0.25" y2="-0.5" width="0.127" layer="51"/>
 <wire x1="0.25" y1="-0.5" x2="-0.25" y2="-0.5" width="0.127" layer="51"/>
@@ -492,6 +492,9 @@
 </polygon>
 <text x="-1.75" y="3.75" size="0.8" layer="25">&gt;NAME</text>
 <text x="-1.75" y="-4.5" size="0.8" layer="27">&gt;VALUE</text>
+</package>
+<package name="BISS-LOGO">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -833,6 +836,10 @@
 <vertex x="-2.286" y="0.635"/>
 <vertex x="-1.778" y="0.127"/>
 </polygon>
+</symbol>
+<symbol name="BISS-LOGO">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
+<text x="2.54" y="-0.635" size="1.778" layer="97">BISS-Logo</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1191,6 +1198,21 @@ Thickness of PCB should be at least 2 mm for a good fit. USB 2.0 spec defines 2.
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BISS-LOGO">
+<gates>
+<gate name="G$1" symbol="BISS-LOGO" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="BISS-LOGO">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
