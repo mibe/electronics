@@ -4,6 +4,42 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1073 - MORE KRK Rokit Black Gunk Speaker Repair
+http://youtu.be/019eUy-vNhk
+# EEVblog #1072 - KRK Rokit 6 Studio Monitor Speaker Repair
+http://youtu.be/dftkoD7LG0A
+# EEVblog #1071 - (UPDATED) Dumpster Dive HP Envy Touch PC REPAIR
+http://youtu.be/Jjv1ETu89vY
+# EEVblog #1070 - What The Hack? Dumpster Hacking!
+http://youtu.be/5WlRm-ghuoA
+# EEVblog #1069 - Mailbag
+http://youtu.be/eGFaOsKh9CQ
+# EEVblog #1068 - Autonomous Uber Incident Update
+http://youtu.be/QCCmqosHT-o
+# EEVblog #1067 - Analog vs Digital Multimeters!
+http://youtu.be/HHALK0sv1Y0
+# EEVblog #1066 - Uber Autonomous Car Accident - LIDAR Failed?
+http://youtu.be/HjeR13u74Mg
+# EEVblog LIVE Scope Draw
+http://youtu.be/bV99dn-tWDk
+# EEVblog #1065 - Soldering Iron Power Delivery Explained
+http://youtu.be/yyt0X2CGDRM
+# EEVblog #1064 - Soldering Irons OLD vs NEW
+http://youtu.be/scvS2yeUH00
+# Tin Whiskers 101
+http://youtu.be/XUvF_Sjxwus
+# EEVblog #1063 - Weller WE1010 vs Hakko FX888D Soldering Station
+http://youtu.be/tlKg6rSMPEs
+# EEVblog #1062 - Trezor Model T Hardware Wallet Review
+http://youtu.be/ibPgfzd9zd8
+# ANNOUNCEMENT: EEVblog2
+http://youtu.be/8zsrGmVnbx8
+# Keysight Scope Giveaway Bonanza!
+http://youtu.be/6cPPUm5N8d8
+# EEVblog #1061 - Data IO Programmer REPAIR - Part 1
+http://youtu.be/11YX-yByl10
+# EEVblog #1060 - $35,000 DataIO Unisite Universal Programmer Teardown!
+http://youtu.be/9MIzbTpdt80
 # eevBLAB #45 - WIRED Job Ad & Tech Journalism
 http://youtu.be/n0jSPmWlUU8
 # EEVblog #1059 - Quick 861DW Hot Air Waveform Measurement
