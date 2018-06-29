@@ -4,6 +4,48 @@
 # Á				µ
 # õ				ä
 
+# STM32 ARM Development - DMA & ADC Discussion
+http://youtu.be/eUA2TRX1NTc
+# Power Director 16 vs Vegas 15 for 4K Rendering Speed
+http://youtu.be/M7rcjUIGr9s
+# How to fix Vegas XAVC 4K crashes
+http://youtu.be/vkdq7Lz5WQE
+# 4K Sponge Action P0rn
+http://youtu.be/53hkyuwIM94
+# Canon HFG30 AVCHD 50P Test
+http://youtu.be/3e3sMS2pV14
+# Sony HXR-NX80 4K Camera First Test (4K XAVCS)
+http://youtu.be/B2RpRJuDUIE
+# Sony HXR-NX80 4K Camera First Test (1080P60 HD AVCHD)
+http://youtu.be/ENuJY8LOPs0
+# Sony HXR-NX80 4K Camera First Test (1080P60 HD XAVCS)
+http://youtu.be/epp6lyAkKeU
+# 121GW High Volatge AC Test
+http://youtu.be/vwVXl-RQWXs
+# 121GW Meter 1210V Test
+http://youtu.be/YPUJipe8Loo
+# Casio FX-991EX Scientific Calculator Review
+http://youtu.be/IsIKyt64Tt4
+# LEGO Technic GBC Module #14 - Strandbeest Build - Part 1
+http://youtu.be/kS9qXq8ZPEA
+# Alesis M1 Active 520USB Studio Monitor Teardown
+http://youtu.be/KsBVBtUDYx4
+# Original 1000th Video Single Take
+http://youtu.be/fHxDVtbUrdo
+# LIVE Pocket Meter Shootout Editing
+http://youtu.be/hIASPevQMcI
+# LIVE KiCAD First Use
+http://youtu.be/qKe_jJIYbZ0
+# Black Test
+http://youtu.be/IATC_nAXCTg
+# EEVblog1076 StudioRGBtoComputerRGB
+http://youtu.be/KnrjeZvnqn4
+# LEGO GBC - Great Ball Contraption - Sydney 2018
+http://youtu.be/O9F4P7QcI4Y
+# MORE Peter Popoff SCAM MAIL!
+http://youtu.be/MFQ0jO6gtQI
+# Couch Feet Remix
+http://youtu.be/rzIToosMRVc
 # Logitech C920 vs C922 Pro Steam Webcam Shootout
 http://youtu.be/17Y6XEoGuLw
 # Tongue angle re-alignment surgery
