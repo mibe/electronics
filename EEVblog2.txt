@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# Audio Microphones Test
+http://youtu.be/XoKJw-vW0RA
 # STM32 ARM Development - DMA & ADC Discussion
 http://youtu.be/eUA2TRX1NTc
 # Power Director 16 vs Vegas 15 for 4K Rendering Speed
