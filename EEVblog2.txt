@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# LEGO Technic GBC Module #14 - Strandbeest Build - Part 2
+http://youtu.be/k5sEjltLdk0
 # Audio Microphones Test
 http://youtu.be/XoKJw-vW0RA
 # STM32 ARM Development - DMA & ADC Discussion

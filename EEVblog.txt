@@ -4,6 +4,14 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1104 - Omicron Labs Bode 100 Teardown
+http://youtu.be/IpI-cGU6-FY
+# EEVBlog #1103 - Omicron Labs Bode 100 Review & Experiments
+http://youtu.be/66s9easZKxU
+# EEVblog #1102 - Casio FX730P 1980's BASIC Scientific Computer
+http://youtu.be/HkJ7Tt-mQAQ
+# EEVblog #1101 - Siglent SVA1015X VNA Teardown
+http://youtu.be/HxBcQDooAYs
 # eevBLAB #49 - Paid Dislikes! (AGAIN!) - BattBump
 http://youtu.be/MA5cMpHz3o4
 # EEVblog #1100 - Dumpster Photocopier Repair
