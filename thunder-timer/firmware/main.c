@@ -1,3 +1,11 @@
+/*
+ * Thunder timer: Calculate thunderstorm distance and output the result acoustically.
+ *
+ * Copyright (C) 2018 Michael Bemmerl
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
