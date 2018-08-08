@@ -1,5 +1,5 @@
 # Thunder timer
-Calculate thunderstorm distance and output the result acoustically.
+Calculate thunderstorm distance by timing the interval between two button presses and output the result acoustically.
 
 Three beep frequencies are used for that:
 

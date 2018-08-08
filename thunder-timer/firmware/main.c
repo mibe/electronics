@@ -1,5 +1,5 @@
 /*
- * Thunder timer: Calculate thunderstorm distance and output the result acoustically.
+ * Thunder timer: Calculate thunderstorm distance by timing the interval between two button presses and output the result acoustically.
  *
  * Copyright (C) 2018 Michael Bemmerl
  *
@@ -10,35 +10,63 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
+// Pin to which the pushbutton is connected.
 #define BTN					PB2
+// Delay between beeps, in ms.
 #define BEEP_DELAY			100
+// Length of each beep, in ms.
 #define BEEP_LENGTH			250
+// Delay between the different magnitudes (5, 1, 0.1 km), in ms.
 #define BEEP_MAG_DELAY		1000
+// Output Compare Register values for the three magnitudes. They determine the buzzer frequency.
+// The values are dependent on the I/O clock (CPU) frequency. Running with 31,25 kHz, these values
+// correspond to about 3900 Hz, 2232 Hz, 1562 Hz. 
 #define OC_BEEP_FIVE		3
 #define OC_BEEP_ONE			6
 #define OC_BEEP_TENTHS		9
 
 volatile uint16_t deziSeconds = 0;
 
+/*
+ * Timer 1 Overflow Interrupt. Increments the deziSeconds counter.
+ */
 ISR(TIMER1_OVF_vect)
 {
+	// Reset Timer 1 to the starting value.
 	TCNT1 = 61;
 	deziSeconds++;
 }
 
+/*
+ * Starts the timer for measuring the interval.
+ */
 void start_timer(void)
 {
 	deziSeconds = 0;
+	// The Timer1 value is set so that the overflow of the timer has a frequency of about 0.1 Hz.
+	// The correct value for exactly 0.1 Hz would be 60.6875
 	TCNT1 = 61;
+	// Start Timer 1 with a prescaler of 16; enable Timer1 Overflow Interrupt.
 	TCCR1 = _BV(CS12) | _BV(CS10);
 	TIMSK = _BV(TOIE1);
 }
 
+/*
+ * Stops the timer for measuring the interval.
+ */
 void stop_timer(void)
 {
 	TCCR1 = 0;
 }
 
+/*
+ * Outputs a square wave on pin BTN (see defines), which drives a buzzer. This is using Timer 0.
+ *
+ * count: Number of beeps.
+ * ocValue: Value for the Output Compare Register. This determines the frequency of the wave.
+ * length: Length of a beep in ms.
+ * delayBetween: Delay between the beeps in ms.
+ */
 void beep(uint16_t count, uint8_t ocValue, uint16_t length, uint16_t delayBetween)
 {
 	for(int a = 0; a < count; a++)
@@ -54,6 +82,7 @@ void beep(uint16_t count, uint8_t ocValue, uint16_t length, uint16_t delayBetwee
 		while(tempLength--)
 			_delay_ms(1);
 		
+		// Stop timer
 		TCCR0B = 0;
 		
 		// don't delay after the last beep
@@ -63,6 +92,13 @@ void beep(uint16_t count, uint8_t ocValue, uint16_t length, uint16_t delayBetwee
 	}
 }
 
+/*
+ * Calculate the distance by using the measured interval.
+ *
+ * fiveKilometers: Number of five kilometers.
+ * kilometers: Number of one kilometer.
+ * tenthKilometers: Number of thenths of a kilometer.
+ */
 void calculateDistance(uint16_t* fiveKilometers, uint8_t* kilometers, uint8_t* tenthKilometers)
 {
 	// Calculate the distance from the measured interval. Speed of sound at 25 °C is about 346 m/s,
@@ -96,6 +132,7 @@ void setup(void)
 	// Enable pull-up on button pin
 	PORTB |= _BV(BTN);
 	
+	// Enable interrupts
 	sei();
 }
 
