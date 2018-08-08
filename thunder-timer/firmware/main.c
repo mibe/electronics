@@ -103,6 +103,11 @@ int main(void)
 {
 	setup();
 	
+	// Play the three beep tones at the beginning to memorize them.
+	beep(1, OC_BEEP_FIVE, BEEP_LENGTH, 0);
+	beep(1, OC_BEEP_ONE, BEEP_LENGTH, 0);
+	beep(1, OC_BEEP_TENTHS, BEEP_LENGTH, 0);
+	
 	// Wait until the button is not pressed
 	while(!(PINB & _BV(BTN)))
 	{ }
