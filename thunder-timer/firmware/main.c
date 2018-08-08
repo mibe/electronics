@@ -24,8 +24,6 @@ ISR(TIMER1_OVF_vect)
 {
 	TCNT1 = 61;
 	deziSeconds++;
-
-	PINB |= _BV(PB4);
 }
 
 void start_timer(void)
@@ -131,8 +129,6 @@ int main(void)
 			// Wait until the button is not pressed
 			while(!(PINB & _BV(BTN)))
 			{ }
-			
-			deziSeconds = 150;
 			
 			uint16_t fiveKilometers = 0;
 			uint8_t kilometers = 0;
