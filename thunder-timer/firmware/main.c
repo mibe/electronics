@@ -8,6 +8,8 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/power.h>
+#include <avr/sleep.h>
 #include <util/delay.h>
 
 // Pin to which the pushbutton is connected.
@@ -26,6 +28,15 @@
 #define OC_BEEP_TENTHS		9
 
 volatile uint16_t deziSeconds = 0;
+
+/*
+ * External interrupt. Used for waking up from sleep mode.
+ */
+ISR(INT0_vect)
+{
+	// Disable INT0 again. The interrupt is used for waking up from sleep mode only.
+	GIMSK &= ~(_BV(INT0));
+}
 
 /*
  * Timer 1 Overflow Interrupt. Increments the deziSeconds counter.
@@ -122,6 +133,9 @@ void calculateDistance(uint16_t* fiveKilometers, uint8_t* kilometers, uint8_t* t
 	*tenthKilometers = distance;
 }
 
+/*
+ * Setup the system.
+ */
 void setup(void)
 {
 	// Set clock prescaler to run at 31.25 kHz (prescaler of 256)
@@ -130,8 +144,12 @@ void setup(void)
 	
 	// Setup I/O ports: PB4 == Debug; PB0 == PWM for piezo (OC0A)
 	DDRB |= _BV(PB4) | _BV(PB0);
-	// Enable pull-up on button pin
-	PORTB |= _BV(BTN);
+	// Enable pull-up on button and unused pins
+	PORTB |= _BV(BTN) | _BV(PB1) | _BV(PB3);
+	
+	// Disable unused modules to save more battery power
+	power_usi_disable();
+	power_adc_disable();
 	
 	// Enable interrupts
 	sei();
@@ -152,6 +170,13 @@ int main(void)
 	
 	while(1)
 	{
+		// Enable INT0 interrupt at low level (ISC00 & ISC01 @ MCUCR = 0) to wake up after
+		// we have entered sleep mode.
+		GIMSK |= _BV(INT0);
+		set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+		sleep_mode();
+
+		// Start the logic as soon as the button pin goes low
 		if (!(PINB & _BV(BTN)))
 		{
 			start_timer();
