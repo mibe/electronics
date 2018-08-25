@@ -82,8 +82,9 @@ void beep(uint16_t count, uint8_t ocValue, uint16_t length, uint16_t delayBetwee
 		while(tempLength--)
 			_delay_ms(1);
 		
-		// Stop timer
+		// Stop timer and disconnect the Output Compare Unit to pull transistor base to low (PB0 @ PORTB is still 0)
 		TCCR0B = 0;
+		TCCR0A = 0;
 		
 		// don't delay after the last beep
 		if (a != count - 1)
