@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:/Elektronik/github-electronics - AT-BB/breakout_boards/ATtiny-BB/ATtiny-BB.sch")
-    (date "19.08.2018 02:49:42")
+    (date "27.08.2018 23:55:13")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -47,7 +47,7 @@
       (tstamp 5B74A2CE))
     (comp (ref J4)
       (value AVR-ISP-6)
-      (footprint Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm)
+      (footprint Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm)
       (libsource (lib atmel) (part AVR-ISP-6))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B78B057))
@@ -156,12 +156,12 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive)))))
   (libraries
-    (library (logical switches)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\switches.lib"))
     (library (logical atmel)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\atmel.lib"))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical switches)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\switches.lib"))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
   (nets
