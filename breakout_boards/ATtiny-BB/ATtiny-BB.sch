@@ -244,4 +244,22 @@ Wire Wire Line
 	4300 4850 4550 4850
 Wire Wire Line
 	5250 4850 4950 4850
+Text Label 4600 3300 0    60   ~ 0
+PB0
+Text Label 4600 3400 0    60   ~ 0
+PB1
+Text Label 4600 3500 0    60   ~ 0
+PB2
+Text Label 4600 3600 0    60   ~ 0
+PB3
+Text Label 4600 3700 0    60   ~ 0
+PB4
+Text Label 4600 3800 0    60   ~ 0
+PB5
+Text Label 4600 4100 0    60   ~ 0
+GND
+Text Label 4600 3000 0    60   ~ 0
+VCC
+Text Label 5450 2100 0    60   ~ 0
+VCC_in
 $EndSCHEMATC
