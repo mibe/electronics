@@ -4,6 +4,62 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1124 - Rigol 7000 Oscilloscope Teardown
+http://youtu.be/6AzXQ7sfYPU
+# EEVblog #1123 - EEVblog Meetup 2 Electric Boogaloo
+http://youtu.be/rTxw_UEVWbo
+# eevBLAB #52 - My Personal Data STOLEN from the Government!
+http://youtu.be/znvIAEquD3k
+# EEVblog #1122 - Raspberry Pi 3 PoE Hat FAIL Investigation
+http://youtu.be/Tpvjo6wDFUA
+# EEVblog #1121 - Fontus goes BANKRUPT!
+http://youtu.be/0Z32_MYxYhc
+# EEVblog #1120 - How To Understand Polarised Light
+http://youtu.be/9SAzxlF57mc
+# EEVBlog #1119 - Designing a 1kV Isolated Oscilloscope
+http://youtu.be/I7ppDNLlEL4
+# EEVblog #1118 - Why Are Studio Monitors Noisy?
+http://youtu.be/_k5MrB99lpU
+# EEVblog #1117 - PCB Power Plane Capacitance
+http://youtu.be/CBD9vwKcvtY
+# Anouncement: Sydney - Electronex + EEVblog Meetup!
+http://youtu.be/GRondtKwrbg
+# EEVBlog #1116 - The Capacitance Multiplier
+http://youtu.be/wopmEyZKnYo
+# KiCAD PCB Design
+http://youtu.be/Ep4r-wD7PPs
+# LIVE KiCAD 5 PCB Design
+http://youtu.be/qpw9dKxL2Ho
+# EEVblog #1115 - Traps In Chips - And the 7660
+http://youtu.be/dpq5iJxt-is
+# eevBLAB #51- Industry Story - Design Deadlines...
+http://youtu.be/VnrtneFP_6A
+# EEVblog #1114 - NEW TS80 USB Soldering Iron Review
+http://youtu.be/_Z9es-D9_8g
+# EEVblog #1113 - Is a $5 USB Soldering Iron Useful?
+http://youtu.be/FOa783WeDPU
+# EEVblog #1111 - World's First Microcontroller & Electronic Game
+http://youtu.be/O4xERdjPZHg
+# EEVblog #1112 (PART 2) - More Vintage Warehouse Diving
+http://youtu.be/7NHu2veqk_4
+# EEVblog #1112 - Vintage Computer Warehouse Diving!
+http://youtu.be/mK4M8dv4NNU
+# EEVblog #1110 - Mailbag
+http://youtu.be/e4lIkonz7Rw
+# EEVacademy #8 - Howland Current Pump
+http://youtu.be/xUKf-4rv_sQ
+# EEVblog #1109 - Spectrum Analyser Design Walk-through
+http://youtu.be/fvTfBwRzpdo
+# EEVblog #1108 - Casio CT-X700 Keyboard Teardown
+http://youtu.be/iAcNjVdd25w
+# eevBLAB #50 - Great Idea At The Wrong Time!
+http://youtu.be/4Lh4Re68Ox0
+# EEVblog #1107 - Shocking 4K BENQ Monitor Problem!
+http://youtu.be/r-V_Z3bD_PA
+# EEVblog #1106 - Pace ADS200 Soldering Station Review (JBC Killer?)
+http://youtu.be/WXL-pWD44pc
+# EEVblog #1105 - $100 Custom LCD Design - Part 3
+http://youtu.be/ZA5vlDdpbkw
 # EEVblog #1104 - Omicron Labs Bode 100 Teardown
 http://youtu.be/IpI-cGU6-FY
 # EEVBlog #1103 - Omicron Labs Bode 100 Review & Experiments
