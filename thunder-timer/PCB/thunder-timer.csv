@@ -1,0 +1,12 @@
+Component Count:;10;;;;
+Ref;Value;Footprint;Datasheet;Manufacturer;Vendor
+BZ1;Buzzer;mibe:Buzzer_12x9.5RM5;;;
+C1;100n;Capacitors_SMD:C_0805_HandSoldering;;;
+D1;1N4148;Diodes_THT:D_DO-35_SOD27_P10.16mm_Horizontal;;;
+J1;Conn_01x02;Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm;;;
+Q1;2PC945;TO_SOT_Packages_THT:TO-92_Inline_Wide;;;
+R1;6.8k;Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;;;
+R2;33k;Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;;;
+R3;82;Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;;;
+SW1;SW_Push;mibe:SW_Push_10mm;;;
+U1;ATTINY85-20PU;Housings_DIP:DIP-8_W7.62mm;;;
