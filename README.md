@@ -12,6 +12,9 @@ An automatic clicking mouse for the game Cookie Clicker
 ## Feuermelder
 A USB "keyboard" disguised in the form of a fire call point to open the Windows Taskmanager
 
+## thunder-timer
+A device to calculate thunderstorm distance by timing the interval between lightning and thunder
+
 ## uCurrentCase
 A case for Dave Jones' µCurrent GOLD
 
