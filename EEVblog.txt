@@ -4,6 +4,12 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1126 - Mystery Teardown!
+http://youtu.be/TCpo_vNWzMs
+# EEVblog #1125 - Amazing $500 Soldering/Inspection Microscope!
+http://youtu.be/CWVbVSKT7js
+# eevBLAB #53 - Beware of Trademark Scams
+http://youtu.be/qp-JyM3wCLg
 # EEVblog #1124 - Rigol 7000 Oscilloscope Teardown
 http://youtu.be/6AzXQ7sfYPU
 # EEVblog #1123 - EEVblog Meetup 2 Electric Boogaloo
