@@ -12,6 +12,7 @@ A small breakout-board for mounting an 8-pin Atmel ATtiny onto a breadboard.
 # Design & building notes
 * The resistor R1 limits the current, if the reset switch is pressed by accident when the RESET pin is used as an I/O pin.
 * J3 is intended for measuring the current consumption of the system. Hence J3 is shorted with a jumper when not used.
+* The standoff (```standoff.STL```) is mounted on the mounting hole by using a M3 screw.
 
 # License
 (C) 2018 Michael Bemmerl
