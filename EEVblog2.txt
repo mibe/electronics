@@ -256,6 +256,8 @@ http://youtu.be/MdcaJCuukeI
 http://youtu.be/Fw_-cYy1its
 # Patent Piss-Take - Multimeter Innovation!
 http://youtu.be/NUTQhwxNupQ
+# 121GW Kickstarter
+http://youtu.be/5cVrGcdV5JA
 # Vegas 15 Render Test MainConcept
 http://youtu.be/Sp3sFTSR-7g
 # Vegas 15 Render Test NVencoderHQ
@@ -264,6 +266,8 @@ http://youtu.be/LOIA2KngrHE
 http://youtu.be/b-NijnqsR-A
 # Vegas 15 & GPU Hardware Acceleration
 http://youtu.be/jjoZDz-i-xY
+# 121GW Input Detection
+http://youtu.be/L5i371JI0Kw
 # x5 Time Lapse PCB Layout
 http://youtu.be/B85WDMTaHnc
 # MORE Core i7 Dumpster PCs!
@@ -342,6 +346,8 @@ http://youtu.be/tzro0ZylTpw
 http://youtu.be/WiMe9peQbTQ
 # DIYODE - New Electronics Magazine!
 http://youtu.be/QX9XlaYwU5k
+# 121GW Switch Contacts
+http://youtu.be/Ku4cXNf6INo
 # 121GW EEVblog Multmeter Firmware Update
 http://youtu.be/96XE5Ye1q6I
 # Pure Silicon Sphere. World's Roundest Object!
@@ -350,10 +356,18 @@ http://youtu.be/SeGep-oHcFs
 http://youtu.be/OxNJ7Uwfw1c
 # Nixie Tube Display ESP8266 Wemos D1 Mini Testing
 http://youtu.be/VTAwzrKPjeE
+# 121GW Linearity Check & Lock-up Bug
+http://youtu.be/rUTuZveP5nQ
 # Rayton Solar + Bill Nye = Questionable Solar Technology?
 http://youtu.be/IbYtn420QBM
+# Rode Podcaster vs Samson C01U Proximity Effect
+http://youtu.be/WdCA-sgUZn8
 # Rode Podcaster vs Samson CO1U USB Microphone
 http://youtu.be/L0kraVM6F8A
+# 121GW Final Test Unit Inspection
+http://youtu.be/R5Jslt5F930
+# 121GW Final Unit & Case
+http://youtu.be/h4xsdhxDcq0
 # Youtube Channel Ranking Dropping And I LOVE IT!
 http://youtu.be/UGVdHM_iul0
 # EEVblab: News & Question
@@ -438,6 +452,12 @@ http://youtu.be/R3UQ5mwnmPk
 http://youtu.be/lZULfMz9nlI
 # How To Make Acoustic Studio Panels
 http://youtu.be/5iS4hVc90PE
+# 121GW Calibration Test
+http://youtu.be/Bs0N0udydj4
+# 121GW Calibration Procedure & Issues
+http://youtu.be/UB4OrQ6EeyQ
+# 121GW Settling Time Test
+http://youtu.be/_HVMtHrZsU0
 # EEVblog Multimeter 3D Printed SLA case
 http://youtu.be/RDUn3CoVmuc
 # Doing it tough...
@@ -460,6 +480,12 @@ http://youtu.be/DNlA4X5_S30
 http://youtu.be/RXk_wr0g8UM
 # 1980's EEVblog Intro
 http://youtu.be/Oa70_S1BRHI
+# EEVblog 121GW Meter - EMC issues
+http://youtu.be/dmZPHd9s1Ks
+# EEVblog 121GW Meter - Autoranging Amps Issue
+http://youtu.be/ct7Q2DVWlfo
+# EEVblog 121GW Meter - Power Measurement Issue
+http://youtu.be/4ILRYVAICn8
 # Lab Exercising
 http://youtu.be/4zdpFagKSaE
 # Den Fenella Bushwalk
@@ -494,6 +520,8 @@ http://youtu.be/AZWw3sMyQ7U
 http://youtu.be/JUfKdbeqz7c
 # ACL Knee Surgery Rehab DAY 9
 http://youtu.be/0pG5Ii-ycKQ
+# 121GW EEVblog Multimeter ARM Prototype
+http://youtu.be/watch?v=jnPsaEalfSw
 # Outtake FAIL
 http://youtu.be/iMiD5DoQ45E
 # ACL Knee Orthopaedic Reconstruction Surgery
