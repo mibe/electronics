@@ -4,7 +4,185 @@
 # Á				µ
 # õ				ä
 
-# EEVblog #1127 - Studio Monitor Speaker Noise - Part 2
+# EEVblog #1198 - 10 Years On Youtube!
+http://youtu.be/GKyKjgOF2cw
+# EEVblog #1197 - DIY PCB Etching With Water
+http://youtu.be/nGL8X8FS4eQ
+# EEVblog #1196 - Custom Heat Sink Design
+http://youtu.be/RTmzVs6LHRo
+# EEVblog #1195 - Sony 4K 60" LCD TV Audio Repair
+http://youtu.be/JrZH_ZQNFzo
+# EEVblog #1194 - 1985 Electronics
+http://youtu.be/Zv9g8-pTfeY
+# EEVblog #1193 - KiCAD PCB 4 Layer Swapping & Stackup
+http://youtu.be/2v5IvaWrPKk
+# eevBLAB #61 - The Demise Of Electronics Australia
+http://youtu.be/GcECR1FRnb8
+# LIVE Keysight Scope Draw
+http://youtu.be/HZc-Ctvgv5Y
+# EEVblog #1192 - Power Meter LCD Repair
+http://youtu.be/uiHk1jY1Cxo
+# EEVblog #1191 - Digital Energy Savers BUSTED!
+http://youtu.be/yw6mf2sWk2k
+# EEVblog #1190 - Mailbag Review Bonanza
+http://youtu.be/7iXwRlGDLmI
+# EEVblog Lab Flood Update #1
+http://youtu.be/Y4nKxjfXgcg
+# EEVblog Lab FLOODED!
+http://youtu.be/3METfruYMUo
+# eevBLAB #60 - Kickstarter Free Energy SCAMS!
+http://youtu.be/HfqpuhYiR3o
+# EEVblog #1189 - Ebay $140 6.5 digit DMM Bargain!?
+http://youtu.be/Nps60OcgYAw
+# Ask Dave LIVE - March 8th 2019
+http://youtu.be/5ilODYy2zGE
+# EEVblog #1188 - $10 DIY EMC Probe using Scope FFT
+http://youtu.be/nImoQcoqkuQ
+# Keysight Scope(s) GIVEAWAY!
+http://youtu.be/4cB2tQpxxng
+# EEVblog #1187 - Room Heater Technology Explained
+http://youtu.be/J3pE_mDwCpk
+# EEVblog #1186 - Solus Graphene Heater Kickstarter BUSTED!
+http://youtu.be/JnM4UcSDDpk
+# EEVblog #1185 - Dumpster Tek 500MHz TDS540D Scope
+http://youtu.be/-Z5GsZ9wLiU
+# EEVblog #1184 - Ebay $200 6.5 Digit Meter Search
+http://youtu.be/I2HcJ80OyrA
+# EEVblog #1183 - RIFA Madness (Schaffner Repair)
+http://youtu.be/XAbrU17hLTM
+# EEVblog #1182 - Mains Interference Simulator Teardown
+http://youtu.be/fp3eJkH8llI
+# EEVblog #1181 - Car ECO OBD2 Fuel Saver SCAM!
+http://youtu.be/XgXwfBTKLGU
+# EEVblog #1180 - Component Parametric Search Tutorial
+http://youtu.be/zqlAq266aTs
+# EEVblog #1179 - Mailbag
+http://youtu.be/OD7LWczxemw
+# EEVblog #1178 - Build a $10 DIY EMC Probe
+http://youtu.be/2xy3Hm1_ZqI
+# eevBLAB  #59 - Patreon Is An Unsustainable Business!
+http://youtu.be/uRaB6xtAPj8
+# EEVblog #1177 - Ericsson PABX Teardown
+http://youtu.be/GZCTwXZIwjc
+# EEVblog #1176 - 2 Layer vs 4 Layer PCB EMC TESTED!
+http://youtu.be/crs_QLuUTyQ
+# eevBLAB #58 - Engineers Are Underappreciated
+http://youtu.be/WQRdEtqLabE
+# EEVblog #1175 - How To Become A Professional Engineer
+http://youtu.be/0Tk13MijU4Y
+# Ask Dave LIVE - Jan 28th 2019
+http://youtu.be/gQ7TTuiDH1M
+# EEVblog #1174 - Rohde & Schwarz PSU Teardowns
+http://youtu.be/Z6F7Pwi6WLI
+# EEVblog #1173 - Rohde & Schwarz Power Supply Bonanza
+http://youtu.be/UXmJpLO8beE
+# EEVblog #1172 - TRIAC Testing (WEP Meltdown Part 2)
+http://youtu.be/4n7iE7pw_WQ
+# EEVblog #1171 - Yihau WEP SMD Rework Station Meltdown!
+http://youtu.be/tUFW5teeRBM
+# EEVblog #1170 - TRUE Mystery Teardown! (not even Dave knows)
+http://youtu.be/xo4sojpJIBI
+# eevBLAB #57 - Solar Freakin' Cruise Ships! & Critical Thinking
+http://youtu.be/ujs7qws1Pgo
+# EEVblog #1169 - TI 1972 Computer Interfacing
+http://youtu.be/OA7_jwk-dGc
+# EEVblog #1168 - Dumpster Diving UPS
+http://youtu.be/qtDY6DEK-dE
+# EEVblog #1167 - Let's Talk About Patents
+http://youtu.be/Nes0MnoeRtg
+# EEVblog #1166 - Amazing 1980's Touch Screen Calculator Watch!
+http://youtu.be/YcJCnrpBo4I
+# EEVblog #1165 - Cypres Parachute Safety AAD Teardown
+http://youtu.be/FjlyLIpf4HU
+# EEVblog #1164 - Xbox Engineering Baptism Of Fire
+http://youtu.be/LBoF1e5YDdQ
+# EEVblog #1163 - Xmas Mailbag
+http://youtu.be/OtRSR_v3ZgM
+# EEVblog #1162 - Little British Monitors
+http://youtu.be/IcKlyIEfoPI
+# EEVblog #1161- Automated Coffee Machine Dumpster Teardown
+http://youtu.be/aJODkRsi1eI
+# EEVblog #1160 - Weller Responds!
+http://youtu.be/XUtj-bWHeKY
+# EEVblog #1159 - World's Most Precise Pocket Calculator
+http://youtu.be/Ong91Ji3iDk
+# EEVblog #1158 - How To Create PCB Mod Boards
+http://youtu.be/jey8NmffhTo
+# EEVblog #1157 - Transistor Zener Clamp Circuit
+http://youtu.be/BGcKjy_UNQ4
+# EEVblog #1156 - Focal Professional CMS40 Studio Monitor Teardown
+http://youtu.be/hhD8-faJuy4
+# EEVblog #1155 - Mailbag
+http://youtu.be/XrhCGrZyIVM
+# EEVblog #1154 - Surprising 4K Dumpster TV Fault
+http://youtu.be/XyqzVNNZEBQ
+# EEVblog #1153 - 1970's Programmable Calculator Teardown
+http://youtu.be/eOWtrO04NOk
+# EEVblog #1152 - 240V-120V = Magic Smoke!
+http://youtu.be/8itTKH5tj3s
+# eevBLAB #56 - Another Bullshit Copyright Claim
+http://youtu.be/6IzVrEk72ww
+# EEVblog #1151 - Dumpster Dive Yamaha Receiver
+http://youtu.be/6rn3p4YlNB4
+# Rigol MSO5000 Bug Bonanza
+http://youtu.be/UDGsZcAWgL8
+# EEVblog #1150 - Electrostatic Speaker Teardown
+http://youtu.be/HmwEh5P3D54
+# EEVblog #1149 - How An Electrostatic Whiteboard Works
+http://youtu.be/MsNbK7kCcKA
+# EEVblog #1148 - Mailbag
+http://youtu.be/Z4qVzeZfNAE
+# EEVblog #1147 - 1 Cent Regulator! That's MAD!
+http://youtu.be/TdNUO3MSfJs
+# EEVblog #1146 - New Rigol MSO5000 Oscilloscope
+http://youtu.be/P5faiEUXbGg
+# New EEVblog Lab Tour (Incomplete Edition)
+http://youtu.be/ti8mbPIAvbI
+# EEVBlog #1145 - Dumpster Diving 4K TV!
+http://youtu.be/XDY2MYzvDIM
+# EEVblog #1144 - Padauk Programmer Reverse Engineering
+http://youtu.be/4Zw_W0iaGFM
+# EEVBlog #1143 - Eakins Microscope Barlow Lenses
+http://youtu.be/fF65DBtsaEo
+# EEVblog #1142 - EEVblog LAB Tour - Before
+http://youtu.be/VAN7NFlg2eE
+# Youtube Community Strike! - w00t!
+http://youtu.be/ReOb8lHFixU
+# The EEVblog Lab is moving!
+http://youtu.be/Uf-UirhJ23k
+# EEVblog #1141 - Padauk 3 CENT Micro - Programmer
+http://youtu.be/r45r4rV5JOI
+# EEVblog #1140 - 3 CENT Micro LED Blinky with ICE!
+http://youtu.be/Rixo78hv_lw
+# EEVblog #1139 - OCXO Oven Oscillator Repair
+http://youtu.be/kypSsA6EZzc
+# EEVblog #1138 - Systron Donner Counter Teardown
+http://youtu.be/C7S7wjuDEdw
+# FranLab Evicted!
+http://youtu.be/SQoNor6wW-4
+# EEVblog #1137 - Mailbag Monday
+http://youtu.be/OyIgZ549D1g
+# EEVblog #1136 - Banksy Artwork Shredder - Part 2 (Still Trolling!)
+http://youtu.be/8dbYGefDdWo
+# EEVacademy #9 - Implementing SCPI in C++
+http://youtu.be/GarToEo6ekQ
+# eevBLAB #55 - Solidworks Pricing is BULLSHIT!
+http://youtu.be/MlD4x0WMbZo
+# EEVblog #1135 - Science Fair 200-in-1 with Sagan
+http://youtu.be/r1gTu5r8mkQ
+# EEVblog #1134 - Dumpster Diving Teardown Tuesday
+http://youtu.be/YX0MJjq9MuU
+# EEVblog #1133 Mailbag Monday
+http://youtu.be/udvPyB7XcQ8
+# EEVblog #1132 - The 3 Cent Microcontroller!
+http://youtu.be/VYhAGnsnO7w
+# EEVBlog #1131 - £1M Prank - Banksy Artwork Shredded! HOW?
+http://youtu.be/SdKdQWhlNTY
+# EEVblog #1130 - Mailbag Monday
+http://youtu.be/cwNBfnNO4AY
+# EEVblog #1129 - Creating a Nice Readable Schematic
+http://youtu.be/R_Ud-FxUw0g
+# EEVblog #1128 - Studio Monitor Speaker Noise - Part 2
 http://youtu.be/d9yA6bEhwAA
 # EEVblog #1127 - Mailbag Monday
 http://youtu.be/2Z3URu9vQBk
