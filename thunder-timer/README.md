@@ -3,7 +3,7 @@ Calculate thunderstorm distance by timing the interval between two button presse
 
 Three beep frequencies are used for that:
 
-- ~1500 Hz: Number of tenth kilometers  
+- ~1500 Hz: Number of tenth kilometers
 - ~2200 Hz: Number of kilometers
 - ~3900 Hz: Number of five kilometers
 
@@ -18,7 +18,7 @@ See the ```PCB/thunder-timer.csv``` file. Short summary:
 - 1x (small signal) diode
 - 3x resistors
 - 1x right-angeled pin header
-- 1x (off the shelf) NPN transistor
+- 1x (off-the-shelf) NPN transistor
 
 ## Other stuff
 - Strapubox 6090 as enclosure
