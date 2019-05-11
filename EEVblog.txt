@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1210 - Sony Waterproof Earphones Teardown
+http://youtu.be/cci-npGQE-U
+# EEVblog #1209 - Mailbag
+http://youtu.be/IKHg32o8rRg
 # EEVblog #1208 - Circuit Analysis & Debugging
 http://youtu.be/x0Dk5SSCMZo
 # EEVblog #1207 - ARM Dev Boards Falling From The Sky!
