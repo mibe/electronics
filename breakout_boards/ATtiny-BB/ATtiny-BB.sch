@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ATtiny-BB-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,7 +20,7 @@ U 1 1 5B7498D9
 P 3000 2800
 F 0 "J1" H 3000 3000 50  0000 C CNN
 F 1 "Conn_01x04" H 3000 2500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3000 2800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3000 2800 50  0001 C CNN
 F 3 "" H 3000 2800 50  0001 C CNN
 	1    3000 2800
 	1    0    0    -1  
@@ -30,7 +31,7 @@ U 1 1 5B749966
 P 3000 3650
 F 0 "J2" H 3000 3850 50  0000 C CNN
 F 1 "Conn_01x04" H 3000 3350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3000 3650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3000 3650 50  0001 C CNN
 F 3 "" H 3000 3650 50  0001 C CNN
 	1    3000 3650
 	1    0    0    -1  
@@ -41,7 +42,7 @@ U 1 1 5B749BFC
 P 7550 2100
 F 0 "J3" H 7550 2200 50  0000 C CNN
 F 1 "Conn_01x02" H 7550 1900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7550 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7550 2100 50  0001 C CNN
 F 3 "" H 7550 2100 50  0001 C CNN
 	1    7550 2100
 	-1   0    0    -1  
@@ -52,7 +53,7 @@ U 1 1 5B749CE9
 P 8250 3600
 F 0 "C1" H 8275 3700 50  0000 L CNN
 F 1 "100n" H 8275 3500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8288 3450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8288 3450 50  0001 C CNN
 F 3 "" H 8250 3600 50  0001 C CNN
 	1    8250 3600
 	1    0    0    -1  
@@ -63,7 +64,7 @@ U 1 1 5B74A2CE
 P 6850 3650
 F 0 "U1" H 6250 4100 50  0000 C CNN
 F 1 "ATTINY45-20PU" H 6000 3200 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 7850 3650 50  0001 C CIN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7850 3650 50  0001 C CIN
 F 3 "" H 6850 3650 50  0001 C CNN
 	1    6850 3650
 	-1   0    0    -1  
@@ -74,7 +75,7 @@ U 1 1 5B78B057
 P 5350 2200
 F 0 "J4" H 5350 2600 50  0000 C CNN
 F 1 "AVR-ISP-6" H 5300 1850 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" V 4830 2240 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 4830 2240 50  0001 C CNN
 F 3 "" H 5325 2200 50  0001 C CNN
 	1    5350 2200
 	1    0    0    -1  
@@ -237,7 +238,7 @@ U 1 1 5B7B32E0
 P 4750 4850
 F 0 "SW1" H 4800 4950 50  0000 L CNN
 F 1 "SW_Push" H 4750 4790 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_KMR2_GNDPad" H 4750 5050 50  0001 C CNN
+F 2 "mibe:SW_Push_1P1T_NO_CK_KMR2_GNDPad" H 4750 5050 50  0001 C CNN
 F 3 "" H 4750 5050 50  0001 C CNN
 	1    4750 4850
 	1    0    0    -1  
@@ -252,7 +253,7 @@ U 1 1 5B7B3216
 P 4300 4550
 F 0 "R1" V 4380 4550 50  0000 C CNN
 F 1 "330" V 4300 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4230 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 4550 50  0001 C CNN
 F 3 "" H 4300 4550 50  0001 C CNN
 	1    4300 4550
 	1    0    0    -1  
