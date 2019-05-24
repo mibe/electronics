@@ -1,9 +1,17 @@
-# PS: "md | Tee-Object -file list.txt"
+# PS: "youtube-dl --get-id -e ytuser:eevblog | Tee-Object -file list.txt"
 # ^(.+ .+)$		# \1
 # ^(.{11})$		http://youtu.be/\1
 # Á				µ
 # õ				ä
 
+# EEVblog #1214 - Insanely Fast Slot Cars!
+http://youtu.be/cV1xSLrkAGA
+# EEVblog #1213 - The Oscilloscope Interpolation Trap!
+http://youtu.be/W4twnd-YQQ4
+# EEVblog #1212 - Dumpster Diving PC Motherlode!
+http://youtu.be/mUbxjP2Vw3A
+# EEVblog #1211 - Apple's Most Beautiful Failure
+http://youtu.be/uawHtD4eWhE
 # EEVblog #1210 - Sony Waterproof Earphones Teardown
 http://youtu.be/cci-npGQE-U
 # EEVblog #1209 - Mailbag
