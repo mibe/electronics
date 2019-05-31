@@ -4,6 +4,12 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1217 - My Home Solar Power System FAILED!
+http://youtu.be/ITfQ4S0OUhs
+# EEVblog #1216 - PCB Layout + FPGA Deep Dive
+http://youtu.be/jhAXPnm8BP0
+# EEVblog #1215 - $18,000 4K Monitor Teardown From 2001!
+http://youtu.be/jlaxgiszfEo
 # EEVblog #1214 - Insanely Fast Slot Cars!
 http://youtu.be/cV1xSLrkAGA
 # EEVblog #1213 - The Oscilloscope Interpolation Trap!
