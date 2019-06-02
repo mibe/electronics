@@ -1,7 +1,7 @@
 /*
  * Thunder timer: Calculate thunderstorm distance by timing the interval between two button presses and output the result acoustically.
  *
- * Copyright (C) 2018 Michael Bemmerl
+ * Copyright (C) 2018, 2019 Michael Bemmerl
  *
  * SPDX-License-Identifier: MIT
  */
@@ -14,12 +14,18 @@
 
 // Pin to which the pushbutton is connected.
 #define BTN					PB2
+// Pin of the DC/DC converters Enable input.
+#define DCDC_PWR			PB3
+// Pin of the PWM signal enabling the buzzer.
+#define BUZ_PWM				PB0
+
 // Delay between beeps, in ms.
 #define BEEP_DELAY			100
 // Length of each beep, in ms.
 #define BEEP_LENGTH			250
 // Delay between the different magnitudes (5, 1, 0.1 km), in ms.
 #define BEEP_MAG_DELAY		1000
+
 // Output Compare Register values for the three magnitudes. They determine the buzzer frequency.
 // The values are dependent on the I/O clock (CPU) frequency. Running with 31,25 kHz, these values
 // correspond to about 3900 Hz, 2232 Hz, 1562 Hz. 
@@ -71,7 +77,26 @@ void stop_timer(void)
 }
 
 /*
- * Outputs a square wave on pin BTN (see defines), which drives a buzzer. This is using Timer 0.
+ * Enables the DC/DC converter by setting the enable pin to high.
+ */
+void enable_dcdc(void)
+{
+	PORTB |= (1 << DCDC_PWR);
+	
+	// Wait 100 ms so the output cap can be charged
+	_delay_ms(100);
+}
+
+/*
+ * Disables the DC/DC converter by setting the enable pin to low.
+ */
+void disable_dcdc(void)
+{
+	PORTB &= ~(1 << DCDC_PWR);
+}
+
+/*
+ * Outputs a square wave on pin BUZ_PWM (see defines), which drives a buzzer. This is using Timer 0.
  *
  * count: Number of beeps.
  * ocValue: Value for the Output Compare Register. This determines the frequency of the wave.
@@ -142,10 +167,10 @@ void setup(void)
 	CLKPR = _BV(CLKPCE);
 	CLKPR = _BV(CLKPS3);
 	
-	// Setup I/O ports: PB4 == Debug; PB0 == PWM for piezo (OC0A)
-	DDRB |= _BV(PB4) | _BV(PB0);
+	// Setup I/O ports: PB4 == Debug; PB0 (BUZ_PWM) == PWM for piezo (OC0A); PB3 (DCDC_PWR) == Enable line of the DC/DC converter
+	DDRB |= _BV(PB4) | _BV(BUZ_PWM) | _BV(DCDC_PWR);
 	// Enable pull-up on button and unused pins
-	PORTB |= _BV(BTN) | _BV(PB1) | _BV(PB3);
+	PORTB |= _BV(BTN) | _BV(PB1);
 	
 	// Disable unused modules to save more battery power
 	power_usi_disable();
@@ -159,10 +184,14 @@ int main(void)
 {
 	setup();
 	
+	enable_dcdc();
+	
 	// Play the three beep tones at the beginning to memorize them.
 	beep(1, OC_BEEP_FIVE, BEEP_LENGTH, 0);
 	beep(1, OC_BEEP_ONE, BEEP_LENGTH, 0);
 	beep(1, OC_BEEP_TENTHS, BEEP_LENGTH, 0);
+	
+	disable_dcdc();
 	
 	// Wait until the button is not pressed
 	while(!(PINB & _BV(BTN)))
@@ -204,6 +233,8 @@ int main(void)
 			
 			calculateDistance(&fiveKilometers, &kilometers, &tenthKilometers);
 			
+			enable_dcdc();
+			
 			if (fiveKilometers > 0)
 			{
 				beep(fiveKilometers, OC_BEEP_FIVE, BEEP_LENGTH, BEEP_DELAY);
@@ -218,6 +249,8 @@ int main(void)
 			
 			if (tenthKilometers > 0)
 				beep(tenthKilometers, OC_BEEP_TENTHS, BEEP_LENGTH, BEEP_DELAY);
+			
+			disable_dcdc();
 		}
 	}
 	
