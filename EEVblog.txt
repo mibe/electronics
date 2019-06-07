@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1218 - 1GHz Oscilloscope Spec Shootout
+http://youtu.be/glktcnck-uk
 # EEVblog #1217 - My Home Solar Power System FAILED!
 http://youtu.be/ITfQ4S0OUhs
 # EEVblog #1216 - PCB Layout + FPGA Deep Dive

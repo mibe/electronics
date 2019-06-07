@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# Test Video Don't Watch
+http://youtu.be/CtayYItihe0
+# 121GW Multimeter 2.00 Firmware
+http://youtu.be/q4gXnpFPFzQ
 # Compiler Optimisations & Why You Should Care
 http://youtu.be/iDF3qy23zyM
 # More Dumpster Diving PC's
