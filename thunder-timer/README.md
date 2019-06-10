@@ -35,6 +35,9 @@ See the ```PCB/thunder-timer.csv``` file. Short summary:
 * C1 is close to a mounting hole, which is not a good idea when using MLCC capacitors, since the failure mode when mechanically overstressed is a short. But since the PCB will be mounted in a plastic case not much force can be applied anyways, so this shouldn't be a problem.
 * The latest revision mainly uses SMD components. I just couldn't be bothered to update the other passives to SMD... 
 
+# Fuses
+To protect NiMH batteries the brownout detector has been enabled to trigger at 1.8 V. The microcontroller will work with the default fuses though.
+
 # License
 (C) 2018, 2019 Michael Bemmerl
 ## Hardware / PCB

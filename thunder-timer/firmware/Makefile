@@ -9,12 +9,16 @@ COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) -I. -mmcu=$(DEVICE) -std=c99
 help:
 	@echo "make hex		compile main.hex"
 	@echo "make flash		flash the firmware"
+	@echo "make fuse		set the (optional) fuses"
 	@echo "make clean		delete objects and hex file"
 
 hex: main.hex
 
 flash: main.hex
 	$(AVRDUDE) -U flash:w:main.hex:i
+
+fuse:
+	$(AVRDUDE) -U hfuse:w:0xde:m -U lfuse:w:0x42:m
 
 clean:
 	rm -f main.hex main.lst main.obj main.cof main.list main.map main.elf *.o
