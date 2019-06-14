@@ -18,7 +18,7 @@ flash: main.hex
 	$(AVRDUDE) -U flash:w:main.hex:i
 
 fuse:
-	$(AVRDUDE) -U hfuse:w:0xde:m -U lfuse:w:0x42:m
+	$(AVRDUDE) -U hfuse:w:0xdf:m -U lfuse:w:0x62:m
 
 clean:
 	rm -f main.hex main.lst main.obj main.cof main.list main.map main.elf *.o
