@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1219 - Don't Trust Switches - Toy Repair
+http://youtu.be/mCyYlvrQ6AM
 # EEVblog #1218 - 1GHz Oscilloscope Spec Shootout
 http://youtu.be/glktcnck-uk
 # EEVblog #1217 - My Home Solar Power System FAILED!
