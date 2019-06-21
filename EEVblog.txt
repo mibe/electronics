@@ -4,6 +4,12 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1222 - Apple's MacBook Design FAIL - Who's To Blame?
+http://youtu.be/jtUwBZ4R9fI
+# EEVblog #1221 - Mailbag Monday
+http://youtu.be/PA-XTgy_m2k
+# EEVblog #1220 - Siglent SDS5000X 1GHz Oscilloscope Review
+http://youtu.be/oxu19IFHMgc
 # EEVblog #1219 - Don't Trust Switches - Toy Repair
 http://youtu.be/mCyYlvrQ6AM
 # EEVblog #1218 - 1GHz Oscilloscope Spec Shootout
