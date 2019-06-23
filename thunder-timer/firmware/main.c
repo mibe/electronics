@@ -34,6 +34,7 @@
 #define OC_BEEP_TENTHS		9
 
 volatile uint16_t deziSeconds = 0;
+uint8_t lastKilometers = 0;
 
 /*
  * External interrupt. Used for waking up from sleep mode.
@@ -52,6 +53,22 @@ ISR(TIMER1_OVF_vect)
 	// Reset Timer 1 to the starting value.
 	TCNT1 = 61;
 	deziSeconds++;
+	
+	// Calculate the distance temporarily for the indication beep.
+	uint16_t fiveKilometers = 0;
+	uint8_t kilometers = 0;
+	uint8_t tenthKilometers = 0;
+	calculateDistance(&fiveKilometers, &kilometers, &tenthKilometers);
+	kilometers += fiveKilometers * 5;
+
+	// Make one beep every kilometer.
+	// The call to beep is blocking, so the beep may not be longer as the interval of the interrupt, which is 0.1 seconds.
+	// The distance calculation also takes some time. The whole thing shouldn't be done in an interrupt...
+	if (kilometers > lastKilometers)
+	{
+		beep(1, OC_BEEP_ONE, 50, 0);
+		lastKilometers = kilometers;
+	}
 }
 
 /*
@@ -222,6 +239,7 @@ int main(void)
 			{ }
 			
 			stop_timer();
+			lastKilometers = 0;
 			
 			// Wait until the button is not pressed
 			while(!(PINB & _BV(BTN)))
