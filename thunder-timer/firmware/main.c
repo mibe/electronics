@@ -58,7 +58,7 @@ ISR(TIMER1_OVF_vect)
 	uint16_t fiveKilometers = 0;
 	uint8_t kilometers = 0;
 	uint8_t tenthKilometers = 0;
-	calculateDistance(&fiveKilometers, &kilometers, &tenthKilometers);
+	calculate_distance(&fiveKilometers, &kilometers, &tenthKilometers);
 	kilometers += fiveKilometers * 5;
 
 	// Make one beep every kilometer.
@@ -153,7 +153,7 @@ void beep(uint16_t count, uint8_t ocValue, uint16_t length, uint16_t delayBetwee
  * kilometers: Number of one kilometer.
  * tenthKilometers: Number of thenths of a kilometer.
  */
-void calculateDistance(uint16_t* fiveKilometers, uint8_t* kilometers, uint8_t* tenthKilometers)
+void calculate_distance(uint16_t* fiveKilometers, uint8_t* kilometers, uint8_t* tenthKilometers)
 {
 	// Calculate the distance from the measured interval. Speed of sound at 25 °C is about 346 m/s,
 	// so the divisor is 1000/346, which is 2.89. We'll use 3 here for simplicity. Result is x 10^2 m.
@@ -249,7 +249,7 @@ int main(void)
 			uint8_t kilometers = 0;
 			uint8_t tenthKilometers = 0;
 			
-			calculateDistance(&fiveKilometers, &kilometers, &tenthKilometers);
+			calculate_distance(&fiveKilometers, &kilometers, &tenthKilometers);
 			
 			enable_dcdc();
 			
