@@ -4,6 +4,64 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1243 - Sony Boombox REPAIR and Teardown
+http://youtu.be/8ToVCAhLg8A
+# EEVblog #1242 - Memory LCD+Supercaps+Low Power Design
+http://youtu.be/XoHkE4xgaFA
+# eevBLAB #65 - No Professional Engineer Title For You!
+http://youtu.be/fGSG-zvWP_I
+# EEVblog #1241 - Power Up Display Counter Project - Part 1
+http://youtu.be/nTpE1Nw3Yy4
+# LIVE Soldering
+http://youtu.be/cpQk2n-wmQ4
+# LIVE Soldering
+http://youtu.be/kIDV_XN9oA8
+# EEVblog #1240 - Tandy In The 1980's
+http://youtu.be/CWxTCQf5gOU
+# eevBLAB #64 - Tesla Solar City Panels Are CATCHING ON FIRE!
+http://youtu.be/WzpXyNNZg38
+# EEVblog #1239 - Mailbag
+http://youtu.be/w0XTHBN-IIg
+# eevBLAB #63: How Affordable Are Electric Cars?
+http://youtu.be/3EgRMEc8R_I
+# EEVblog #1238 - Vion: The World's Worst Multimeter!
+http://youtu.be/1k04p4UgS6Y
+# Youtube Video Notification Issue?
+http://youtu.be/6423QfwiWc8
+# EEVblog #1237 - Old School Teardown: HP3785A Jitter Analyser
+http://youtu.be/lOs4A2OL2tM
+# EEVblog #1236 - German Solar Freakin' Roadways!
+http://youtu.be/I7nbYBcH0tU
+# EEVblog #1235 - How To Align Signals On A Digital Oscilloscope
+http://youtu.be/mZYC80fkNsg
+# EEVblog #1234 - MORE Epic Solar Roadways FAIL!
+http://youtu.be/7ngWjH0jdRo
+# EEVblog #1233 - The Demise Of Solar Roadways
+http://youtu.be/dM50P4K9UVk
+# EEVblog #1232 - Add Web Access To Old Instruments!
+http://youtu.be/WC1YT66c9KM
+# EEVblog #1231- New Uni-T UPO3000 Oscilloscope Teardown
+http://youtu.be/99_WFvP_T9E
+# EEVblog #1230 - How The Apollo 11 Moon Walk Video Happened
+http://youtu.be/2yW3GW_6LBM
+# EEVblog #1229 - Mailbag
+http://youtu.be/MwL3qgMNYLc
+# Apollo 11 Launch LIVE - 50 Years Later
+http://youtu.be/DWS4Qp3Yn0A
+# EEVblog #1228 - Do Digital Scopes Have REAL Verniers?
+http://youtu.be/7v-P75MOZ5o
+# EEVblog #1227 - The Free Energy Community RESPONDS!
+http://youtu.be/m9xWd25ebPg
+# EEVblog LIVE Q&A
+http://youtu.be/LwjTe3SiVXg
+# EEVblog #1226 - Get Better Accuracy On Your Oscilloscope
+http://youtu.be/8iE28oGtayQ
+# EEVblog #1225 - Dumpster Credit Card Embosser!
+http://youtu.be/5ZQHSsFnACs
+# EEVblog #1224 - uBeam is Sinking!
+http://youtu.be/t1R9IQF0Y9s
+# EEVblog #1223 - What Is Oscilloscope Standard Deviation?
+http://youtu.be/G8Qoj3TpO9A
 # EEVblog #1222 - Apple's MacBook Design FAIL - Who's To Blame?
 http://youtu.be/jtUwBZ4R9fI
 # EEVblog #1221 - Mailbag Monday
