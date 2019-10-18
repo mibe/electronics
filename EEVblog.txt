@@ -4,6 +4,30 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1255 - Apple iPad 5th Gen Screen REPAIR
+http://youtu.be/Lu8gJ2pKSnY
+# EEVblog #1254 - Mailbag
+http://youtu.be/K6yGwkwJ_FY
+# EEVblog #1253 - LED Flicker 2: Electric Boogaloo
+http://youtu.be/9M76q2_VfDQ
+# EEVblog #1252 - LED Panel Lighting Flicker Investigated
+http://youtu.be/BTq33MiVAsI
+# EEVblog #1251 - LifeSaber Kickstarter - A Master of None FAIL
+http://youtu.be/2Qi2tL2IvxY
+# EEVblog #1250 - World's Thinnest Wallet Review - Stealth Razor
+http://youtu.be/EICbskk-0dM
+# EEVblog #1249 - TUTORIAL: Timing Diagrams Explained
+http://youtu.be/AUGRBhfAabY
+# EEVblog #1248 - INSANE! A 0.02% Process Meter for $9? WTF!
+http://youtu.be/y3h02BDPMJw
+# EEVblog #1247 - DDR Memory PCB Propagation Delay & Layout
+http://youtu.be/4VTtkF5fzMM
+# EEVblog #1246 - Dumpster TV to Retro RGB Monitor Conversion
+http://youtu.be/cyHmBMI3zC0
+# EEVblog #1245 - A Most Excellent REPAIR: IBM PCjr Keyboard
+http://youtu.be/9inGSp2QnfI
+# EEVblog #1244 - Mailbag
+http://youtu.be/Uib8nUV1JEg
 # EEVblog #1243 - Sony Boombox REPAIR and Teardown
 http://youtu.be/8ToVCAhLg8A
 # EEVblog #1242 - Memory LCD+Supercaps+Low Power Design
