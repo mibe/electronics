@@ -747,19 +747,8 @@ Connection ~ 9100 1600
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5DA80BBC
-P 5950 7000
-F 0 "H2" H 6050 7046 50  0000 L CNN
-F 1 "MountingHole" H 6050 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7000 50  0001 C CNN
-F 3 "~" H 5950 7000 50  0001 C CNN
-	1    5950 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5DA81C0F
 P 5950 6800
-F 0 "H1" H 6050 6846 50  0000 L CNN
+F 0 "H2" H 6050 6846 50  0000 L CNN
 F 1 "MountingHole" H 6050 6755 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 6800 50  0001 C CNN
 F 3 "~" H 5950 6800 50  0001 C CNN
@@ -767,25 +756,36 @@ F 3 "~" H 5950 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Mechanical:MountingHole H1
+U 1 1 5DA81C0F
+P 5950 6600
+F 0 "H1" H 6050 6646 50  0000 L CNN
+F 1 "MountingHole" H 6050 6555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 6600 50  0001 C CNN
+F 3 "~" H 5950 6600 50  0001 C CNN
+	1    5950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
 L Mechanical:MountingHole H3
 U 1 1 5DA82263
-P 5950 7200
-F 0 "H3" H 6050 7246 50  0000 L CNN
-F 1 "MountingHole" H 6050 7155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7200 50  0001 C CNN
-F 3 "~" H 5950 7200 50  0001 C CNN
-	1    5950 7200
+P 5950 7000
+F 0 "H3" H 6050 7046 50  0000 L CNN
+F 1 "MountingHole" H 6050 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7000 50  0001 C CNN
+F 3 "~" H 5950 7000 50  0001 C CNN
+	1    5950 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5DA824F6
-P 5950 7400
-F 0 "H4" H 6050 7446 50  0000 L CNN
-F 1 "MountingHole" H 6050 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7400 50  0001 C CNN
-F 3 "~" H 5950 7400 50  0001 C CNN
-	1    5950 7400
+P 5950 7200
+F 0 "H4" H 6050 7246 50  0000 L CNN
+F 1 "MountingHole" H 6050 7155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7200 50  0001 C CNN
+F 3 "~" H 5950 7200 50  0001 C CNN
+	1    5950 7200
 	1    0    0    -1  
 $EndComp
 Text Label 4900 4500 0    50   ~ 0
@@ -794,4 +794,30 @@ Text Label 4900 4700 0    50   ~ 0
 FB
 Text Label 8300 4350 1    50   ~ 0
 G
+Text Label 2050 3200 0    50   ~ 0
+USB_C-CC1
+Text Label 2050 3300 0    50   ~ 0
+USB_C-CC2
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5DB3DB97
+P 5950 7400
+F 0 "H5" H 6050 7446 50  0000 L CNN
+F 1 "MountingHole" H 6050 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7400 50  0001 C CNN
+F 3 "~" H 5950 7400 50  0001 C CNN
+	1    5950 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5DB4140D
+P 5950 7600
+F 0 "H6" H 6050 7646 50  0000 L CNN
+F 1 "MountingHole" H 6050 7555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5950 7600 50  0001 C CNN
+F 3 "~" H 5950 7600 50  0001 C CNN
+	1    5950 7600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
