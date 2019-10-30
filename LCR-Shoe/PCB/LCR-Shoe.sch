@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LCR-Shoe-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -258,12 +259,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female J5
 U 1 1 5D7B33F9
-P 9550 1600
-F 0 "J5" H 9578 1626 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 9578 1535 50  0000 L CNN
-F 2 "mibe:Keystone_269" H 9550 1600 50  0001 C CNN
-F 3 "~" H 9550 1600 50  0001 C CNN
-	1    9550 1600
+P 9550 2200
+F 0 "J5" H 9578 2226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 9578 2135 50  0000 L CNN
+F 2 "mibe:Keystone_269" H 9550 2200 50  0001 C CNN
+F 3 "~" H 9550 2200 50  0001 C CNN
+	1    9550 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -422,10 +423,6 @@ F 3 "" H 9100 1350 50  0001 C CNN
 	1    9100 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 1350 9100 1600
-Wire Wire Line
-	9100 1600 9350 1600
 $Comp
 L Power_Management:LTC4412xS6 U2
 U 1 1 5D80063F
@@ -558,10 +555,6 @@ Wire Wire Line
 	9500 3600 9500 4000
 Connection ~ 9500 4000
 NoConn ~ 8700 4850
-Wire Wire Line
-	9100 2200 9100 2450
-Wire Wire Line
-	9350 2200 9100 2200
 $Comp
 L power:GND #PWR018
 U 1 1 5D7B57E1
@@ -576,12 +569,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J6
 U 1 1 5D7B3CC5
-P 9550 2200
-F 0 "J6" H 9522 2224 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 9522 2133 50  0000 R CNN
-F 2 "mibe:Keystone_261" H 9550 2200 50  0001 C CNN
-F 3 "~" H 9550 2200 50  0001 C CNN
-	1    9550 2200
+P 9550 1600
+F 0 "J6" H 9522 1624 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 9522 1533 50  0000 R CNN
+F 2 "mibe:Keystone_261" H 9550 1600 50  0001 C CNN
+F 3 "~" H 9550 1600 50  0001 C CNN
+	1    9550 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -738,12 +731,6 @@ F 3 "~" H 9100 1900 50  0001 C CNN
 	1    9100 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 2050 9100 2200
-Connection ~ 9100 2200
-Wire Wire Line
-	9100 1750 9100 1600
-Connection ~ 9100 1600
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5DA80BBC
@@ -820,4 +807,18 @@ F 3 "~" H 5950 7600 50  0001 C CNN
 	1    5950 7600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9100 1350 9100 1600
+Wire Wire Line
+	9100 2050 9100 2200
+Wire Wire Line
+	9350 1600 9100 1600
+Connection ~ 9100 1600
+Wire Wire Line
+	9100 1600 9100 1750
+Wire Wire Line
+	9350 2200 9100 2200
+Connection ~ 9100 2200
+Wire Wire Line
+	9100 2200 9100 2450
 $EndSCHEMATC
