@@ -1,5 +1,5 @@
-(module Keystone_261 (layer F.Cu) (tedit 5D589D1A)
-  (descr "9 Volt battery socket for - pole, vertical, https://www.keyelco.com/product-pdf.cfm?p=1077")
+(module Keystone_261 (layer F.Cu) (tedit 5DB9FE7D)
+  (descr "9 Volt battery socket (plug), vertical, https://www.keyelco.com/product-pdf.cfm?p=1077")
   (tags "PP3 battery socket vertical")
   (attr smd)
   (fp_text reference REF** (at 0 -5.8) (layer F.SilkS)
