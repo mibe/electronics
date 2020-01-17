@@ -4,6 +4,60 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1278 - Mailbag
+http://youtu.be/PJs1Ax6M9Qs
+# EEVblog #1277 - Electric Fence Controller Teardown
+http://youtu.be/2LuWr25xgzE
+# EEVblog #1276 - Solar Roadways Surface TESTED!
+http://youtu.be/l6n8UEKZies
+# EEVblog #1275 - Uniden UHF Walkie Talkie Teardowns
+http://youtu.be/4NQOgd92lM8
+# EEVblog #1274 - Long Term Alkaline Battery Leakage Testing
+http://youtu.be/MVkPVq0nYbs
+# EEVblog #1273 - EMC Near Field vs Far Field Explained
+http://youtu.be/lYmfVMWbIHQ
+# EEVblog #1272 - Mailbag
+http://youtu.be/EEEOuduAeI8
+# EEVblog #1271 - 100kW WindWall Generator BUSTED!
+http://youtu.be/WG-vTc7SwU0
+# EEVblog #1270 - Electronics Textbook Shootout
+http://youtu.be/m08EqBTeg4I
+# EEVblog #1269 - Solar Roadways SR4 DATA Hilarity!
+http://youtu.be/r8X76uW1fMY
+# EEVblog #1268 - DIY Boeing 747 Cockpit Simulator Full Tour
+http://youtu.be/Ug7xa-7sako
+# EEVblog #1267 - How To Control a 747 Flight Simulator
+http://youtu.be/U5aaDVEeTSQ
+# EEVblog #1266 - PSU Probing Screw Up!
+http://youtu.be/gpwkiJC5hfU
+# EEVblog #1265 - $53 360W Lab Bench PSU!
+http://youtu.be/0qjLx_HsKUQ
+# EEVblog #1264 - uSupply Software Development Setup
+http://youtu.be/7MIWFHsF7Jw
+# eevBLAB #69 - The Problem With Bitchute
+http://youtu.be/wjBV0JSV3xs
+# EEVblog #1263 - Mailbag
+http://youtu.be/pt2CgSphN58
+# EEVblog #1262 - Designing a Flex PCB + uSupply Update
+http://youtu.be/SFrUINyYcEA
+# eevBLAB #67 - Youtube COPPA Adpocalypse 3.0
+http://youtu.be/Ywj-FcVNhec
+# EEVblog #1261 - Dumpster Diving 55" LCD TV
+http://youtu.be/7Ls_8Cwi8_s
+# EEVblog #1260 - $70 100MHz Oscilloscope?
+http://youtu.be/SIH48bIUU00
+# EEVblog #1259 - PCB Manufacturing Options EXPLAINED
+http://youtu.be/mT2Vp3HcIP4
+# EEVblog #1258 - MORE Dumpster Wandel And Goltermann!
+http://youtu.be/AkMF_v_vNoE
+# eevBLAB #67 - Shilling NordVPN & Youtube Sponsorships
+http://youtu.be/GiN9d6NnTDA
+# EEVblog #1257 - MORE! $9 0.02% AIMO Process Calibrator
+http://youtu.be/RnazibcEJCw
+# EEVblog #1256 - GORGEOUS Mystery Test Gear Teardown!
+http://youtu.be/Yxo_pTfj07U
+# eevBLAB #66 - Renting vs Buying a Commercial Office Lab
+http://youtu.be/C6JQQMpXp_s
 # EEVblog #1255 - Apple iPad 5th Gen Screen REPAIR
 http://youtu.be/Lu8gJ2pKSnY
 # EEVblog #1254 - Mailbag
