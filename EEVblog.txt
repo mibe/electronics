@@ -4,6 +4,14 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1284 - How Bad Product Design Kills The Environment
+http://youtu.be/_kI8ySvNPdQ
+# eevBLAB #70 - EEVblog Impersonation WARNING!
+http://youtu.be/MPcjH6QX96A
+# EEVblog #1283- What is Mains Ripple Injection?
+http://youtu.be/Po4b7JhpxKQ
+# EEVblog #1282 - Design Your Own Membrane Keypad!
+http://youtu.be/H8XBBfvsPj0
 # EEVblog #1281 - Garmin GPS Repair
 http://youtu.be/Qt-lTpa1pJk
 # EEVblog #1280 - Dumpster Lab PC Upgrade
