@@ -1,5 +1,6 @@
 # LCR-Shoe
-**LCR-Shoe** is a power supply attachment for cheap LCR meters. Power can be supplied by USB type B, Mini-B, Micro-B, USB 3.0 type C or an 9-volt battery.
+**LCR-Shoe** is a power supply attachment for cheap LCR meters. Power can be supplied by USB type B, Mini-B, Micro-B, USB 3.0 type C or an 9-volt battery:
+![image of the assembled project](https://raw.githubusercontent.com/mibe/electronics/master/LCR-Shoe/Pictures/Complete.jpg)
 
 # The Story
 The LCR meter usually comes with a standard battery connector cable, dangling around. This is quite unpractical. The same with the battery: Who has a charged 9-volt battery lying around? But what probably most engineers have on their desks is a computer with an USB connector providing 5 volts. So why not leverage this and use the USB as a power supply? And so this project was born. These goals had to be achieved:
