@@ -301,6 +301,7 @@ F 0 "L1" V 4690 4050 50  0000 C CNN
 F 1 "LQH43MN100K03L" V 4599 4050 50  0000 C CNN
 F 2 "Inductor_SMD:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 4500 4050 50  0001 C CNN
 F 3 "~" H 4500 4050 50  0001 C CNN
+F 4 "10 µH" H 4500 4050 50  0001 C CNN "Characteristics"
 	1    4500 4050
 	0    -1   -1   0   
 $EndComp
@@ -340,6 +341,7 @@ F 0 "R4" V 5650 4700 50  0000 C CNN
 F 1 "110k" V 5650 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 4700 50  0001 C CNN
 F 3 "~" H 5550 4700 50  0001 C CNN
+F 4 "1%" H 5550 4700 50  0001 C CNN "Characteristics"
 	1    5550 4700
 	0    -1   -1   0   
 $EndComp
@@ -363,6 +365,7 @@ F 0 "C1" H 4065 5096 50  0000 L CNN
 F 1 "2.2µ" H 4065 5005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3988 4900 50  0001 C CNN
 F 3 "~" H 3950 5050 50  0001 C CNN
+F 4 "MLCC X5R / X7R" H 3950 5050 50  0001 C CNN "Characteristics"
 	1    3950 5050
 	1    0    0    -1  
 $EndComp
@@ -374,6 +377,7 @@ F 0 "C2" V 5400 4900 50  0000 C CNN
 F 1 "270p" V 5300 4900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 4750 50  0001 C CNN
 F 3 "~" H 5550 4900 50  0001 C CNN
+F 4 "MLCC X5R / X7R" H 5550 4900 50  0001 C CNN "Characteristics"
 	1    5550 4900
 	0    -1   -1   0   
 $EndComp
@@ -390,6 +394,7 @@ F 0 "R3" H 5120 5246 50  0000 L CNN
 F 1 "15k" H 5120 5155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 5200 50  0001 C CNN
 F 3 "~" H 5050 5200 50  0001 C CNN
+F 4 "1%" H 5050 5200 50  0001 C CNN "Characteristics"
 	1    5050 5200
 	1    0    0    -1  
 $EndComp
@@ -585,6 +590,7 @@ F 0 "R1" H 2470 3546 50  0000 L CNN
 F 1 "5.1k" H 2470 3455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 3500 50  0001 C CNN
 F 3 "~" H 2400 3500 50  0001 C CNN
+F 4 "max. 10%" H 2400 3500 50  0001 C CNN "Characteristics"
 	1    2400 3500
 	-1   0    0    -1  
 $EndComp
@@ -630,6 +636,7 @@ F 0 "R2" H 2670 3546 50  0000 L CNN
 F 1 "5.1k" H 2670 3455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 3500 50  0001 C CNN
 F 3 "~" H 2600 3500 50  0001 C CNN
+F 4 "max. 10%" H 2600 3500 50  0001 C CNN "Characteristics"
 	1    2600 3500
 	1    0    0    -1  
 $EndComp
