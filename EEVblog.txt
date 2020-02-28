@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1288 - Synology NAS Dumpster Find! (REPAIR)
+http://youtu.be/Y8_emfoR_MI
+# EEVblog #1287 - Gatekeeper Shopping Trolley Lock Investigated
+http://youtu.be/-QKcprQD0zc
 # EEVblog #1286 - Mailbag
 http://youtu.be/9s1sJRO7rwU
 # EEVblog #1285 - How to do Design By Inspection
