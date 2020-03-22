@@ -88,3 +88,5 @@ excellon.txt
 *.wrl
 *.ADPT
 *.AZO
+
+*.kicad_pcb-bak
