@@ -4,6 +4,12 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1295 - What Makes A Good Lab HEPA Air Filter?
+http://youtu.be/bPDr0l05CPY
+# EEVblog #1294 - LLC Resonant Mode Converter Design
+http://youtu.be/Mm8StKdwqGU
+# EEVblog #1293 - New Rohde and Schwarz NGP800 800W PSU
+http://youtu.be/Q-gi_jfXhg0
 # EEVblog #1292 - $2 Meter vs JVA Electric Fence Controller!
 http://youtu.be/7j5NtKB0vss
 # Pro Tip: DIY Hand Sanitiser
