@@ -62,7 +62,14 @@ void setup(void)
 	// Set clock prescaler to run at 62.5 kHz (prescaler of 128)
 	clock_prescale_set(clock_div_128);
 	
-	// Timer0 Fast PWM to 0xFF; clock == clkIO (no prescaling); clear OC0A on compare match
+	// Disable stuff which is not needed: Analog Comparator, Timer1, USI, ADC, input buffer on AIN0/1
+	ACSR |= _BV(ACD);
+	power_timer1_disable();
+	power_usi_disable();
+	power_adc_disable();
+	DIDR0 |= _BV(AIN0D) | _BV(AIN0D);
+	
+	// Timer0 Fast PWM to 0xFF; clock == clkIO (no prescaling); clear OC0x on compare match; both channels
 	TCCR0A = _BV(COM0A1) | _BV(COM0B1) | _BV(WGM01) | _BV(WGM00);
 	TCCR0B = _BV(CS00);
 	OCR0A = 100;
