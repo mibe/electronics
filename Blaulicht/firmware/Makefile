@@ -1,5 +1,5 @@
 DEVICE  = attiny85
-F_CPU   = 31250
+F_CPU   = 62500
 AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE) -B200
 
 OBJECTS = main.o

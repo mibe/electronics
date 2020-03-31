@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
+#include <avr/power.h>
 
 volatile uint8_t overflows = 0;
 volatile uint8_t state = 0;
@@ -58,9 +59,8 @@ ISR(TIMER0_OVF_vect)
  */
 void setup(void)
 {
-	// Set clock prescaler to run at 31.25 kHz (prescaler of 256)
-	CLKPR = _BV(CLKPCE);
-	CLKPR = _BV(CLKPS2) | _BV(CLKPS1) | _BV(CLKPS0);
+	// Set clock prescaler to run at 62.5 kHz (prescaler of 128)
+	clock_prescale_set(clock_div_128);
 	
 	// Timer0 Fast PWM to 0xFF; clock == clkIO (no prescaling); clear OC0A on compare match
 	TCCR0A = _BV(COM0A1) | _BV(COM0B1) | _BV(WGM01) | _BV(WGM00);
