@@ -1,5 +1,6 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/sleep.h>
 
 volatile uint8_t overflows = 0;
 volatile uint8_t state = 0;
@@ -82,7 +83,13 @@ int main(void)
 	setup();
 	
 	// Endless loop: Everything is done in the TOV0 interrupt.
-	while(1) {};
+	while(1)
+	{
+		// Enter idle sleep mode. An occurring interrupt will wake the CPU.
+		// Enter idle sleep mode again after processing of the interrupt.
+		set_sleep_mode(SLEEP_MODE_IDLE);
+		sleep_mode();
+	}
 	
 	return 0;
 }
