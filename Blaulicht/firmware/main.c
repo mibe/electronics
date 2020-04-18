@@ -7,6 +7,9 @@ volatile uint8_t overflows = 0;
 volatile uint8_t state = 0;
 volatile uint8_t pin = 0;
 
+/*
+ * Update the state machine to the next state.
+ */
 void updateState(void)
 {
 	if (state == 0)
@@ -45,6 +48,9 @@ void updateState(void)
 		pin = PB0;
 }
 
+/*
+ * Timer0 overflow interrupt.
+ */
 ISR(TIMER0_OVF_vect)
 {
 	overflows++;
@@ -73,6 +79,8 @@ void setup(void)
 	// Timer0 Fast PWM to 0xFF; clock == clkIO (no prescaling); clear OC0x on compare match; both channels
 	TCCR0A = _BV(COM0A1) | _BV(COM0B1) | _BV(WGM01) | _BV(WGM00);
 	TCCR0B = _BV(CS00);
+	
+	// Set the PWM duty cycle. This controls the brightness of the LEDs.
 	OCR0A = 100;
 	OCR0B = 100;
 	
@@ -86,6 +94,9 @@ void setup(void)
 	sei();
 }
 
+/*
+ * Main entry point.
+ */
 int main(void)
 {
 	setup();
