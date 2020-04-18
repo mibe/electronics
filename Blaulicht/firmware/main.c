@@ -64,10 +64,11 @@ void setup(void)
 	
 	// Disable stuff which is not needed: Analog Comparator, Timer1, USI, ADC, input buffer on AIN0/1
 	ACSR |= _BV(ACD);
-	power_timer1_disable();
-	power_usi_disable();
-	power_adc_disable();
+	PRR |= _BV(PRTIM1) | _BV(PRUSI) | _BV(PRADC);
 	DIDR0 |= _BV(AIN0D) | _BV(AIN0D);
+	
+	// Enable pull-ups on unsused inputs (see chapter 10.2.6 in the datasheet)
+	PORTB |= _BV(PB2) | _BV(PB3) | _BV(PB4);
 	
 	// Timer0 Fast PWM to 0xFF; clock == clkIO (no prescaling); clear OC0x on compare match; both channels
 	TCCR0A = _BV(COM0A1) | _BV(COM0B1) | _BV(WGM01) | _BV(WGM00);
