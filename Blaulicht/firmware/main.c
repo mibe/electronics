@@ -7,41 +7,27 @@ volatile uint8_t overflows = 0;
 volatile uint8_t state = 0;
 volatile uint8_t pin = 0;
 
+// Blink pattern: 1 = LED on, 0 = LED off. LSB is the first step.
+uint32_t ledStates = 0b00000000001001000010000100100001;
+
 /*
- * Update the state machine to the next state.
+ * Update the state machine to the next step.
  */
 void updateState(void)
 {
-	if (state == 0)
+	// Shift the states to the current step. Activate output if first bit is set.
+	if (ledStates >> state == 0x01)
 		DDRB |= _BV(pin);
-	else if (state >= 1 && state <= 4)
-		DDRB &= ~_BV(pin);
-	else if (state == 5)
-		DDRB |= _BV(pin);
-	else if (state >= 6 && state <= 7)
-		DDRB &= ~_BV(pin);
-	else if (state == 8)
-		DDRB |= _BV(pin);
-	else if (state >= 9 && state <= 12)
-		DDRB &= ~_BV(pin);
-	else if (state == 13)
-		DDRB |= _BV(pin);
-	else if (state >= 14 && state <= 17)
-		DDRB &= ~_BV(pin);
-	else if (state == 18)
-		DDRB |= _BV(pin);
-	else if (state >= 19 && state <= 20)
-		DDRB &= ~_BV(pin);
-	else if (state == 21)
-		DDRB |= _BV(pin);
-	else if (state >= 22 && state <= 25)
+	else
 		DDRB &= ~_BV(pin);
 	
+	// Has the state machine traversed through all steps? If yes, reset it.
 	if (state == 25)
 		state = 0;
 	else
 		state++;
 	
+	// Change the LED on these step numbers.
 	if (state == 8)
 		pin = PB1;
 	else if (state == 21)
