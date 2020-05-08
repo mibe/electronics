@@ -4,6 +4,34 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1305 - HEPA Solder Fume Extractor
+http://youtu.be/ffaiKZMU0Lw
+# EEVblog #1304 - Mailbag
+http://youtu.be/TyCqcR-ferk
+# EEVblog #1303 - New Lab LED Panels
+http://youtu.be/6juM5ygT9is
+# eevBLAB #75 - Income Shootout! LBRY vs Youtube!
+http://youtu.be/wU3FAIaAF0I
+# EEVblog #1302 - Scrapping a Dumpster Laser Printer For Parts
+http://youtu.be/hy1fOSj8_uw
+# EEVblog #1301 - Arcade Machine Repair
+http://youtu.be/i36yCY1pyrY
+# EEVblog #1300 - "Parts Per" Notation EXPLAINED
+http://youtu.be/f496QtJDgzc
+# EEVblog #1299 - Dumpster Laptop REPAIR
+http://youtu.be/YfpUggLais4
+# eevBLAB #74 - 5G Causes EVERYTHING!
+http://youtu.be/4vHx-UyIM9M
+# EEVblog #1298 - $70 2000W Power Supply
+http://youtu.be/GUxszz_lo14
+# eevBLAB #73 - Medtronics Open Ventilator + Others UPDATE
+http://youtu.be/TltM74rNasM
+# EEVblog #1297 - Turn an LCD into E-Paper!
+http://youtu.be/ldolTAeXs_w
+# eevBLAB #72 - BUSTED! Medtronics Open Ventilator FAIL
+http://youtu.be/1wrin8FYtEo
+# EEVblog #1296 - Alkaline Battery Leakage Testing 2 - Electric Boogaloo
+http://youtu.be/889TkOQmCjY
 # EEVblog #1295 - What Makes A Good Lab HEPA Air Filter?
 http://youtu.be/bPDr0l05CPY
 # EEVblog #1294 - LLC Resonant Mode Converter Design
