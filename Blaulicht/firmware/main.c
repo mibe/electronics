@@ -1,3 +1,11 @@
+/*
+ * Blaulicht
+ *
+ * Copyright (C) 2020 Michael Bemmerl
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
