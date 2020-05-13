@@ -1,4 +1,4 @@
-![Blaulicht](https://raw.githubusercontent.com/mibe/electronics/master/Blaulicht/Blaulicht.gif)
+![Blaulicht](https://raw.githubusercontent.com/mibe/electronics/master/Blaulicht/Notarztwagen.gif)
 
 # Blaulicht
 The idea was to retrofit an old toy car with some blinkenlights imitating emergency lighting from the real world. The blink pattern was taken off of a YouTube video I cannot find anymore.
