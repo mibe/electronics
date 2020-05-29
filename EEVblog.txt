@@ -4,6 +4,20 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1308 - 1970's Intel MCS-85 8085 Design Kit!
+http://youtu.be/SBkW_pzhUSs
+# EEVblog #1307 - TUTORIAL: PCB BOM Consolidation
+http://youtu.be/RwVzLOI4cmA
+# EEVblog #1306 (5 of 5): Spooky Action - Hardware Testing
+http://youtu.be/E81hlwciXJU
+# EEVblog #1306 (4 of 5): Open Source SDCC C Compiler
+http://youtu.be/HAQG_pnnfn0
+# EEVblog #1306 (3 of 5) : How to program an STM32 using DFU Bootloader
+http://youtu.be/2CDN8EQmOeo
+# EEVblog #1306 (2 of 5): 3 Cent Padauk Micro - PCB Soldering & Assembly
+http://youtu.be/VJJmtm0VmIs
+# EEVblog #1306 (1 of 5): 3 Cent Padauk Micro - Open Source Programmer
+http://youtu.be/4fvFLSeDc4M
 # EEVblog #1305 - HEPA Solder Fume Extractor
 http://youtu.be/ffaiKZMU0Lw
 # EEVblog #1304 - Mailbag
