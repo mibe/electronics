@@ -6,6 +6,9 @@ Some simple codes for the Arduino platform
 ## Blaulicht
 Retrofitting an old toy car with emergency lights
 
+## BreadBoard-Power-BusBar
+Connect both opposing supply rails of a breadboard in an orderly fashion
+
 ## breakout_boards
 Some breakout boards for use on a breadboard
 
