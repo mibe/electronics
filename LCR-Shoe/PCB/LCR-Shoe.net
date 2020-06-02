@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source D:\Elektronik\github-electronics\LCR-Shoe\PCB\LCR-Shoe.sch)
-    (date "11.11.2019 22:48:54")
-    (tool "Eeschema (5.1.4)-1")
+    (date "03.06.2020 01:03:23")
+    (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title LCR-Shoe)
@@ -68,6 +68,8 @@
       (value LQH43MN100K03L)
       (footprint Inductor_SMD:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) "10 µH"))
       (libsource (lib Device) (part L) (description Inductor))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D7BE1D7))
@@ -82,6 +84,8 @@
       (value 110k)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) 1%))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D7C1839))
@@ -89,6 +93,8 @@
       (value 2.2µ)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) "MLCC X5R / X7R"))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D7C588D))
@@ -96,6 +102,8 @@
       (value 270p)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) "MLCC X5R / X7R"))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D7C63E9))
@@ -103,6 +111,8 @@
       (value 15k)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) 1%))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D7C2573))
@@ -145,6 +155,8 @@
       (value 5.1k)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) "max. 10%"))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D843A82))
@@ -152,6 +164,8 @@
       (value 5.1k)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name Characteristics) "max. 10%"))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 5D84506B))
