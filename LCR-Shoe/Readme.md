@@ -66,4 +66,4 @@ Some (crappy) pictures are available in the [```Pictures```](Pictures) folder.
 # The License
 (C) 2019, 2020 Michael Bemmerl
 
-This project is available under the [CERN OHL 1.2 License](https://www.ohwr.org/documents/294) license.
+This project is available under the [CERN OHL 1.2 License](https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-1.2) license.

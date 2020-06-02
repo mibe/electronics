@@ -6,4 +6,4 @@ The idea was to retrofit an old toy car with some blinkenlights imitating emerge
 # License
 (C) 2020 Michael Bemmerl
 
-This PCB is available under the [CERN OHL 1.2 License](https://www.ohwr.org/documents/294) license, while the firmware is [MIT](https://opensource.org/licenses/MIT) licensed.
+This PCB is available under the [CERN OHL 1.2 License](https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-1.2) license, while the firmware is [MIT](https://opensource.org/licenses/MIT) licensed.

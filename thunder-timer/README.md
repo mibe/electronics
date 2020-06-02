@@ -38,6 +38,6 @@ See the ```PCB/thunder-timer.csv``` file. Short summary:
 # License
 (C) 2018, 2019 Michael Bemmerl
 ## Hardware / PCB
-[CERN OHL 1.2 License](https://www.ohwr.org/documents/294)
+[CERN OHL 1.2 License](https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-1.2)
 ## Software / Firmware
 [MIT License](https://tldrlegal.com/license/mit-license)
