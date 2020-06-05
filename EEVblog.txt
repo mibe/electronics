@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# EEVblog #1310 - 5G USB BioShield SCAM!
+http://youtu.be/aJURlsuui4I
+# EEVblog #1309 - Siglent SDS2000X Plus Scope Teardown+Hack
+http://youtu.be/HxzQS-Bn2R0
 # EEVblog #1308 - 1970's Intel MCS-85 8085 Design Kit!
 http://youtu.be/SBkW_pzhUSs
 # EEVblog #1307 - TUTORIAL: PCB BOM Consolidation
