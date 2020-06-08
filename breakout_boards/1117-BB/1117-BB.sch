@@ -326,4 +326,6 @@ Wire Wire Line
 Connection ~ 6250 3100
 Wire Wire Line
 	6250 3100 5800 3100
+Text Label 7000 3750 0    50   ~ 0
+ADJ
 $EndSCHEMATC
