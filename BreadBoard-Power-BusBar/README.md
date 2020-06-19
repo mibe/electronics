@@ -1,5 +1,5 @@
 # BreadBoard-Power-BusBar
-The BBPBB is a PCB to connect both supply rails on a standard breadboard. As a bonus the PCB has an LED to indicate power on the rails. This LED can be switched off if it becomes to distracting. The PCB is non-polarized, so the direction how the BBPBB is plugged into the breadboard does not matter.
+The BBPBB is a PCB to connect both supply rails on a standard breadboard. As a bonus the PCB has an LED to indicate power on the rails. This LED can be switched off if it becomes too distracting. The PCB is non-polarized, so the direction how the BBPBB is plugged into the breadboard does not matter.
 
 ## Range
 Voltage range: 3 V - 30 V
