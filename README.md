@@ -21,6 +21,9 @@ A USB "keyboard" disguised in the form of a fire call point to open the Windows 
 ## LCR-Shoe
 A power supply attachment for cheap LCR meters
 
+## tiny-UPDI-burner
+A small board for connecting an USB to RS-232 converter to SOIC to DIL converters for burning ATtiny's via UPDI
+
 ## thunder-timer
 A device to calculate thunderstorm distance by timing the interval between lightning and thunder
 
