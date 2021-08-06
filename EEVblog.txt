@@ -4,6 +4,64 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1412 - Argon Ion Laser TEARDOWN!
+http://youtu.be/SFFGqXGvgx0
+# EEVblog 1411 - Tesla Victoria Big Battery FIRE!
+http://youtu.be/ukuSxK5VpI8
+# EEVblog 1410 - Mailbag
+http://youtu.be/Ayj65iqD00Q
+# EEVblog 1409 - The DANGERS of Inductor Back EMF
+http://youtu.be/hReCPMIcLHg
+# EEVblog 1408 - $5M WiGL Wireless Charging BUSTED!
+http://youtu.be/lDdRVtka0Jg
+# EEVblog 1407 - Right to Repair with iFixit Founder Kyle Wiens
+http://youtu.be/8FcbnVQp8sI
+# EEVblog 1406 - DC Circuit Transients Fundamentals
+http://youtu.be/8nyNamrWcyE
+# EEVblog 1405 - Focusrite Scarlett Solo vs Rode AI-1 TEARDOWN
+http://youtu.be/8onqBc5iTB4
+# eevBLAB 87 - Flake Multimeter Watch!
+http://youtu.be/YxyW_mttnQ0
+# EEVblog 1404 - The Amazing HP 9845B Computer
+http://youtu.be/RYKfVoDe76M
+# EEVblog 1403 - Mailbag
+http://youtu.be/Muiwo1Rw4_8
+# EEVblog 1402 - Rohde & Schwarz NGA100 PSU Teardown + GIVEAWAY
+http://youtu.be/a-v53hfAyDU
+# EEVblog 1401 - DC Power, Efficiency, & Maximum Power Transfer Theory
+http://youtu.be/fHoHYEZnVIg
+# EEVblog 1400 - Hard Drive Micro Actuators are AMAZING!
+http://youtu.be/fUV8QQwCrh4
+# EEVblog 1399 - Electronics Fundamentals: Voltage Dividers
+http://youtu.be/xSRe_4TQbuo
+# EEVblog 1398 - Western Digital RED 6TB WD60EFRX Hard Drive TEARDOWN
+http://youtu.be/NnBPLuw-LnY
+# EEVblog 1397 - DC Voltage & Current Source Theory
+http://youtu.be/AQK7RyecVW0
+# EEVblog 1396 - BlackMagic ATEM Mini Extreme ISO TEARDOWN
+http://youtu.be/APf-YGpNXfY
+# EEVblog 1395 - Onkyo Repair SUCCESS
+http://youtu.be/rkKyqk1YQ60
+# EEVblog 1394 - Onkyo Receiver Repair - Part 1
+http://youtu.be/YMC3R86_2h0
+# EEVblog 1393 - Retro Fluke 37 Multimeter Review & Teardown
+http://youtu.be/NJhptTZpGPw
+# EEVblog 1392 - No temp probe? No problem!
+http://youtu.be/57VuCgb6Udw
+# EEVblog 1391 - Mailbag
+http://youtu.be/Ns8FWobISNA
+# EEVblog 1390 - NEGATIVE Household Solar Consumption? WHY?
+http://youtu.be/dxc5aHCVQzA
+# EEVblog 1389 - Spanish Solar Pavement STUPIDITY
+http://youtu.be/RIiiGReUZ3A
+# eevBLAB 86 - On The Importance Of Diligence + NEWS
+http://youtu.be/yb73J7dTg_w
+# EEVblog 1388 -  Dumpster Diving 4K TV Murphy's "Repair"
+http://youtu.be/SrKLVzChy9M
+# EEVblog 1387 - MOSFET Repair Replacement Search
+http://youtu.be/BnKDj4ed40Y
+# EEVblog 1386 - 295W Inverter vs 370W Solar Panel - WTF?
+http://youtu.be/x4ER6I8Y9gA
 # EEVBlog WebNX Data Center Server FIRE!
 http://youtu.be/M6ZVF8jeqcs
 # EEVblog 1385 - 8kW Home Solar Power System EXPANSION!
@@ -972,6 +1030,8 @@ http://youtu.be/WyV06NfWzoQ
 http://youtu.be/VVOi2dbtxC0
 # EEVacademy #5 - Digital Logic Datasheets Explained
 http://youtu.be/sr1DOHnJi8I
+# eevBLAB #35 - Lily Drone / Mota Group Trademark Claim! WTF?
+http://youtu.be/9E2415TLVj0
 # EEVblog #1018 - ZeroPlus Logic Analysers
 http://youtu.be/ttvgJqbCXRs
 # EEVblog #1017 - Enter The World Of Atto Amps
