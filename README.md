@@ -18,6 +18,9 @@ An automatic clicking mouse for the game Cookie Clicker
 ## Feuermelder
 A USB "keyboard" disguised in the form of a fire call point to open the Windows Taskmanager
 
+## Flip-USB
+A replacement USB board for JBL's Flip 2 bluetooth speaker
+
 ## LCR-Shoe
 A power supply attachment for cheap LCR meters
 
@@ -32,3 +35,6 @@ A case for Dave Jones' µCurrent GOLD
 
 ## USB-breaker
 A tool to shortly disconnect a USB device from the USB bus
+
+## Wire-to-RJ14
+A simple adapter to connect bare wires to a cable with RJ-14 connectors
