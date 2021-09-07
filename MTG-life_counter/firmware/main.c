@@ -11,17 +11,19 @@ volatile uint8_t dummy = 0;
 const uint8_t digits[10] = {63, 6, 91, 79, 102, 109, 125, 7, 127, 111};
 const uint8_t mask = _BV(PB1) | _BV(PB2);
 
-// ISR(TIMER0_OVF_vect)
-// {
-	// if (dummy % 2 == 0)
-	// {
-		// DDRD = 0;
-	// }
-	// else
-		// DDRD = 0xFF;
-	
-	// dummy++;
-// }
+ISR(TIMER0_OVF_vect)
+{
+	if (PORTB & _BV(PB3) == _BV(PB3))
+	{
+		PORTB &= ~_BV(PB3);
+		PORTB |= _BV(PB4);
+	}
+	else
+	{
+		PORTB |= _BV(PB3);
+		PORTB &= ~_BV(PB4);
+	}
+}
 
 ISR(TIMER1_OVF_vect)
 {
@@ -48,21 +50,23 @@ ISR(ADC_vect)
 
 void setup(void)
 {
-	DDRB |= _BV(PB0);
+	DDRB |= _BV(PB0) | _BV(PB3) | _BV(PB4);
 	DDRD = 0xFF;
 	
+	// Enable pull-ups on PB1 & PB2 for the push buttons.
 	PORTB |= _BV(PB1) | _BV(PB2);
 	
 	counter = 0;
 	
-	// TCCR0 = _BV(CS00);
+	// Timer0 used for multiplexing both 7-segment-displays
+	TCCR0 = _BV(CS00);
+	TIMSK |= _BV(TOIE0);
 	
-	// TIMSK |= _BV(TOIE0);
-	// sei();
-	
+	// Timer1 used for brightness control
 	TCCR1B = _BV(CS10);
 	TIMSK |= _BV(TOIE1) | _BV(OCIE1);
 	
+	// ADC used for brightness control
 	ADMUX = _BV(MUX1) | _BV(MUX0);
 	ADCSR = _BV(ADEN) | _BV(ADSC) | _BV(ADFR) | _BV(ADIE) | _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0);
 	sei();
