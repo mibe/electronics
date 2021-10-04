@@ -345,4 +345,10 @@ Text Label 7300 4800 0    50   ~ 0
 GND
 Wire Wire Line
 	4500 4050 4500 3900
+Text Notes 7950 4400 0    50   ~ 0
+Charging
+Text Notes 7050 4400 0    50   ~ 0
+Done
+Text Label 4850 3350 0    50   ~ 0
+PROG
 $EndSCHEMATC
