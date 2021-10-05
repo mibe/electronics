@@ -43,6 +43,7 @@ F 0 "R1" H 4820 3646 50  0000 L CNN
 F 1 "2,49 kΩ" H 4820 3555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4680 3600 50  0001 C CNN
 F 3 "~" H 4750 3600 50  0001 C CNN
+F 4 "1%, " H 4750 3600 50  0001 C CNN "Characteristics"
 	1    4750 3600
 	1    0    0    -1  
 $EndComp
@@ -133,19 +134,9 @@ F 0 "R3" H 6970 3646 50  0000 L CNN
 F 1 "330 Ω" H 6970 3555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6830 3600 50  0001 C CNN
 F 3 "~" H 6900 3600 50  0001 C CNN
+F 4 "1%, min. 0.1 W" H 6900 3600 50  0001 C CNN "Characteristics"
 	1    6900 3600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 61530ECD
-P 5100 4200
-F 0 "RV1" H 5030 4154 50  0000 R CNN
-F 1 "100 kΩ" H 5030 4245 50  0000 R CNN
-F 2 "mibe:Potentiometer_Bourns_3361P_Vertical" H 5100 4200 50  0001 C CNN
-F 3 "~" H 5100 4200 50  0001 C CNN
-	1    5100 4200
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R2
@@ -155,6 +146,7 @@ F 0 "R2" H 4570 4246 50  0000 L CNN
 F 1 "187 kΩ" H 4570 4155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4430 4200 50  0001 C CNN
 F 3 "~" H 4500 4200 50  0001 C CNN
+F 4 "1%" H 4500 4200 50  0001 C CNN "Characteristics"
 	1    4500 4200
 	1    0    0    -1  
 $EndComp
@@ -285,7 +277,7 @@ Wire Wire Line
 	6300 2750 6300 4800
 Connection ~ 6300 4800
 Text Notes 8050 3100 0    50   ~ 0
-Imax: 401 mA due to R1
+Imax: 402 mA due to R1
 Text Notes 9450 3400 0    50   ~ 0
 Battery connected here
 $Comp
@@ -296,6 +288,7 @@ F 0 "R4" H 7870 3646 50  0000 L CNN
 F 1 "390 Ω" H 7870 3555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7730 3600 50  0001 C CNN
 F 3 "~" H 7800 3600 50  0001 C CNN
+F 4 "1%, min. 0.1 W" H 7800 3600 50  0001 C CNN "Characteristics"
 	1    7800 3600
 	1    0    0    -1  
 $EndComp
@@ -345,10 +338,24 @@ Text Label 7300 4800 0    50   ~ 0
 GND
 Wire Wire Line
 	4500 4050 4500 3900
+Text Label 4850 3350 0    50   ~ 0
+PROG
+Text Notes 5200 4400 0    50   ~ 0
+150 kΩ
 Text Notes 7950 4400 0    50   ~ 0
 Charging
 Text Notes 7050 4400 0    50   ~ 0
 Done
-Text Label 4850 3350 0    50   ~ 0
-PROG
+$Comp
+L Device:R_POT RV1
+U 1 1 61530ECD
+P 5100 4200
+F 0 "RV1" H 5030 4154 50  0000 R CNN
+F 1 "3361P-1-104G" H 5030 4245 50  0000 R CNN
+F 2 "mibe:Potentiometer_Bourns_3361P_Vertical" H 5100 4200 50  0001 C CNN
+F 3 "~" H 5100 4200 50  0001 C CNN
+F 4 "150 kΩ" H 5100 4200 50  0001 C CNN "Characteristics"
+	1    5100 4200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
