@@ -4,6 +4,38 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1425 - Fluke Repair 2 Electric Boogaloo
+http://youtu.be/Y-G4oCRfEqU
+# EEVblog 1424 - Fluke 23 Multimeter Repair
+http://youtu.be/-9kNSR4ozT4
+# EEVblog 1423 - Flaming Magic Repair Smoke!
+http://youtu.be/HJAbJ5whzjE
+# EEVblog Survey Results - 2021
+http://youtu.be/T5cRvs44LcE
+# EEVblog 1422 - CAUSE of the Tesla Victoria Big Battery Fire
+http://youtu.be/oknr1OaqnUE
+# EEVblog 1421 - Epson Dumpster Hack
+http://youtu.be/58rxS_AXYRA
+# EEVblog 1420 - Mailbag
+http://youtu.be/45C6HFf2kIA
+# EEVblog 1419 - Sinclair C5 Restoration - Part 2
+http://youtu.be/Bc67cIRHDmg
+# EEVblog 1418 - The Most EMBARRASSING Repair!
+http://youtu.be/xbqx25wT2Qo
+# EEVblog 1417 - Alternating Current AC Basics - Part 1
+http://youtu.be/rrPtvYYJ2-g
+# EEVblog 1416 - Random TEARDOWN: Sennheiser EW100 True Diversity Receiver
+http://youtu.be/sREAh14_K0o
+# ANNOUNCEMENT + GIVEAWAY - EEVblog 2021 Survey
+http://youtu.be/F7sHU3momzA
+# EEVblog 1415 - Reverse Engineering the DP10007 Differential Probe
+http://youtu.be/GOk1BYKSsOI
+# EEVblog 1414 - Turning it up to 11 (1100V)
+http://youtu.be/V93Rnco-wKg
+# eevBLAB 88 - Right To Repair Questions & Answers
+http://youtu.be/moa3YBdLepg
+# EEVblog 1413 - Oscilloscope Current Probe TEARDOWN + DEMO
+http://youtu.be/suf3VWqs5zw
 # EEVblog 1412 - Argon Ion Laser TEARDOWN!
 http://youtu.be/SFFGqXGvgx0
 # EEVblog 1411 - Tesla Victoria Big Battery FIRE!
