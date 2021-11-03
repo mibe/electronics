@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -715,189 +715,16 @@ Wire Wire Line
 	4400 1950 4100 1950
 Wire Wire Line
 	4100 2050 4400 2050
+$Sheet
+S 7150 4800 1350 900 
+U 61835AF1
+F0 "Power" 50
+F1 "Power.sch" 50
+$EndSheet
+Wire Bus Line
+	5250 2600 5250 3750
 Wire Bus Line
 	8050 2600 8050 3650
 Wire Bus Line
 	9350 2600 9350 3650
-Wire Bus Line
-	5250 2600 5250 3750
-Text Notes 5400 6150 0    50   ~ 0
-nominal\nvoltage:\n3.7 V
-$Comp
-L Switch:SW_SPST #SW2
-U 1 1 6148AECB
-P 4900 5700
-F 0 "#SW2" H 4900 5935 50  0000 C CNN
-F 1 "SW_SPST" H 4900 5844 50  0000 C CNN
-F 2 "" H 4900 5700 50  0001 C CNN
-F 3 "~" H 4900 5700 50  0001 C CNN
-	1    4900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR012
-U 1 1 6149EAE3
-P 5400 5650
-F 0 "#PWR012" H 5400 5500 50  0001 C CNN
-F 1 "VCC" H 5415 5823 50  0000 C CNN
-F 2 "" H 5400 5650 50  0001 C CNN
-F 3 "" H 5400 5650 50  0001 C CNN
-	1    5400 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 5700 5400 5700
-Wire Wire Line
-	5400 5700 5400 5650
-Wire Wire Line
-	1500 5400 1300 5400
-Wire Wire Line
-	1500 6000 1500 5400
-Wire Wire Line
-	1500 6400 1000 6400
-Connection ~ 1500 6400
-Wire Wire Line
-	1500 6300 1500 6400
-Wire Wire Line
-	3950 6400 4400 6400
-Connection ~ 3950 6400
-Wire Wire Line
-	3950 6200 3950 6400
-Wire Wire Line
-	3950 5900 3950 5700
-$Comp
-L Device:C C5
-U 1 1 614CCC8B
-P 3950 6050
-F 0 "C5" H 4065 6096 50  0000 L CNN
-F 1 "C" H 4065 6005 50  0000 L CNN
-F 2 "" H 3988 5900 50  0001 C CNN
-F 3 "~" H 3950 6050 50  0001 C CNN
-	1    3950 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 614CBA2F
-P 1500 6150
-F 0 "C4" H 1615 6196 50  0000 L CNN
-F 1 "C" H 1615 6105 50  0000 L CNN
-F 2 "" H 1538 6000 50  0001 C CNN
-F 3 "~" H 1500 6150 50  0001 C CNN
-	1    1500 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 5900 3050 5900
-Text GLabel 3200 5900 2    50   Output ~ 0
-CHARGE_LED
-Wire Wire Line
-	4400 5700 4700 5700
-Wire Wire Line
-	3950 5700 4400 5700
-Connection ~ 4400 5700
-Wire Wire Line
-	4400 5700 4400 5650
-$Comp
-L power:+BATT #PWR09
-U 1 1 6149F617
-P 4400 5650
-F 0 "#PWR09" H 4400 5500 50  0001 C CNN
-F 1 "+BATT" H 4415 5823 50  0000 C CNN
-F 2 "" H 4400 5650 50  0001 C CNN
-F 3 "" H 4400 5650 50  0001 C CNN
-	1    4400 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 5900 2250 5900
-Wire Wire Line
-	2050 6000 2050 5900
-Wire Wire Line
-	2050 6400 1500 6400
-Connection ~ 2050 6400
-Wire Wire Line
-	2050 6300 2050 6400
-$Comp
-L Device:R R1
-U 1 1 6149905F
-P 2050 6150
-F 0 "R1" H 2120 6196 50  0000 L CNN
-F 1 "R" H 2120 6105 50  0000 L CNN
-F 2 "" V 1980 6150 50  0001 C CNN
-F 3 "~" H 2050 6150 50  0001 C CNN
-	1    2050 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 6400 4400 6200
-Wire Wire Line
-	1000 6400 1000 6450
-Connection ~ 1000 6400
-Wire Wire Line
-	1000 6000 1000 6400
-Wire Wire Line
-	4400 5700 4400 5900
-Connection ~ 3950 5700
-Wire Wire Line
-	3050 5700 3950 5700
-NoConn ~ 1300 5800
-NoConn ~ 1300 5700
-NoConn ~ 1300 5600
-Wire Wire Line
-	2650 6400 3950 6400
-Wire Wire Line
-	2650 6400 2050 6400
-Connection ~ 2650 6400
-Wire Wire Line
-	2650 6100 2650 6400
-Connection ~ 1500 5400
-Wire Wire Line
-	2650 5400 1500 5400
-Wire Wire Line
-	2650 5500 2650 5400
-$Comp
-L Battery_Management:MCP73831-2-OT U1
-U 1 1 6142838A
-P 2650 5800
-F 0 "U1" H 2750 6200 50  0000 L CNN
-F 1 "MCP73831-2-OT" H 2750 6100 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2700 5550 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2500 5750 50  0001 C CNN
-	1    2650 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_B_Mini J1
-U 1 1 61439C57
-P 1000 5600
-F 0 "J1" H 1057 6067 50  0000 C CNN
-F 1 "USB_B_Mini" H 1057 5976 50  0000 C CNN
-F 2 "mibe:USB_Mini-B_Reichelt_BWM" H 1150 5550 50  0001 C CNN
-F 3 "~" H 1150 5550 50  0001 C CNN
-	1    1000 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 61439440
-P 1000 6450
-F 0 "#PWR01" H 1000 6200 50  0001 C CNN
-F 1 "GND" H 1005 6277 50  0000 C CNN
-F 2 "" H 1000 6450 50  0001 C CNN
-F 3 "" H 1000 6450 50  0001 C CNN
-	1    1000 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 6143801A
-P 4400 6100
-F 0 "BT1" H 4518 6196 50  0000 L CNN
-F 1 "Battery_Cell" H 4518 6105 50  0000 L CNN
-F 2 "" V 4400 6160 50  0001 C CNN
-F 3 "~" V 4400 6160 50  0001 C CNN
-	1    4400 6100
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
