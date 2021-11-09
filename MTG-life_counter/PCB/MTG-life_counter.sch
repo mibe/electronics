@@ -721,6 +721,7 @@ U 61835AF1
 F0 "Power" 50
 F1 "Power.sch" 50
 F2 "VUSB" O L 7150 5100 50 
+F3 "~BATT_LOW" O R 8500 5100 50 
 $EndSheet
 Wire Bus Line
 	5250 2600 5250 3750
