@@ -785,21 +785,63 @@ $EndComp
 Wire Wire Line
 	3750 5800 4100 5800
 NoConn ~ 8400 3750
-Wire Bus Line
-	8050 2600 8050 3650
-Wire Bus Line
-	9350 2600 9350 3650
-Wire Bus Line
-	5250 2600 5250 3750
 $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 619F4049
 P 4000 6100
 F 0 "Q1" H 4204 6146 50  0000 L CNN
 F 1 "IRLML6244" H 4204 6055 50  0000 L CNN
-F 2 "" H 4200 6200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4200 6200 50  0001 C CNN
 F 3 "~" H 4000 6100 50  0001 C CNN
 	1    4000 6100
 	1    0    0    -1  
 $EndComp
+Text Notes 2300 5750 0    50   ~ 0
++BATT
+$Comp
+L Device:LED D2
+U 1 1 61A3EFBD
+P 3100 6850
+F 0 "D2" H 3093 7067 50  0000 C CNN
+F 1 "LED red" H 3093 6976 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 3100 6850 50  0001 C CNN
+F 3 "~" H 3100 6850 50  0001 C CNN
+F 4 "Vf 1.6 V; If 2 mA" H 3100 6850 50  0001 C CNN "Characteristics"
+	1    3100 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 61A40252
+P 2700 6850
+F 0 "R13" V 2493 6850 50  0000 C CNN
+F 1 "1,8 kΩ" V 2584 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 6850 50  0001 C CNN
+F 3 "~" H 2700 6850 50  0001 C CNN
+	1    2700 6850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 6850 3300 6850
+Wire Wire Line
+	3300 6850 3300 6350
+Connection ~ 3300 6350
+Wire Wire Line
+	2950 6850 2850 6850
+Wire Wire Line
+	2550 6850 2450 6850
+Wire Wire Line
+	2450 6850 2450 6400
+Wire Wire Line
+	2450 6400 2200 6400
+Wire Bus Line
+	8050 2600 8050 3650
+Wire Bus Line
+	9350 2600 9350 3650
+Wire Bus Line
+	5250 2600 5250 3750
+Text Notes 2300 6350 0    50   ~ 0
+VUSB
+Text Notes 2600 7050 0    50   ~ 0
+Low = Charging
 $EndSCHEMATC
