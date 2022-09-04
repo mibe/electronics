@@ -1,0 +1,32 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT90S4433-8P
+D 8 MHz, 4 kB Flash, 128 B SRAM, 256 B EEPROM, DIP-28
+K AVR 8bit Microcontroller MegaAVR
+F http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2486-8-bit-avr-microcontroller-atmega8_l_datasheet.pdf
+$ENDCMP
+#
+$CMP BAS40BRW
+D Surface Mount Schottky Barrier Diode Arrays, 28V Vrms, 0.2 A If, SOT-363 SMD package
+K rectifier acdc
+F https://www.diodes.com/assets/Datasheets/ds30156.pdf
+$ENDCMP
+#
+$CMP HDSP-H101
+D One digit 7 segment orange, common anode
+K display LED 7-segment
+F https://docs.broadcom.com/doc/AV02-2554EN
+$ENDCMP
+#
+$CMP LM2621
+D Low Input Voltage, Step-Up DC-DC Converter
+F https://www.ti.com/lit/ds/symlink/lm2621.pdf
+$ENDCMP
+#
+$CMP SGM809
+D Microprocessor power monitor, active low output
+K supervisor reset push-pull
+F http://www.sg-micro.com/uploads/soft/20190626/1561528457.pdf
+$ENDCMP
+#
+#End Doc Library
