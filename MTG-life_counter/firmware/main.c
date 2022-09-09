@@ -50,6 +50,7 @@ ISR(ADC_vect)
 
 void setup(void)
 {
+	// Set PB3 & PB4 as outputs
 	DDRB |= _BV(PB0) | _BV(PB3) | _BV(PB4);
 	DDRD = 0xFF;
 	
@@ -59,14 +60,17 @@ void setup(void)
 	counter = 0;
 	
 	// Timer0 used for multiplexing both 7-segment-displays
+	// No prescaler, overflow interrupt enabled
 	TCCR0 = _BV(CS00);
 	TIMSK |= _BV(TOIE0);
 	
 	// Timer1 used for brightness control
+	// No prescaler, overflow interrupt enabled
 	TCCR1B = _BV(CS10);
 	TIMSK |= _BV(TOIE1) | _BV(OCIE1);
 	
 	// ADC used for brightness control
+	// ADC3 (PC3) as input, enable & start conversion, free running, interrupt enabled, Prescaler of 128
 	ADMUX = _BV(MUX1) | _BV(MUX0);
 	ADCSR = _BV(ADEN) | _BV(ADSC) | _BV(ADFR) | _BV(ADIE) | _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0);
 	sei();
