@@ -4,6 +4,14 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB 102 - Last Mile Autonomous Robot Deliveries WILL FAIL
+http://youtu.be/WHO8NBfpaO0
+# EEVblog 1500 - Automatic Transfer Switch REVERSE ENGINEERED
+http://youtu.be/W1Q8CxL95_Y
+# EEVblog 1499 - EcoFlow Delta Pro 3.6kWh Portable Battery TEARDOWN!
+http://youtu.be/lagxSrPeoYg
+# EEVblog 1498 - TransPod Fluxjet Hyperloop $550M Boondoggle!
+http://youtu.be/qTctWW9_FmE
 # eevBLAB 101 - Why Are Tektronix Oscilloscopes So Expensive?
 http://youtu.be/3t9G80wk0pk
 # EEVblog 1497 - RIP Fluke. Thanks Energizer. NOT.
