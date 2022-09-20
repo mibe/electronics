@@ -13,7 +13,7 @@ const uint8_t mask = _BV(PB1) | _BV(PB2);
 
 ISR(TIMER0_OVF_vect)
 {
-	if (PORTB & _BV(PB3) == _BV(PB3))
+	if ((PORTB & _BV(PB3)) == _BV(PB3))
 	{
 		PORTB &= ~_BV(PB3);
 		PORTB |= _BV(PB4);
