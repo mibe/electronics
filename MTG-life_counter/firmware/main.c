@@ -27,12 +27,13 @@ ISR(TIMER0_OVF_vect)
 
 ISR(TIMER1_OVF_vect)
 {
-	PORTB |= _BV(PB0);
+	PORTD = ~digits[counter];
 }
 
 ISR(TIMER1_COMP_vect)
 {
-	PORTB &= ~_BV(PB0);
+	// All bits high --> no current will be sunk --> all displays are off.
+	PORTD = 0xFF;
 }
 
 ISR(ADC_vect)
@@ -108,8 +109,6 @@ int main(void)
 				debounce(PB2);
 			}
 		}
-
-		PORTD = ~digits[counter];
 	}
 	
 	return 0;
