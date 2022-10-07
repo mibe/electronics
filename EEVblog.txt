@@ -4,6 +4,16 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1505 - 120W Home Phantom Power? Audit Time!
+http://youtu.be/zEzjVUzNAFA
+# EEVblog 1504 - The COOL thing you MISSED at Tesla AI Day 2022
+http://youtu.be/YIbQ3nudCA0
+# EEVblog 1503 - Rigol HDO4000 12bit Oscilloscope TEARDOWN
+http://youtu.be/W1Jl0rMRGSg
+# EEVblog 1502 - Is Home Battery Storage Financially Viable?
+http://youtu.be/YFKu_emNzpk
+# EEVblog 1501 - Rigol HDO4000 Low Noise 12bit Oscilloscope Unboxing & First Impression
+http://youtu.be/gremHHvqYTE
 # eevBLAB 102 - Last Mile Autonomous Robot Deliveries WILL FAIL
 http://youtu.be/WHO8NBfpaO0
 # EEVblog 1500 - Automatic Transfer Switch REVERSE ENGINEERED
