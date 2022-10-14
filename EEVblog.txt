@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1507 - Mida: A surprisingly good cheap portable EVSE
+http://youtu.be/SrZgN_EuRGw
+# EEVblog 1506 - History of Electricity with Kathy Loves Physics
+http://youtu.be/4EcQYK_no5M
 # EEVblog 1505 - 120W Home Phantom Power? Audit Time!
 http://youtu.be/zEzjVUzNAFA
 # EEVblog 1504 - The COOL thing you MISSED at Tesla AI Day 2022
