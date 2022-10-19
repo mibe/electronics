@@ -25,30 +25,6 @@ ISR(TIMER0_OVF_vect)
 	}
 }
 
-ISR(TIMER1_OVF_vect)
-{
-	PORTD = ~digits[counter];
-}
-
-ISR(TIMER1_COMP_vect)
-{
-	// All bits high --> no current will be sunk --> all displays are off.
-	PORTD = 0xFF;
-}
-
-ISR(ADC_vect)
-{
-	uint16_t adc = ADC;
-	
-	if (adc > 0 && adc < 1000)
-	{
-		// Shift the 10 bit wide ADC value 6 bits to the left for the OCR1 register (16 bit Timer1)
-		OCR1 = adc << 6;
-	}
-	else if (adc >= 1000)
-		OCR1 = 0xFFFF;
-}
-
 void setup(void)
 {
 	// Set PB3 & PB4 as outputs
@@ -65,15 +41,6 @@ void setup(void)
 	TCCR0 = _BV(CS00);
 	TIMSK |= _BV(TOIE0);
 	
-	// Timer1 used for brightness control
-	// No prescaler, overflow interrupt enabled
-	TCCR1B = _BV(CS10);
-	TIMSK |= _BV(TOIE1) | _BV(OCIE1);
-	
-	// ADC used for brightness control
-	// ADC3 (PC3) as input, enable & start conversion, free running, interrupt enabled, Prescaler of 128
-	ADMUX = _BV(MUX1) | _BV(MUX0);
-	ADCSR = _BV(ADEN) | _BV(ADSC) | _BV(ADFR) | _BV(ADIE) | _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0);
 	sei();
 }
 

@@ -939,51 +939,10 @@ Text Label 4300 1950 0    50   ~ 0
 ~DIGIT_1_ENABLE
 Text Label 4300 2050 0    50   ~ 0
 ~DIGIT_2_ENABLE
-$Comp
-L Device:R_POT RV1
-U 1 1 61456388
-P 4850 2450
-F 0 "RV1" H 4780 2404 50  0000 R CNN
-F 1 "10 kΩ" H 4780 2495 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-H01_Horizontal" H 4850 2450 50  0001 C CNN
-F 3 "~" H 4850 2450 50  0001 C CNN
-	1    4850 2450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8000 2400 8750 2400
 Wire Wire Line
 	8750 2400 8750 2550
-$Comp
-L power:+BATT #PWR0102
-U 1 1 61C17C07
-P 4550 2450
-F 0 "#PWR0102" H 4550 2300 50  0001 C CNN
-F 1 "+BATT" H 4565 2623 50  0000 C CNN
-F 2 "" H 4550 2450 50  0001 C CNN
-F 3 "" H 4550 2450 50  0001 C CNN
-	1    4550 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 6146287A
-P 5150 2450
-F 0 "#PWR011" H 5150 2200 50  0001 C CNN
-F 1 "GND" H 5155 2277 50  0000 C CNN
-F 2 "" H 5150 2450 50  0001 C CNN
-F 3 "" H 5150 2450 50  0001 C CNN
-	1    5150 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 2450 5150 2450
-Wire Wire Line
-	4550 2450 4700 2450
-Wire Wire Line
-	4850 2650 4850 2600
-Wire Wire Line
-	4100 2650 4850 2650
 Wire Wire Line
 	6000 2050 6000 2400
 Wire Wire Line
@@ -1064,8 +1023,6 @@ Connection ~ 2300 2100
 Wire Wire Line
 	1750 1800 2300 1800
 Connection ~ 2300 1800
-Text Label 4300 2650 0    50   ~ 0
-BRIGHTNESS
 $Comp
 L Device:R R19
 U 1 1 62CE8F9E
@@ -1096,6 +1053,7 @@ F 3 "~" H 5350 1600 50  0001 C CNN
 $EndComp
 Text Label 6200 6300 0    50   ~ 0
 VCC_PROG
+NoConn ~ 4100 2650
 Wire Bus Line
 	5250 3150 5250 4250
 Wire Bus Line
