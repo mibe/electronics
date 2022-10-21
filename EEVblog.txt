@@ -4,6 +4,12 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB 103 - Is an $800 Oscilloscope OVERKILL?
+http://youtu.be/ln_XJDPKJlc
+# EEVblog 1509 - The Art of High Security Safe Locks (TEARDOWNS)
+http://youtu.be/I5ge4STdbkE
+# EEVblog 1508 - We FINALLY Got Alkaline Battery LEAKAGE!
+http://youtu.be/BScnU4BT4xk
 # EEVblog 1507 - Mida: A surprisingly good cheap portable EVSE
 http://youtu.be/SrZgN_EuRGw
 # EEVblog 1506 - History of Electricity with Kathy Loves Physics
