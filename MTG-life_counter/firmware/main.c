@@ -27,18 +27,16 @@ ISR(TIMER0_OVF_vect)
 
 void setup(void)
 {
-	// Set PB3 & PB4 as outputs
+	// Set both anode drivers of the digits as outputs. Port D is also an output.
 	DDRB |= _BV(PB0) | _BV(PB3) | _BV(PB4);
 	DDRD = 0xFF;
 	
 	// Enable pull-ups on PB1 & PB2 for the push buttons.
 	PORTB |= _BV(PB1) | _BV(PB2);
 	
-	counter = 0;
-	
-	// Timer0 used for multiplexing both 7-segment-displays
-	// No prescaler, overflow interrupt enabled
-	TCCR0 = _BV(CS00);
+	// Timer0 used for multiplexing both 7-segment displays
+	// Prescaler of 64, overflow interrupt enabled
+	TCCR0 = _BV(CS12);
 	TIMSK |= _BV(TOIE0);
 	
 	sei();
