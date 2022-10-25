@@ -1,6 +1,6 @@
 DEVICE  = at90s4433
 F_CPU   = 8000000
-AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE)
+AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE) -V
 
 OBJECTS = main.o
 
