@@ -77,7 +77,11 @@ void update_display()
 		temp -= 10;
 	}
 	
-	digit1 = ~digits[tenths];
+	if (tenths > 0)
+		digit1 = ~digits[tenths];
+	else
+		digit1 = 0xFF;
+	
 	digit2 = ~digits[temp];
 }
 
