@@ -4,9 +4,12 @@
 # Á				µ
 # õ				ä
 
+# Rigol HDO1000 Serial Boot Capture for Hack + R&S MXO4 play
+http://youtu.be/p-eLu1z7-cs
 # R&S MXO4 Lockup
 http://youtu.be/UhGn8AtcHzM
-
+# LIVE  Scope Assembly
+http://youtu.be/yfmkD7rB-SQ
 # Testing a new look...
 http://youtu.be/PAJAtN7vTqc
 # Bluetooth Enabling a Security Safe!

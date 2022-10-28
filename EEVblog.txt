@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1510 - $699 Rigol 12bit HDO1000 Teardown - WOAH!
+http://youtu.be/qEpkVa_ysaw
 # eevBLAB 103 - Is an $800 Oscilloscope OVERKILL?
 http://youtu.be/ln_XJDPKJlc
 # EEVblog 1509 - The Art of High Security Safe Locks (TEARDOWNS)
