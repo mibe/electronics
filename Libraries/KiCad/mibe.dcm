@@ -23,6 +23,12 @@ D Low Input Voltage, Step-Up DC-DC Converter
 F https://www.ti.com/lit/ds/symlink/lm2621.pdf
 $ENDCMP
 #
+$CMP PAM2804AAB010
+D 1 A, Step-Down DC/DC-Converter, Adjustable Output Voltage, 1.5MHz, TSOT-23-5
+K Voltage regulator switching buck fixed output analog
+F https://www.diodes.com/assets/Datasheets/products_inactive_data/PAM2804.pdf
+$ENDCMP
+#
 $CMP SGM809
 D Microprocessor power monitor, active low output
 K supervisor reset push-pull
