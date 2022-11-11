@@ -1,9 +1,15 @@
-# PS: "youtube-dl --get-id -e ytuser:eevblog | Tee-Object -file list.txt"
+# PS: "yt-dlp --get-id -e ytuser:eevblog | Tee-Object -file list.txt"
 # ^(.+ .+)$		# \1
 # ^(.{11})$		http://youtu.be/\1
 # Á				µ
 # õ				ä
 
+# EEVblog 1513 - Dumpster Tossers Have No Shame!
+http://youtu.be/jT-18dt7A4w
+# EEVblog 1512 - Why Bypass Your PCB Like THIS?
+http://youtu.be/PgHQ7ES1uDk
+# EEVblog 1511 - Solar Analytics System FAIL! (+ Dave gets ZAPPED!)
+http://youtu.be/ECvJu_BKwtQ
 # EEVblog 1510 - $699 Rigol 12bit HDO1000 Teardown - WOAH!
 http://youtu.be/qEpkVa_ysaw
 # eevBLAB 103 - Is an $800 Oscilloscope OVERKILL?

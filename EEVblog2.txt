@@ -1,9 +1,17 @@
-# PS: "youtube-dl --get-id -e ytuser:eevblog2 | Tee-Object -file list.txt"
+# PS: "yt-dlp --get-id -e ytuser:eevblog2 | Tee-Object -file list.txt"
 # ^(.+ .+)$		# \1
 # ^(.{11})$		http://youtu.be/\1
 # Á				µ
 # õ				ä
 
+# Avoiding JAIL! - On Hold With The Government
+http://youtu.be/CFMYXdtb0oc
+# Instant Electric Hot Water Heater vs Heat Pump Hot Water Tank System
+http://youtu.be/pXtSybs9QRs
+# LIVE new EEVblog product teardown
+http://youtu.be/5zf1_yjFV80
+# Heat Pump Hot Water System vs Gas Hot Water
+http://youtu.be/iavM2IqueM8
 # Rigol HDO1000 Serial Boot Capture for Hack + R&S MXO4 play
 http://youtu.be/p-eLu1z7-cs
 # R&S MXO4 Lockup
