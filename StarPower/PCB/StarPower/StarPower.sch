@@ -36,34 +36,23 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y1
-U 1 1 6369D0A6
-P 4600 5350
-F 0 "Y1" V 4350 5350 50  0000 C CNN
-F 1 "32768 Hz" V 4850 5350 50  0000 C CNN
-F 2 "" H 4600 5350 50  0001 C CNN
-F 3 "~" H 4600 5350 50  0001 C CNN
-	1    4600 5350
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 6369D795
 P 5350 5500
 F 0 "C3" H 5465 5546 50  0000 L CNN
 F 1 "C" H 5465 5455 50  0000 L CNN
-F 2 "" H 5388 5350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5388 5350 50  0001 C CNN
 F 3 "~" H 5350 5500 50  0001 C CNN
 	1    5350 5500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C4
 U 1 1 6369DFE7
 P 5350 5200
-F 0 "C2" H 5465 5246 50  0000 L CNN
+F 0 "C4" H 5465 5246 50  0000 L CNN
 F 1 "C" H 5465 5155 50  0000 L CNN
-F 2 "" H 5388 5050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5388 5050 50  0001 C CNN
 F 3 "~" H 5350 5200 50  0001 C CNN
 	1    5350 5200
 	0    1    1    0   
@@ -81,23 +70,23 @@ F 4 "ESR as low as possible" H 6450 2700 50  0001 C CNN "Characteristics"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C5
+L Device:C C2
 U 1 1 636A08B3
 P 8250 3100
-F 0 "C5" H 8365 3146 50  0000 L CNN
+F 0 "C2" H 8365 3146 50  0000 L CNN
 F 1 "C1206C106K3PACTU" H 8365 3055 50  0000 L CNN
-F 2 "" H 8288 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8288 2950 50  0001 C CNN
 F 3 "~" H 8250 3100 50  0001 C CNN
 	1    8250 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L Device:C C5
 U 1 1 636A0DE7
 P 7750 3100
-F 0 "C4" H 7865 3146 50  0000 L CNN
+F 0 "C5" H 7865 3146 50  0000 L CNN
 F 1 "100 nF" H 7865 3055 50  0000 L CNN
-F 2 "" H 7788 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7788 2950 50  0001 C CNN
 F 3 "~" H 7750 3100 50  0001 C CNN
 	1    7750 3100
 	1    0    0    -1  
@@ -164,8 +153,8 @@ L mibe:SGM809 U2
 U 1 1 636AEB68
 P 3100 3150
 F 0 "U2" H 2870 3196 50  0000 R CNN
-F 1 "SGM809" H 2870 3105 50  0000 R CNN
-F 2 "" H 2700 3300 50  0001 C CNN
+F 1 "SGM809B-SXN3LG" H 2870 3105 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23W_Handsoldering" H 2700 3300 50  0001 C CNN
 F 3 "http://www.sg-micro.com/uploads/soft/20190626/1561528457.pdf" H 2800 3400 50  0001 C CNN
 	1    3100 3150
 	1    0    0    -1  
@@ -176,7 +165,7 @@ U 1 1 6369F26A
 P 4550 3200
 F 0 "C1" H 4665 3246 50  0000 L CNN
 F 1 "C1206C106K3PACTU" H 4665 3155 50  0000 L CNN
-F 2 "" H 4588 3050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4588 3050 50  0001 C CNN
 F 3 "~" H 4550 3200 50  0001 C CNN
 F 4 "±10 %; X5R" H 4550 3200 50  0001 C CNN "Characteristics"
 	1    4550 3200
@@ -301,11 +290,11 @@ Wire Wire Line
 Wire Wire Line
 	8250 3600 8250 3250
 Wire Wire Line
-	6850 3100 6450 3100
+	6850 3100 6100 3100
 Wire Wire Line
-	6450 3100 6450 2900
+	6100 3100 6100 2900
 Wire Wire Line
-	6450 2900 6000 2900
+	6100 2900 6000 2900
 Connection ~ 6850 3100
 Wire Wire Line
 	6850 3100 6850 3050
@@ -339,17 +328,6 @@ F 3 "" H 8250 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8250 2700
-$Comp
-L power:+2V8 #PWR0106
-U 1 1 636E305D
-P 2800 4650
-F 0 "#PWR0106" H 2800 4500 50  0001 C CNN
-F 1 "+2V8" H 2815 4823 50  0000 C CNN
-F 2 "" H 2800 4650 50  0001 C CNN
-F 3 "" H 2800 4650 50  0001 C CNN
-	1    2800 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 4650 2800 4700
 $Comp
@@ -390,4 +368,28 @@ Connection ~ 6850 3600
 Connection ~ 6850 2700
 Text Notes 7250 3350 0    50   ~ 0
 0.82 Ω
+$Comp
+L power:+BATT #PWR0106
+U 1 1 636EEFD2
+P 2800 4650
+F 0 "#PWR0106" H 2800 4500 50  0001 C CNN
+F 1 "+BATT" H 2815 4823 50  0000 C CNN
+F 2 "" H 2800 4650 50  0001 C CNN
+F 3 "" H 2800 4650 50  0001 C CNN
+	1    2800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 6369D0A6
+P 4600 5350
+F 0 "Y1" V 4350 5350 50  0000 C CNN
+F 1 "32.768 kHz" V 4850 5350 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_MC146-4Pin_6.7x1.5mm_HandSoldering" H 4600 5350 50  0001 C CNN
+F 3 "~" H 4600 5350 50  0001 C CNN
+	1    4600 5350
+	0    1    1    0   
+$EndComp
+Text Notes 7000 3100 0    50   ~ 0
+Iled ~~ 122 mA
 $EndSCHEMATC
