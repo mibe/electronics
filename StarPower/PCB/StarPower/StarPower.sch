@@ -107,8 +107,8 @@ L Switch:SW_Push SW1
 U 1 1 636A2B0E
 P 4000 5000
 F 0 "SW1" H 4000 5285 50  0000 C CNN
-F 1 "SW_Push" H 4000 5194 50  0000 C CNN
-F 2 "" H 4000 5200 50  0001 C CNN
+F 1 "TL3301" H 4000 5194 50  0000 C CNN
+F 2 "mibe:SW_SPST_TL3301" H 4000 5200 50  0001 C CNN
 F 3 "~" H 4000 5200 50  0001 C CNN
 	1    4000 5000
 	1    0    0    -1  
@@ -392,4 +392,37 @@ F 3 "~" H 4600 5350 50  0001 C CNN
 $EndComp
 Text Notes 7000 3100 0    50   ~ 0
 Iled ~~ 122 mA
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6372BC7B
+P 7700 6000
+F 0 "H1" H 7800 6046 50  0000 L CNN
+F 1 "MountingHole" H 7800 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 7700 6000 50  0001 C CNN
+F 3 "~" H 7700 6000 50  0001 C CNN
+	1    7700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6372C182
+P 8500 6000
+F 0 "H2" H 8600 6046 50  0000 L CNN
+F 1 "MountingHole" H 8600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 8500 6000 50  0001 C CNN
+F 3 "~" H 8500 6000 50  0001 C CNN
+	1    8500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6372C56E
+P 9300 6000
+F 0 "H3" H 9400 6046 50  0000 L CNN
+F 1 "MountingHole" H 9400 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 9300 6000 50  0001 C CNN
+F 3 "~" H 9300 6000 50  0001 C CNN
+	1    9300 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
