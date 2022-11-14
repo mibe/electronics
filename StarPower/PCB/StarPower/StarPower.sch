@@ -58,18 +58,6 @@ F 3 "~" H 5350 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:L L1
-U 1 1 6369E4E0
-P 6450 2700
-F 0 "L1" V 6640 2700 50  0000 C CNN
-F 1 "SRU1038-150Y" V 6549 2700 50  0000 C CNN
-F 2 "Inductor_SMD:L_Bourns-SRU1028_10.0x10.0mm" H 6450 2700 50  0001 C CNN
-F 3 "~" H 6450 2700 50  0001 C CNN
-F 4 "ESR as low as possible" H 6450 2700 50  0001 C CNN "Characteristics"
-	1    6450 2700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 636A08B3
 P 8250 3100
@@ -146,7 +134,7 @@ F 3 "~" H 6850 2900 50  0001 C CNN
 	1    6850 2900
 	0    -1   -1   0   
 $EndComp
-Text Notes 6350 2800 0    50   ~ 0
+Text Notes 6450 2800 0    50   ~ 0
 15 µH
 $Comp
 L mibe:SGM809 U2
@@ -221,8 +209,6 @@ $EndComp
 Wire Wire Line
 	3000 3600 2400 3600
 Connection ~ 3000 3600
-Wire Wire Line
-	6300 2700 6000 2700
 Text GLabel 3650 3150 2    50   Output ~ 0
 RESET
 Text GLabel 3650 5500 2    50   Input ~ 0
@@ -283,8 +269,6 @@ Wire Wire Line
 	8250 2700 7750 2700
 Wire Wire Line
 	6850 2750 6850 2700
-Wire Wire Line
-	6850 2700 6600 2700
 Wire Wire Line
 	6850 3600 7750 3600
 Wire Wire Line
@@ -425,4 +409,28 @@ F 3 "~" H 9300 6000 50  0001 C CNN
 	1    9300 6000
 	1    0    0    -1  
 $EndComp
+Text Label 4100 5400 0    50   ~ 0
+XTAL2
+Text Label 4100 5300 0    50   ~ 0
+XTAL1
+$Comp
+L Device:L L1
+U 1 1 6369E4E0
+P 6550 2700
+F 0 "L1" V 6740 2700 50  0000 C CNN
+F 1 "SRU1038-150Y" V 6649 2700 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns-SRU1028_10.0x10.0mm" H 6550 2700 50  0001 C CNN
+F 3 "~" H 6550 2700 50  0001 C CNN
+F 4 "ESR as low as possible" H 6550 2700 50  0001 C CNN "Characteristics"
+	1    6550 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2700 6000 2700
+Wire Wire Line
+	6850 2700 6700 2700
+Text Label 6050 2700 0    50   ~ 0
+SW
+Text Label 6150 3100 0    50   ~ 0
+FB
 $EndSCHEMATC
