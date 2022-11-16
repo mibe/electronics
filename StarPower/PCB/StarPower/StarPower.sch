@@ -69,17 +69,6 @@ F 3 "~" H 8250 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
-U 1 1 636A0DE7
-P 1650 3100
-F 0 "C5" H 1765 3146 50  0000 L CNN
-F 1 "100 nF" H 1765 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1688 2950 50  0001 C CNN
-F 3 "~" H 1650 3100 50  0001 C CNN
-	1    1650 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 636A1A59
 P 6850 3350
@@ -137,17 +126,6 @@ $EndComp
 Text Notes 6450 2800 0    50   ~ 0
 15 µH
 $Comp
-L mibe:SGM809 U2
-U 1 1 636AEB68
-P 3100 3150
-F 0 "U2" H 2870 3196 50  0000 R CNN
-F 1 "SGM809B-SXN3LG" H 2870 3105 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23W_Handsoldering" H 2700 3300 50  0001 C CNN
-F 3 "http://www.sg-micro.com/uploads/soft/20190626/1561528457.pdf" H 2800 3400 50  0001 C CNN
-	1    3100 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 6369F26A
 P 4550 3200
@@ -162,60 +140,19 @@ $EndComp
 Text Notes 5000 3200 0    50   ~ 0
 10 µF
 Wire Wire Line
-	5200 2700 4550 2700
-Wire Wire Line
 	4550 2700 4550 3050
-Wire Wire Line
-	4550 3600 5600 3600
 Wire Wire Line
 	5600 3600 5600 3100
 Wire Wire Line
 	4550 3350 4550 3600
-Wire Wire Line
-	4550 3600 3000 3600
-Wire Wire Line
-	3000 3600 3000 3550
 Connection ~ 4550 3600
-Wire Wire Line
-	4550 2700 3000 2700
-Wire Wire Line
-	3000 2700 3000 2750
 Connection ~ 4550 2700
-$Comp
-L power:+BATT #PWR0102
-U 1 1 636B99F8
-P 1650 2700
-F 0 "#PWR0102" H 1650 2550 50  0001 C CNN
-F 1 "+BATT" H 1665 2873 50  0000 C CNN
-F 2 "" H 1650 2700 50  0001 C CNN
-F 3 "" H 1650 2700 50  0001 C CNN
-	1    1650 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 2700 2200 2700
-Connection ~ 3000 2700
-$Comp
-L power:GND #PWR0103
-U 1 1 636BA4A7
-P 1650 3600
-F 0 "#PWR0103" H 1650 3350 50  0001 C CNN
-F 1 "GND" H 1655 3427 50  0000 C CNN
-F 2 "" H 1650 3600 50  0001 C CNN
-F 3 "" H 1650 3600 50  0001 C CNN
-	1    1650 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 3650 3150 2    50   Output ~ 0
-RESET
 Text GLabel 3650 5500 2    50   Input ~ 0
-RESET
+~RESET
 Text GLabel 5000 2900 0    50   Input ~ 0
 ENABLE
 Wire Wire Line
 	5000 2900 5200 2900
-Wire Wire Line
-	3650 3150 3400 3150
 Wire Wire Line
 	3400 5500 3650 5500
 Wire Wire Line
@@ -294,29 +231,6 @@ $EndComp
 Connection ~ 8250 2700
 Wire Wire Line
 	2800 4650 2800 4700
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 636E7652
-P 2200 2700
-F 0 "#FLG0102" H 2200 2775 50  0001 C CNN
-F 1 "PWR_FLAG" H 2200 2873 50  0000 C CNN
-F 2 "" H 2200 2700 50  0001 C CNN
-F 3 "~" H 2200 2700 50  0001 C CNN
-	1    2200 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 636ECB08
-P 2200 3600
-F 0 "#FLG0103" H 2200 3675 50  0001 C CNN
-F 1 "PWR_FLAG" H 2200 3773 50  0000 C CNN
-F 2 "" H 2200 3600 50  0001 C CNN
-F 3 "~" H 2200 3600 50  0001 C CNN
-	1    2200 3600
-	1    0    0    -1  
-$EndComp
-Connection ~ 1650 3600
 Connection ~ 5600 5500
 Wire Wire Line
 	5600 5200 5600 5000
@@ -414,20 +328,6 @@ FB
 Wire Wire Line
 	6850 3600 8250 3600
 Wire Wire Line
-	1650 3600 2200 3600
-Connection ~ 3000 3600
-Wire Wire Line
-	1650 2700 1650 2950
-Connection ~ 1650 2700
-Wire Wire Line
-	1650 3600 1650 3250
-Connection ~ 2200 2700
-Wire Wire Line
-	2200 2700 3000 2700
-Connection ~ 2200 3600
-Wire Wire Line
-	2200 3600 3000 3600
-Wire Wire Line
 	4400 5500 4600 5500
 Wire Wire Line
 	4400 5200 4600 5200
@@ -437,4 +337,104 @@ Wire Wire Line
 Connection ~ 4600 5500
 Wire Wire Line
 	4600 5500 5200 5500
+Wire Wire Line
+	4550 3600 5600 3600
+Wire Wire Line
+	5200 2700 4550 2700
+Wire Wire Line
+	2200 3600 3000 3600
+Connection ~ 2200 3600
+Wire Wire Line
+	2200 2700 3000 2700
+Connection ~ 2200 2700
+Wire Wire Line
+	1650 3600 1650 3250
+Connection ~ 1650 2700
+Wire Wire Line
+	1650 2700 1650 2950
+Connection ~ 3000 3600
+Wire Wire Line
+	1650 3600 2200 3600
+Connection ~ 1650 3600
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 636ECB08
+P 2200 3600
+F 0 "#FLG0103" H 2200 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 3773 50  0000 C CNN
+F 2 "" H 2200 3600 50  0001 C CNN
+F 3 "~" H 2200 3600 50  0001 C CNN
+	1    2200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 636E7652
+P 2200 2700
+F 0 "#FLG0102" H 2200 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 2873 50  0000 C CNN
+F 2 "" H 2200 2700 50  0001 C CNN
+F 3 "~" H 2200 2700 50  0001 C CNN
+	1    2200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3150 3400 3150
+Text GLabel 3650 3150 2    50   Output ~ 0
+~RESET
+$Comp
+L power:GND #PWR0103
+U 1 1 636BA4A7
+P 1650 3600
+F 0 "#PWR0103" H 1650 3350 50  0001 C CNN
+F 1 "GND" H 1655 3427 50  0000 C CNN
+F 2 "" H 1650 3600 50  0001 C CNN
+F 3 "" H 1650 3600 50  0001 C CNN
+	1    1650 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 2700
+Wire Wire Line
+	1650 2700 2200 2700
+$Comp
+L power:+BATT #PWR0102
+U 1 1 636B99F8
+P 1650 2700
+F 0 "#PWR0102" H 1650 2550 50  0001 C CNN
+F 1 "+BATT" H 1665 2873 50  0000 C CNN
+F 2 "" H 1650 2700 50  0001 C CNN
+F 3 "" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2700 3000 2750
+Wire Wire Line
+	4550 2700 3000 2700
+Wire Wire Line
+	3000 3600 3000 3550
+Wire Wire Line
+	4550 3600 3000 3600
+$Comp
+L mibe:SGM809 U2
+U 1 1 636AEB68
+P 3100 3150
+F 0 "U2" H 2870 3196 50  0000 R CNN
+F 1 "SGM809B-SXN3LG" H 2870 3105 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23W_Handsoldering" H 2700 3300 50  0001 C CNN
+F 3 "http://www.sg-micro.com/uploads/soft/20190626/1561528457.pdf" H 2800 3400 50  0001 C CNN
+	1    3100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 636A0DE7
+P 1650 3100
+F 0 "C5" H 1765 3146 50  0000 L CNN
+F 1 "100 nF" H 1765 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1688 2950 50  0001 C CNN
+F 3 "~" H 1650 3100 50  0001 C CNN
+	1    1650 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
