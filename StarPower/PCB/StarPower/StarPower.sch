@@ -347,10 +347,10 @@ U 1 1 6369D0A6
 P 4600 5350
 F 0 "Y1" V 4350 5350 50  0000 C CNN
 F 1 "32.768 kHz" V 4850 5350 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_MC146-4Pin_6.7x1.5mm_HandSoldering" H 4600 5350 50  0001 C CNN
+F 2 "mibe:Crystal_SMD_Qantek_QTP7-4Pin_6.9x1.4mm_HandSoldering" H 4600 5350 50  0001 C CNN
 F 3 "~" H 4600 5350 50  0001 C CNN
 	1    4600 5350
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Text Notes 7000 3100 0    50   ~ 0
 Iled ~~ 122 mA
@@ -431,10 +431,10 @@ Wire Wire Line
 	4400 5500 4600 5500
 Wire Wire Line
 	4400 5200 4600 5200
-Connection ~ 4600 5500
-Wire Wire Line
-	4600 5500 5200 5500
 Connection ~ 4600 5200
 Wire Wire Line
 	4600 5200 5200 5200
+Connection ~ 4600 5500
+Wire Wire Line
+	4600 5500 5200 5500
 $EndSCHEMATC
