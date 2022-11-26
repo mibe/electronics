@@ -15,8 +15,8 @@
 #define STATE_TIMER_OFF 4				// Timer is active, LEDs are off
 
 #define BLINKS 7						// Number of blinks. Number * 2 + 1, e.g. 4 blinks --> 4 * 2 + 1
-#define TIMER_ON_TIME 3
-#define TIMER_OFF_TIME 5
+#define TIMER_ON_TIME 3					// Number of seconds the LEDs are on in Timer mode
+#define TIMER_OFF_TIME 5				// Number of seconds the LEDs are off in Timer mode
 
 #ifdef DEBUG
 volatile uint8_t led;
@@ -24,6 +24,14 @@ volatile uint8_t led;
 volatile uint8_t state;
 volatile uint16_t seconds;
 volatile uint8_t blink_counter;
+
+// We save ourselfs a header file here...
+void enable_dcdc();
+void disable_dcdc();
+void update();
+void setup();
+void debounce(uint8_t bit);
+void switch_state();
 
 ISR(TIMER1_OVF_vect)
 {
@@ -36,17 +44,7 @@ ISR(TIMER1_OVF_vect)
 		PORTB &= ~_BV(DEBUG_LED);
 	#endif
 	
-	if (state == STATE_TIMER_BLINK)
-	{
-		if (blink_counter % 2 == 0)
-			enable_dcdc();
-		else
-			disable_dcdc();
-		
-		blink_counter++;
-		update();
-	}
-	else if (state == STATE_TIMER_ON)
+	if (state == STATE_TIMER_ON)
 	{
 		seconds++;
 		
@@ -54,7 +52,7 @@ ISR(TIMER1_OVF_vect)
 		{
 			seconds = 0;
 			state = STATE_TIMER_OFF;
-			disable_dcdc();
+			update();
 		}
 	}
 	else if (state == STATE_TIMER_OFF)
@@ -65,8 +63,18 @@ ISR(TIMER1_OVF_vect)
 		{
 			seconds = 0;
 			state = STATE_TIMER_ON;
-			enable_dcdc();
+			update();
 		}
+	}
+	else if (state == STATE_TIMER_BLINK)
+	{
+		if (blink_counter % 2 == 0)
+			enable_dcdc();
+		else
+			disable_dcdc();
+		
+		blink_counter++;
+		update();
 	}
 }
 
@@ -102,22 +110,38 @@ void debounce(uint8_t bit)
 
 void update()
 {
+	if (state == STATE_TIMER_OFF)
+	{
+		disable_dcdc();
+		return;
+	}
+	
+	if (state == STATE_TIMER_ON)
+	{
+		enable_dcdc();
+		return;
+	}
+
 	if (state == STATE_OFF || state == STATE_ON)
 	{
 		// System is permanently on or off: stop & reset timer
 		TCCR1 = 0;
 		TCNT1 = 0;
 		blink_counter = 0;
+		
+		if (state == STATE_ON)
+			enable_dcdc();
+		else
+			disable_dcdc();
+		
+		return;
 	}
 	
-	if (state == STATE_OFF || state == STATE_TIMER_OFF)
-		disable_dcdc();
-	
-	if (state == STATE_ON || state == STATE_TIMER_ON)
-		enable_dcdc();
-	
 	if (state == STATE_TIMER_BLINK && TCCR1 == 0)
+	{
 		TCCR1 = _BV(CS12) | _BV(CS11);
+		return;
+	}
 	
 	if (state == STATE_TIMER_BLINK && blink_counter >= BLINKS)
 		state = STATE_TIMER_ON;
