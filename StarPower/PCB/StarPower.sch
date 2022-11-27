@@ -36,28 +36,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
-U 1 1 6369D795
-P 5350 5500
-F 0 "C3" H 5465 5546 50  0000 L CNN
-F 1 "C" H 5465 5455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5388 5350 50  0001 C CNN
-F 3 "~" H 5350 5500 50  0001 C CNN
-	1    5350 5500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 6369DFE7
-P 5350 5200
-F 0 "C4" H 5465 5246 50  0000 L CNN
-F 1 "C" H 5465 5155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5388 5050 50  0001 C CNN
-F 3 "~" H 5350 5200 50  0001 C CNN
-	1    5350 5200
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 636A08B3
 P 8250 3100
@@ -166,22 +144,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 636C6851
-P 5600 5550
-F 0 "#PWR0104" H 5600 5300 50  0001 C CNN
-F 1 "GND" H 5605 5377 50  0000 C CNN
-F 2 "" H 5600 5550 50  0001 C CNN
-F 3 "" H 5600 5550 50  0001 C CNN
-	1    5600 5550
+P 5000 5000
+F 0 "#PWR0104" H 5000 4750 50  0001 C CNN
+F 1 "GND" H 5005 4827 50  0000 C CNN
+F 2 "" H 5000 5000 50  0001 C CNN
+F 3 "" H 5000 5000 50  0001 C CNN
+	1    5000 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 5550 5600 5500
-Wire Wire Line
-	5600 5500 5600 5200
-Wire Wire Line
-	5600 5200 5500 5200
-Wire Wire Line
-	5500 5500 5600 5500
 Wire Wire Line
 	6850 3200 6850 3100
 Wire Wire Line
@@ -231,12 +201,8 @@ $EndComp
 Connection ~ 8250 2700
 Wire Wire Line
 	2800 4650 2800 4700
-Connection ~ 5600 5500
 Wire Wire Line
-	5600 5200 5600 5000
-Wire Wire Line
-	5600 5000 4200 5000
-Connection ~ 5600 5200
+	5000 5000 4200 5000
 Wire Wire Line
 	3800 5000 3400 5000
 NoConn ~ 3400 5100
@@ -331,12 +297,6 @@ Wire Wire Line
 	4400 5500 4600 5500
 Wire Wire Line
 	4400 5200 4600 5200
-Connection ~ 4600 5200
-Wire Wire Line
-	4600 5200 5200 5200
-Connection ~ 4600 5500
-Wire Wire Line
-	4600 5500 5200 5500
 Wire Wire Line
 	4550 3600 5600 3600
 Wire Wire Line
