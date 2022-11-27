@@ -15,15 +15,15 @@
 #define STATE_TIMER_ON 3				// Timer is active, LEDs are on
 #define STATE_TIMER_OFF 4				// Timer is active, LEDs are off
 
-#define BLINKS 7						// Number of blinks. Number * 2 + 1, e.g. 4 blinks --> 4 * 2 + 1
-#define TIMER_ON_TIME 3					// Number of seconds the LEDs are on in Timer mode
-#define TIMER_OFF_TIME 5				// Number of seconds the LEDs are off in Timer mode
+#define BLINKS 25						// Number of blinks. Number * 8 + 1, e.g. 4 blinks --> 4 * 8 + 1
+#define TIMER_ON_TIME 1					// Number of ticks the LEDs are on in Timer mode. Ticks = Number of seconds / 8
+#define TIMER_OFF_TIME 2				// Number of ticks the LEDs are off in Timer mode. Ticks = Number of seconds / 8
 
 #ifdef DEBUG
 volatile uint8_t led;
 #endif
 volatile uint8_t state;
-volatile uint16_t seconds;
+volatile uint16_t ticks;
 volatile uint8_t blink_counter;
 
 // We save ourselfs a header file here...
@@ -34,7 +34,7 @@ void setup();
 void debounce(uint8_t bit);
 void switch_state();
 
-ISR(TIMER1_OVF_vect)
+ISR(TIMER0_OVF_vect)
 {
 	#ifdef DEBUG
 	led = !led;
@@ -45,36 +45,38 @@ ISR(TIMER1_OVF_vect)
 		PORTB &= ~_BV(DEBUG_LED);
 	#endif
 	
-	// Increment seconds counter, for both timer states. If the counter
+	// Increment ticks counter, for both timer states. If the counter
 	// exceeds the limit, change the timer state (on / off).
 	// In blink mode toggle the enable state of the LED driver.
 	if (state == STATE_TIMER_ON)
 	{
-		seconds++;
+		ticks++;
 		
-		if (seconds >= TIMER_ON_TIME)
+		if (ticks >= TIMER_ON_TIME)
 		{
-			seconds = 0;
+			ticks = 0;
 			state = STATE_TIMER_OFF;
 			update();
 		}
 	}
 	else if (state == STATE_TIMER_OFF)
 	{
-		seconds++;
+		ticks++;
 
-		if (seconds >= TIMER_OFF_TIME)
+		if (ticks >= TIMER_OFF_TIME)
 		{
-			seconds = 0;
+			ticks = 0;
 			state = STATE_TIMER_ON;
 			update();
 		}
 	}
 	else if (state == STATE_TIMER_BLINK)
 	{
-		if (blink_counter % 2 == 0)
+		// The prescaler of Timer0 does not fit perfectly to the desired blink frequency,
+		// so fix that by using an appropriate modulo division.
+		if (blink_counter % 8 == 0)
 			enable_dcdc();
-		else
+		else if (blink_counter % 8 == 4)
 			disable_dcdc();
 		
 		blink_counter++;
@@ -123,8 +125,8 @@ void update()
 	if (state == STATE_OFF || state == STATE_ON)
 	{
 		// System is permanently on or off: stop & reset timer
-		TCCR1 = 0;
-		TCNT1 = 0;
+		TCCR0B = 0;
+		TCNT0 = 0;
 		blink_counter = 0;
 		
 		if (state == STATE_ON)
@@ -135,11 +137,11 @@ void update()
 		return;
 	}
 	
-	// In blink mode and unset Timer1, configure Timer1
-	if (state == STATE_TIMER_BLINK && TCCR1 == 0)
+	// In blink mode and unset Timer0, configure Timer0
+	if (state == STATE_TIMER_BLINK && TCCR0B == 0)
 	{
-		// Prescaler of 32.
-		TCCR1 = _BV(CS12) | _BV(CS11);
+		// Prescaler of 8.
+		TCCR0B = _BV(CS01);
 		return;
 	}
 	
@@ -148,8 +150,8 @@ void update()
 	
 	if (state == STATE_TIMER_ON || state == STATE_TIMER_OFF)
 	{
-		// Prescaler of 128
-		TCCR1 = _BV(CS13);
+		// Prescaler of 1024
+		TCCR0B = _BV(CS02) | _BV(CS00);
 	}
 }
 
@@ -175,8 +177,8 @@ void setup(void)
 	PCMSK |= _BV(BTN);
 	GIMSK |= _BV(PCIE);
 	
-	// Disable Timer0, USI, the ADC and the analog comparator.
-	PRR |= _BV(PRTIM0) | _BV(PRUSI) | _BV(PRADC);
+	// Disable Timer1, USI, the ADC and the analog comparator.
+	PRR |= _BV(PRTIM1) | _BV(PRUSI) | _BV(PRADC);
 	ACSR |= _BV(ACD);
 	
 	// Disable the digital input buffer
@@ -190,8 +192,8 @@ void setup(void)
 	// Enable pull-ups
 	PORTB |= _BV(BTN) | _BV(PB5) | _BV(PB4) | _BV(PB3);
 	
-	// Enable Timer1 overflow interrupt.
-	TIMSK = _BV(TOIE1);
+	// Enable Timer0 overflow interrupt.
+	TIMSK = _BV(TOIE0);
 	
 	sei();
 }
