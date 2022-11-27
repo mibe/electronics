@@ -135,8 +135,10 @@ void update()
 		return;
 	}
 	
+	// In blink mode and unset Timer1, configure Timer1
 	if (state == STATE_TIMER_BLINK && TCCR1 == 0)
 	{
+		// Prescaler of 32.
 		TCCR1 = _BV(CS12) | _BV(CS11);
 		return;
 	}
@@ -146,6 +148,7 @@ void update()
 	
 	if (state == STATE_TIMER_ON || state == STATE_TIMER_OFF)
 	{
+		// Prescaler of 128
 		TCCR1 = _BV(CS13);
 	}
 }
@@ -165,22 +168,29 @@ void switch_state()
 
 void setup(void)
 {
+	// Use Idle mode when sleeping
 	set_sleep_mode(SLEEP_MODE_IDLE);
 	
+	// Activate Pin Change interrupt on the button pin.
 	PCMSK |= _BV(BTN);
 	GIMSK |= _BV(PCIE);
 	
+	// Disable Timer0, USI, the ADC and the analog comparator.
 	PRR |= _BV(PRTIM0) | _BV(PRUSI) | _BV(PRADC);
 	ACSR |= _BV(ACD);
 	
-	DIDR0 |= _BV(AIN1D);
+	// Disable the digital input buffer
+	DIDR0 |= _BV(ADC0D) | _BV(ADC2D) | _BV(ADC3D) | _BV(ADC1D) | _BV(AIN1D) | _BV(AIN0D);
 	
 	DDRB |= _BV(ENABLE);
 	#ifdef DEBUG
 	DDRB |= _BV(DEBUG_LED);
 	#endif
+	
+	// Enable pull-ups
 	PORTB |= _BV(BTN) | _BV(PB5) | _BV(PB4) | _BV(PB3);
 	
+	// Enable Timer1 overflow interrupt.
 	TIMSK = _BV(TOIE1);
 	
 	sei();
