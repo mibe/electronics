@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
+#include <avr/sleep.h>
 
 #define DEBUG
 
@@ -44,6 +45,9 @@ ISR(TIMER1_OVF_vect)
 		PORTB &= ~_BV(DEBUG_LED);
 	#endif
 	
+	// Increment seconds counter, for both timer states. If the counter
+	// exceeds the limit, change the timer state (on / off).
+	// In blink mode toggle the enable state of the LED driver.
 	if (state == STATE_TIMER_ON)
 	{
 		seconds++;
@@ -78,6 +82,11 @@ ISR(TIMER1_OVF_vect)
 	}
 }
 
+ISR(PCINT0_vect)
+{
+	// Empty ISR. The interrupt is just used to wake the CPU from sleep.
+}
+
 void enable_dcdc()
 {
 	PORTB |= _BV(ENABLE);
@@ -88,21 +97,9 @@ void disable_dcdc()
 	PORTB &= ~_BV(ENABLE);
 }
 
-void setup(void)
-{
-	DDRB |= _BV(ENABLE);
-	#ifdef DEBUG
-	DDRB |= _BV(DEBUG_LED);
-	#endif
-	PORTB |= _BV(BTN);
-	
-	TIMSK = _BV(TOIE1);
-	
-	sei();
-}
-
 void debounce(uint8_t bit)
 {
+	// Poor man's debouncer. ;-)
 	_delay_ms(100);
 	while((PINB & _BV(bit)) == 0) {}
 	_delay_ms(50);
@@ -110,6 +107,7 @@ void debounce(uint8_t bit)
 
 void update()
 {
+	// Handle the timer states first to save CPU cycles (and thus power).
 	if (state == STATE_TIMER_OFF)
 	{
 		disable_dcdc();
@@ -165,6 +163,29 @@ void switch_state()
 	update();
 }
 
+void setup(void)
+{
+	set_sleep_mode(SLEEP_MODE_IDLE);
+	
+	PCMSK |= _BV(BTN);
+	GIMSK |= _BV(PCIE);
+	
+	PRR |= _BV(PRTIM0) | _BV(PRUSI) | _BV(PRADC);
+	ACSR |= _BV(ACD);
+	
+	DIDR0 |= _BV(AIN1D);
+	
+	DDRB |= _BV(ENABLE);
+	#ifdef DEBUG
+	DDRB |= _BV(DEBUG_LED);
+	#endif
+	PORTB |= _BV(BTN) | _BV(PB5) | _BV(PB4) | _BV(PB3);
+	
+	TIMSK = _BV(TOIE1);
+	
+	sei();
+}
+
 int main(void)
 {
 	setup();
@@ -177,6 +198,8 @@ int main(void)
 			debounce(BTN);
 			switch_state();
 		}
+		
+		sleep_mode();
 	}
 	
 	return 0;
