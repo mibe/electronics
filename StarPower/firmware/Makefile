@@ -1,4 +1,4 @@
-DEVICE  = attiny45
+DEVICE  = attiny25
 F_CPU   = 32768
 AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE) -B200 -V
 
