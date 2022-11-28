@@ -141,17 +141,6 @@ Wire Wire Line
 	4400 5200 4400 5300
 Wire Wire Line
 	4400 5300 3400 5300
-$Comp
-L power:GND #PWR0104
-U 1 1 636C6851
-P 5000 5000
-F 0 "#PWR0104" H 5000 4750 50  0001 C CNN
-F 1 "GND" H 5005 4827 50  0000 C CNN
-F 2 "" H 5000 5000 50  0001 C CNN
-F 3 "" H 5000 5000 50  0001 C CNN
-	1    5000 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6850 3200 6850 3100
 Wire Wire Line
@@ -202,10 +191,7 @@ Connection ~ 8250 2700
 Wire Wire Line
 	2800 4650 2800 4700
 Wire Wire Line
-	5000 5000 4200 5000
-Wire Wire Line
 	3800 5000 3400 5000
-NoConn ~ 3400 5100
 Connection ~ 6850 3600
 Connection ~ 6850 2700
 Text Notes 7250 3350 0    50   ~ 0
@@ -395,6 +381,28 @@ F 1 "100 nF" H 1765 3055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1688 2950 50  0001 C CNN
 F 3 "~" H 1650 3100 50  0001 C CNN
 	1    1650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5100 4300 5100
+Wire Wire Line
+	4300 5100 4300 5000
+Connection ~ 4300 5000
+Wire Wire Line
+	4300 5000 4200 5000
+Wire Wire Line
+	5000 5050 5000 5000
+Wire Wire Line
+	5000 5000 4300 5000
+$Comp
+L power:GND #PWR0104
+U 1 1 636C6851
+P 5000 5050
+F 0 "#PWR0104" H 5000 4800 50  0001 C CNN
+F 1 "GND" H 5005 4877 50  0000 C CNN
+F 2 "" H 5000 5050 50  0001 C CNN
+F 3 "" H 5000 5050 50  0001 C CNN
+	1    5000 5050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
