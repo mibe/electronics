@@ -25,12 +25,12 @@ F 3 "https://www.diodes.com/assets/Datasheets/products_inactive_data/PAM2804.pdf
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny25-20SSU U1
+L MCU_Microchip_ATtiny:ATtiny25V-10SU U1
 U 1 1 6369BBC6
 P 2800 5300
-F 0 "U1" H 2400 5850 50  0000 R CNN
-F 1 "ATtiny25-20SSU" H 2650 4750 50  0000 R CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 5300 50  0001 C CIN
+F 0 "U1" H 2300 5850 50  0000 L CNN
+F 1 "ATtiny25V-10SU" H 2650 4750 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2800 5300 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2800 5300 50  0001 C CNN
 	1    2800 5300
 	1    0    0    -1  
@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 636A2B0E
-P 4000 5000
-F 0 "SW1" H 4000 5285 50  0000 C CNN
-F 1 "TL3301" H 4000 5194 50  0000 C CNN
-F 2 "mibe:SW_SPST_TL3301" H 4000 5200 50  0001 C CNN
-F 3 "~" H 4000 5200 50  0001 C CNN
-	1    4000 5000
+P 4150 5000
+F 0 "SW1" H 4150 5285 50  0000 C CNN
+F 1 "TL3301" H 4150 5194 50  0000 C CNN
+F 2 "mibe:SW_SPST_TL3301" H 4150 5200 50  0001 C CNN
+F 3 "~" H 4150 5200 50  0001 C CNN
+	1    4150 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -191,7 +191,7 @@ Connection ~ 8250 2700
 Wire Wire Line
 	2800 4650 2800 4700
 Wire Wire Line
-	3800 5000 3400 5000
+	3950 5000 3400 5000
 Connection ~ 6850 3600
 Connection ~ 6850 2700
 Text Notes 7250 3350 0    50   ~ 0
@@ -384,16 +384,16 @@ F 3 "~" H 1650 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5100 4300 5100
+	3400 5100 4400 5100
 Wire Wire Line
-	4300 5100 4300 5000
-Connection ~ 4300 5000
+	4400 5100 4400 5000
+Connection ~ 4400 5000
 Wire Wire Line
-	4300 5000 4200 5000
+	4400 5000 4350 5000
 Wire Wire Line
 	5000 5050 5000 5000
 Wire Wire Line
-	5000 5000 4300 5000
+	5000 5000 4400 5000
 $Comp
 L power:GND #PWR0104
 U 1 1 636C6851
@@ -405,4 +405,6 @@ F 3 "" H 5000 5050 50  0001 C CNN
 	1    5000 5050
 	1    0    0    -1  
 $EndComp
+Text Label 3650 5000 0    50   ~ 0
+BUTTON
 $EndSCHEMATC
