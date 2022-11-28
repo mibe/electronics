@@ -5,6 +5,7 @@
 
 #define DEBUG
 
+// Pin mapping
 #define BTN PB0
 #define DEBUG_LED PB1
 #define ENABLE PB2
@@ -15,9 +16,10 @@
 #define STATE_TIMER_ON 3				// Timer is active, LEDs are on
 #define STATE_TIMER_OFF 4				// Timer is active, LEDs are off
 
+// Timer configuration
 #define BLINKS 25						// Number of blinks. Number * 8 + 1, e.g. 4 blinks --> 4 * 8 + 1
-#define TIMER_ON_TIME 1					// Number of ticks the LEDs are on in Timer mode. Ticks = Number of seconds / 8
-#define TIMER_OFF_TIME 2				// Number of ticks the LEDs are off in Timer mode. Ticks = Number of seconds / 8
+#define TIMER_ON_TIME 75				// Number of ticks the LEDs are on in Timer mode. Ticks = Number of seconds / 8
+#define TIMER_OFF_TIME 75				// Number of ticks the LEDs are off in Timer mode. Ticks = Number of seconds / 8
 
 #ifdef DEBUG
 volatile uint8_t led;
@@ -26,7 +28,7 @@ volatile uint8_t state;
 volatile uint16_t ticks;
 volatile uint8_t blink_counter;
 
-// We save ourselfs a header file here...
+// We save ourselves a header file here...
 void enable_dcdc();
 void disable_dcdc();
 void update();
@@ -121,7 +123,8 @@ void update()
 		enable_dcdc();
 		return;
 	}
-
+	
+	// Disable Timer0 when it is not needed.
 	if (state == STATE_OFF || state == STATE_ON)
 	{
 		// System is permanently on or off: stop & reset timer
@@ -145,9 +148,11 @@ void update()
 		return;
 	}
 	
+	// After enough blinks change to Timer mode.
 	if (state == STATE_TIMER_BLINK && blink_counter >= BLINKS)
 		state = STATE_TIMER_ON;
 	
+	// Setup Timer0 in Timer mode.
 	if (state == STATE_TIMER_ON || state == STATE_TIMER_OFF)
 	{
 		// Prescaler of 1024
@@ -157,7 +162,7 @@ void update()
 
 void switch_state()
 {
-	// Switch states from OFF --> TTIMER_BLINK; TIMER_* --> ON; ON--> OFF;
+	// Switch states from OFF --> TIMER_BLINK; TIMER_* --> ON; ON--> OFF;
 	if (state == STATE_OFF)
 		state = STATE_TIMER_BLINK;
 	else if (state == STATE_TIMER_BLINK || state == STATE_TIMER_ON || state == STATE_TIMER_OFF)
@@ -189,8 +194,8 @@ void setup(void)
 	DDRB |= _BV(DEBUG_LED);
 	#endif
 	
-	// Enable pull-ups
-	PORTB |= _BV(BTN) | _BV(PB5) | _BV(PB4) | _BV(PB3);
+	// Enable pull-up on the button pin.
+	PORTB |= _BV(BTN);
 	
 	// Enable Timer0 overflow interrupt.
 	TIMSK = _BV(TOIE0);
@@ -200,11 +205,13 @@ void setup(void)
 
 int main(void)
 {
+	// Setup hardware and activate state machine.
 	setup();
 	update();
 	
 	while(1)
 	{
+		// Switch the state when the button is pressed.
 		if ((PINB & _BV(BTN)) == 0)
 		{
 			debounce(BTN);
