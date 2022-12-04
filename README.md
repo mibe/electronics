@@ -24,11 +24,14 @@ A replacement USB board for JBL's Flip 2 bluetooth speaker
 ## LCR-Shoe
 A power supply attachment for cheap LCR meters
 
-## tiny-UPDI-burner
-A small board for connecting an USB to RS-232 converter to SOIC to DIL converters for burning ATtiny's via UPDI
+## StarPower
+A control PCB for a christmas star as a replacement for the old, less energy-efficient one
 
 ## thunder-timer
 A device to calculate thunderstorm distance by timing the interval between lightning and thunder
+
+## tiny-UPDI-burner
+A small board for connecting an USB to RS-232 converter to SOIC to DIL converters for burning ATtiny's via UPDI
 
 ## uCurrentCase
 A case for Dave Jones' µCurrent GOLD
