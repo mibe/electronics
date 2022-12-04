@@ -18,8 +18,8 @@
 
 // Timer configuration
 #define BLINKS 25						// Number of blinks. Number * 8 + 1, e.g. 4 blinks --> 4 * 8 + 1
-#define TIMER_ON_TIME 75				// Number of ticks the LEDs are on in Timer mode. Ticks = Number of seconds / 8
-#define TIMER_OFF_TIME 75				// Number of ticks the LEDs are off in Timer mode. Ticks = Number of seconds / 8
+#define TIMER_ON_TIME 2700				// Number of ticks the LEDs are on in Timer mode. Ticks = Number of seconds / 8
+#define TIMER_OFF_TIME 8100				// Number of ticks the LEDs are off in Timer mode. Ticks = Number of seconds / 8
 
 #ifdef DEBUG
 volatile uint8_t led;
