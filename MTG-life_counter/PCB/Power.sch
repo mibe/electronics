@@ -308,4 +308,8 @@ NoConn ~ 1750 3000
 NoConn ~ 1750 2900
 NoConn ~ 1750 2800
 NoConn ~ 1750 2700
+Text Label 2050 2400 0    50   ~ 0
+CC1
+Text Label 2050 2500 0    50   ~ 0
+CC2
 $EndSCHEMATC
