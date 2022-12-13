@@ -188,7 +188,7 @@ Wire Wire Line
 Connection ~ 3450 2200
 Connection ~ 3950 2200
 Wire Wire Line
-	3950 2200 5100 2200
+	3950 2200 4550 2200
 $Comp
 L Device:R R10
 U 1 1 618D046B
@@ -312,4 +312,20 @@ Text Label 2050 2400 0    50   ~ 0
 CC1
 Text Label 2050 2500 0    50   ~ 0
 CC2
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 639C798F
+P 4550 2250
+F 0 "#FLG0103" H 4550 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4550 2423 50  0000 C CNN
+F 2 "" H 4550 2250 50  0001 C CNN
+F 3 "~" H 4550 2250 50  0001 C CNN
+	1    4550 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2250 4550 2200
+Connection ~ 4550 2200
+Wire Wire Line
+	4550 2200 5100 2200
 $EndSCHEMATC
