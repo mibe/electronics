@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1524 - The 10 CENT RISC V Processor! CH32V003
+http://youtu.be/L9Wrv7nW-S8
+# eevBLAB 107 - WARNING: Youtube Telegram Comment SCAM
+http://youtu.be/nVtefye9Yz4
 # EEVblog 1523 - Dumpster Samsung Cleaning Robot TEARDOWN
 http://youtu.be/531R4DE275U
 # EEVblog 1522 - BM786 Multimeter Repair PART 2
