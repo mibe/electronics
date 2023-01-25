@@ -4,6 +4,7 @@
 
 #define MAX 99
 #define MIN 0
+#define START 8
 
 #define INC_BTN PB1
 #define DEC_BTN PB2
@@ -23,7 +24,7 @@ uint8_t isDead = 0;
 /**
  * Life counter
  */
-uint8_t counter = 2;
+uint8_t counter = START;
 
 volatile uint8_t animationCounter = 0;
 volatile uint8_t digit1 = 0;
@@ -31,7 +32,7 @@ volatile uint8_t digit2 = 0;
 
 const uint8_t digits[10] = {63, 6, 91, 79, 102, 109, 125, 7, 127, 111}; // "0123456789"
 const uint8_t dead[7] = {0, 94, 121, 119, 94, 0, 0}; // " dEAd  "
-const uint8_t mask = _BV(PB1) | _BV(PB2);
+const uint8_t btnMask = _BV(INC_BTN) | _BV(DEC_BTN);
 
 ISR(TIMER0_OVF_vect)
 {
@@ -141,9 +142,9 @@ int main(void)
 	
 	while(1)
 	{
-		uint8_t input = PINB & mask;
+		uint8_t input = PINB & btnMask;
 		
-		if (input != mask)
+		if (input != btnMask)
 		{
 			if ((input & _BV(INC_BTN)) == 0)
 			{
