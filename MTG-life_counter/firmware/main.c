@@ -119,11 +119,11 @@ void setup(void)
 	PORTB |= _BV(INC_BTN) | _BV(DEC_BTN);
 	PORTD = 0xFF;
 	
-	update_display();
+	display_counter();
 	
 	// Timer0 used for multiplexing both 7-segment displays at ~ 488 Hz.
 	// Prescaler of 64 (125 kHz), overflow interrupt enabled
-	TCCR0 = _BV(CS12);
+	TCCR0 = _BV(CS02);
 	TIMSK |= _BV(TOIE0);
 	
 	sei();
@@ -161,7 +161,7 @@ int main(void)
 				debounce(DEC_BTN);
 			}
 			
-			// If the counter reaches MIN, start the animation.
+			// If the counter reaches MIN, start the ticker animation.
 			// If the counter is (once again) bigger than MIN, disable the animation.
 			if (counter == MIN)
 				isDead = 1;
