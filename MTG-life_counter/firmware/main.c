@@ -26,7 +26,7 @@ uint8_t isDead = 0;
  */
 uint8_t counter = START;
 
-volatile uint8_t animationCounter = 0;
+volatile uint8_t tickerCounter = 0;
 volatile uint8_t digit1 = 0;
 volatile uint8_t digit2 = 0;
 
@@ -56,7 +56,7 @@ ISR(TIMER0_OVF_vect)
 	}
 	
 	if ((isDead & 0x01) == 0x01)
-		animationCounter++;
+		tickerCounter++;
 }
 
 void display_counter()
@@ -167,7 +167,7 @@ int main(void)
 				isDead = 1;
 			else
 			{
-				animationCounter = 0;
+				tickerCounter = 0;
 				isDead = 0;
 			}
 			
@@ -176,10 +176,10 @@ int main(void)
 		
 		
 		// The counter at 0x7F results in a nice ticker animation (~ 1 Hz)
-		if (animationCounter == 0x7F)
+		if (tickerCounter == 0x7F)
 		{
 			update_display();
-			animationCounter = 0;
+			tickerCounter = 0;
 		}
 	}
 	
