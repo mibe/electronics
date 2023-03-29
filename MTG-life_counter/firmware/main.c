@@ -2,14 +2,21 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
-#define MAX 99
-#define MIN 0
-#define START 8
+/**
+ * Counter values:
+ */
+#define MAX 99			// Maximum counter value
+#define MIN 0			// Minimum counter value
+#define START 20		// Starting counter value
+#define INJURED 10		// "Breathing" animation counter value
 
-#define INC_BTN PB1
-#define DEC_BTN PB2
-#define DIGIT1 PB3
-#define DIGIT2 PB4
+/**
+ * Pin mappings:
+ */
+#define INC_BTN PB1		// Button for incrementing the counter value
+#define DEC_BTN PB2		// Button for decrementing the counter value
+#define DIGIT1 PB3		// Anode driver for first digit
+#define DIGIT2 PB4		// Anode driver for second digit
 
 /**
  * State variable of the Dead ticker-style animation
@@ -22,16 +29,35 @@
 uint8_t isDead = 0;
 
 /**
- * Life counter
+ * State variable for the breathing animation. Set when the counter is not greather than INJURED.
+ */
+uint8_t isInjured = 0;
+
+/**
+ * Life counter, set to START
  */
 uint8_t counter = START;
 
+/**
+ * Variables containing the bits for the 7-segment display for the digits.
+ */
+uint8_t digit1 = 0;
+uint8_t digit2 = 0;
+
+/**
+ * State variables for the ticker and the breathing animation.
+ */
+volatile uint8_t origPORTD = 0;
+volatile uint8_t breathDirection = 0;
+volatile uint8_t breathStep = 0;
+volatile uint8_t breathIndex = 0;
+volatile uint8_t timer1Compare = 0;
+volatile uint8_t timer1Counter = 0;
 volatile uint8_t tickerCounter = 0;
-volatile uint8_t digit1 = 0;
-volatile uint8_t digit2 = 0;
 
 const uint8_t digits[10] = {63, 6, 91, 79, 102, 109, 125, 7, 127, 111}; // "0123456789"
 const uint8_t dead[7] = {0, 94, 121, 119, 94, 0, 0}; // " dEAd  "
+const uint8_t breath[21] = {0, 0, 0, 1, 1, 2, 3, 4, 6, 8, 10, 12, 15, 18, 21, 22, 23, 24, 25, 25, 25}; // breath curve: inhale; backwards exhale
 const uint8_t btnMask = _BV(INC_BTN) | _BV(DEC_BTN);
 
 ISR(TIMER0_OVF_vect)
@@ -55,11 +81,56 @@ ISR(TIMER0_OVF_vect)
 		PORTD = digit2;
 	}
 	
-	if ((isDead & 0x01) == 0x01)
+	// Backup PORTD. This is used in the TIMER1_COMP ISR.
+	origPORTD = PORTD;
+	
+	if (isDead)
 		tickerCounter++;
+	
+	if (isInjured)
+	{
+		// Next "breath" index every 10th step
+		if (breathStep == 10)
+		{
+			timer1Compare = breath[breathIndex];
+			
+			// Increment or decrement the index depending on the direction and swap it when needed.
+			if (breathDirection == 0)
+			{
+				if (breathIndex == 20)
+					breathDirection = 1;
+				else
+					breathIndex++;
+			}
+			else
+			{
+				if (breathIndex == 0)
+					breathDirection = 0;
+				else
+					breathIndex--;
+			}
+			
+			// Reset step
+			breathStep = 0;
+		}
+		else
+			breathStep++;
+	}
 }
 
-void display_counter()
+ISR(TIMER1_COMP_vect)
+{
+	// Enable all segments when the counter is smaller than timer1Compare.
+	// Otherwise use original PORTD value. This is basically a software PWM.
+	if (timer1Counter < timer1Compare)
+		PORTD = 0x0;
+	else
+		PORTD = origPORTD;
+	
+	timer1Counter++;
+}
+
+void calc_digits()
 {
 	uint8_t temp = counter;
 	uint8_t tenths = 0;
@@ -80,19 +151,19 @@ void display_counter()
 
 void update_display()
 {
-	// Is the player dead? Check first bit = general dead state
-	if ((isDead & 0x01) == 0x01)
+	// Is the player dead?
+	if (isDead)
 	{
 		// Player is dead, do the ticker
 		// Wait one animation cycle to display the zero. Bit two used here as state.
 		if ((isDead & 0x02) == 0x00)
 		{
-			display_counter();
+			calc_digits();
 			isDead = 0x03;
 		}
 		else
 		{
-			// Get index from the last three bits (mask & shift)
+			// Get index from the three MSB bits (mask & shift)
 			uint8_t index = (isDead & 0xE0) >> 5;
 			digit1 = ~dead[index++];
 			digit2 = ~dead[index];
@@ -101,12 +172,34 @@ void update_display()
 			if (index >= 6)
 				index = 0;
 			
-			// Save index
+			// Save index in state variable
 			isDead = (index << 5) | 0x03;
 		}
 	}
 	else
-		display_counter();
+		calc_digits();
+}
+
+void start_breathing()
+{
+	isInjured = 1;
+	
+	// Timer1 runs at clock speed.
+	TCCR1B |= _BV(CS10);
+}
+
+void stop_breathing()
+{
+	// Reset state variables
+	isInjured = 0;
+	breathDirection = 0;
+	breathStep = 0;
+	breathIndex = 0;
+	timer1Compare = 0;
+	timer1Counter = 0;
+	
+	// Stop Timer1
+	TCCR1B &= ~_BV(CS10);
 }
 
 void setup(void)
@@ -119,18 +212,26 @@ void setup(void)
 	PORTB |= _BV(INC_BTN) | _BV(DEC_BTN);
 	PORTD = 0xFF;
 	
-	display_counter();
+	calc_digits();
 	
-	// Timer0 used for multiplexing both 7-segment displays at ~ 488 Hz.
+	// Timer0 is used for multiplexing both 7-segment displays at ~ 488 Hz.
 	// Prescaler of 64 (125 kHz), overflow interrupt enabled
 	TCCR0 = _BV(CS02);
-	TIMSK |= _BV(TOIE0);
+	
+	// Timer1 is used for a "breathing" animation.
+	// Set output compare to 0xFF and to clear Timer1 at a match.
+	OCR1 = 0xFF;
+	TCCR1B = _BV(CTC1);
+	
+	// Enable interrupt handlers: Timer0 overflow & Timer1 compare match
+	TIMSK |= _BV(TOIE0) | _BV(OCIE1);
 	
 	sei();
 }
 
 void debounce(uint8_t bit)
 {
+	// Poor man's debouncing: Just wait until the button is not pressed anymore
 	_delay_ms(100);
 	while((PINB & _BV(bit)) == 0) {}
 	_delay_ms(50);
@@ -142,6 +243,7 @@ int main(void)
 	
 	while(1)
 	{
+		// Get button state
 		uint8_t input = PINB & btnMask;
 		
 		if (input != btnMask)
@@ -162,18 +264,27 @@ int main(void)
 			}
 			
 			// If the counter reaches MIN, start the ticker animation.
-			// If the counter is (once again) bigger than MIN, disable the animation.
+			// If the counter is (once again) greater than MIN, disable the animation.
 			if (counter == MIN)
+			{
 				isDead = 1;
+				stop_breathing();
+			}
 			else
 			{
 				tickerCounter = 0;
 				isDead = 0;
 			}
 			
+			// If the coutner is greater than MIN but less or equal INJURED start the breathing animation.
+			// If not, stop it.
+			if (counter > MIN && counter <= INJURED)
+				start_breathing();
+			else
+				stop_breathing();
+			
 			update_display();
 		}
-		
 		
 		// The counter at 0x7F results in a nice ticker animation (~ 1 Hz)
 		if (tickerCounter == 0x7F)
