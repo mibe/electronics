@@ -4,6 +4,10 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB 111 - The TMA Banning x1/x10 Switchable Probes?
+http://youtu.be/LeVZ5n3K2io
+# EEVblog 1535 - DeepPCB AI AutoRouting FAIL!
+http://youtu.be/HJVy8LAI_Bc
 # eevBLAB 110 - Linus Tech Tips HACKED!
 http://youtu.be/qegYDD1A8VA
 # EEVblog 1534 - Solar Freakin' RAILways!
