@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
+#include <avr/pgmspace.h>
 
 /**
  * Counter values:
@@ -55,9 +56,9 @@ volatile uint8_t timer1Compare = 0;
 volatile uint8_t timer1Counter = 0;
 volatile uint8_t tickerCounter = 0;
 
-const uint8_t digits[10] = {63, 6, 91, 79, 102, 109, 125, 7, 127, 111}; // "0123456789"
-const uint8_t dead[7] = {0, 94, 121, 119, 94, 0, 0}; // " dEAd  "
-const uint8_t breath[21] = {0, 0, 0, 1, 1, 2, 3, 4, 6, 8, 10, 12, 15, 18, 21, 22, 23, 24, 25, 25, 25}; // breath curve: inhale; backwards exhale
+const uint8_t digits[10] PROGMEM = {63, 6, 91, 79, 102, 109, 125, 7, 127, 111}; // "0123456789"
+const uint8_t dead[7] PROGMEM = {0, 94, 121, 119, 94, 0, 0}; // " dEAd  "
+const uint8_t breath[21] PROGMEM = {0, 0, 0, 1, 1, 2, 3, 4, 6, 8, 10, 12, 15, 18, 21, 22, 23, 24, 25, 25, 25}; // breath curve: inhale; backwards exhale
 const uint8_t btnMask = _BV(INC_BTN) | _BV(DEC_BTN);
 
 ISR(TIMER0_OVF_vect)
@@ -92,7 +93,7 @@ ISR(TIMER0_OVF_vect)
 		// Next "breath" index every 10th step
 		if (breathStep == 10)
 		{
-			timer1Compare = breath[breathIndex];
+			timer1Compare = pgm_read_byte(&(breath[breathIndex]));
 			
 			// Increment or decrement the index depending on the direction and swap it when needed.
 			if (breathDirection == 0)
@@ -142,11 +143,11 @@ void calc_digits()
 	}
 	
 	if (tenths > 0)
-		digit1 = ~digits[tenths];
+		digit1 = ~pgm_read_byte(&(digits[tenths]));
 	else
 		digit1 = 0xFF;
 	
-	digit2 = ~digits[temp];
+	digit2 = ~pgm_read_byte(&(digits[temp]));
 }
 
 void update_display()
@@ -165,8 +166,8 @@ void update_display()
 		{
 			// Get index from the three MSB bits (mask & shift)
 			uint8_t index = (isDead & 0xE0) >> 5;
-			digit1 = ~dead[index++];
-			digit2 = ~dead[index];
+			digit1 = ~pgm_read_byte(&(dead[index++]));
+			digit2 = ~pgm_read_byte(&(dead[index]));
 			
 			// Reset index if necessary
 			if (index >= 6)

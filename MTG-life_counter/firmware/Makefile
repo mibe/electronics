@@ -4,7 +4,7 @@ AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE) -V
 
 OBJECTS = main.o
 
-COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) -I. -mmcu=$(DEVICE) -std=c99
+COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) -I. -mmcu=$(DEVICE) -std=c99 -Wl,-Map,main.map
 
 help:
 	@echo "make hex		compile main.hex"
