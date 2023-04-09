@@ -4,6 +4,8 @@
 # Á				µ
 # õ				ä
 
+# EEVblog 1536 - How to find a $50 Oscilloscope on Ebay (Part 3)
+http://youtu.be/6oxiaeXYja8
 # eevBLAB 111 - The TMA Banning x1/x10 Switchable Probes?
 http://youtu.be/LeVZ5n3K2io
 # EEVblog 1535 - DeepPCB AI AutoRouting FAIL!
