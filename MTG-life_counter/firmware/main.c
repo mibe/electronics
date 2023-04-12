@@ -6,18 +6,19 @@
 /**
  * Counter values:
  */
-#define MAX 99			// Maximum counter value
-#define MIN 0			// Minimum counter value
-#define START 20		// Starting counter value
-#define INJURED 10		// "Breathing" animation counter value
+#define MAX			99			// Maximum counter value
+#define MIN			0			// Minimum counter value
+#define START		20			// Starting counter value
+#define START_THG	30			// Starting counter value for Two-Headed Giant
+#define INJURED		10			// "Breathing" animation counter value
 
 /**
  * Pin mappings:
  */
-#define INC_BTN PB1		// Button for incrementing the counter value
-#define DEC_BTN PB2		// Button for decrementing the counter value
-#define DIGIT1 PB3		// Anode driver for first digit
-#define DIGIT2 PB4		// Anode driver for second digit
+#define INC_BTN		PB1			// Button for incrementing the counter value
+#define DEC_BTN		PB2			// Button for decrementing the counter value
+#define DIGIT1		PB3			// Anode driver for first digit
+#define DIGIT2		PB4			// Anode driver for second digit
 
 /**
  * State variable of the Dead ticker-style animation
@@ -216,10 +217,10 @@ void setup(void)
 	calc_digits();
 	
 	// Timer0 is used for multiplexing both 7-segment displays at ~ 488 Hz.
-	// Prescaler of 64 (125 kHz), overflow interrupt enabled
+	// Prescaler of 64 (125 kHz)
 	TCCR0 = _BV(CS02);
 	
-	// Timer1 is used for a "breathing" animation.
+	// Timer1 is used for a "breathing" animation (but not started here).
 	// Set output compare to 0xFF and to clear Timer1 at a match.
 	OCR1 = 0xFF;
 	TCCR1B = _BV(CTC1);
@@ -230,12 +231,26 @@ void setup(void)
 	sei();
 }
 
-void debounce(uint8_t bit)
+uint8_t debounce(uint8_t bit, uint8_t cancelBit)
 {
+	uint8_t canceled = 0;
+	
 	// Poor man's debouncing: Just wait until the button is not pressed anymore
 	_delay_ms(100);
-	while((PINB & _BV(bit)) == 0) {}
-	_delay_ms(50);
+	while((PINB & _BV(bit)) == 0)
+	{
+		// Abort the loop when the cancel pin is low (button is pressed). Also check for a valid pin bit value.
+		if (cancelBit <= 0x80 && (PINB & _BV(cancelBit)) == 0)
+		{
+			canceled = 1;
+			break;
+		}
+	}
+	
+	if (!canceled)
+		_delay_ms(50);
+	
+	return canceled;
 }
 
 int main(void)
@@ -254,14 +269,30 @@ int main(void)
 				if (counter < MAX)
 					counter++;
 				
-				debounce(INC_BTN);
+				uint8_t both = debounce(INC_BTN, DEC_BTN);
+				
+				// If both buttons were pressed, reset the counter.
+				if (both)
+				{
+					counter = START;
+					debounce(INC_BTN, 0xFF);
+					debounce(DEC_BTN, 0xFF);
+				}
 			}
 			else if ((input & _BV(DEC_BTN)) == 0)
 			{
 				if (counter > MIN)
 					counter--;
 				
-				debounce(DEC_BTN);
+				uint8_t both = debounce(DEC_BTN, INC_BTN);
+				
+				// If both buttons were pressed, reset the counter to the Two-Headed Giant starting value.
+				if (both)
+				{
+					counter = START_THG;
+					debounce(INC_BTN, 0xFF);
+					debounce(DEC_BTN, 0xFF);
+				}
 			}
 			
 			// If the counter reaches MIN, start the ticker animation.
@@ -277,7 +308,7 @@ int main(void)
 				isDead = 0;
 			}
 			
-			// If the coutner is greater than MIN but less or equal INJURED start the breathing animation.
+			// If the counter is greater than MIN but less or equal INJURED start the breathing animation.
 			// If not, stop it.
 			if (counter > MIN && counter <= INJURED)
 				start_breathing();
