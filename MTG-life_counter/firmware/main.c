@@ -207,14 +207,19 @@ void stop_breathing()
 void setup(void)
 {
 	// Set both anode drivers of the digits as outputs. Port D is also an output.
-	DDRB |= _BV(PB0) | _BV(DIGIT1) | _BV(DIGIT2);
+	DDRB |= _BV(DIGIT1) | _BV(DIGIT2);
 	DDRD = 0xFF;
 	
-	// Enable pull-ups on both pins for the push buttons. Also set all Port D pins high (disable display).
-	PORTB |= _BV(INC_BTN) | _BV(DEC_BTN);
+	// Enable pull-ups on both pins for the push buttons and the unused pins on Port B.
+	// Also enable pull-ups on Port C and set all Port D pins high (disable display).
+	PORTB |= _BV(INC_BTN) | _BV(DEC_BTN) | _BV(PB0) | _BV(PB5);
+	PORTC = 0xFF;
 	PORTD = 0xFF;
 	
 	calc_digits();
+	
+	// Disable Analog Comparator
+	ACSR |= _BV(ACD);
 	
 	// Timer0 is used for multiplexing both 7-segment displays at ~ 488 Hz.
 	// Prescaler of 64 (125 kHz)
