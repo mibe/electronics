@@ -1,6 +1,6 @@
 DEVICE  = at90s4433
 F_CPU   = 8000000
-AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE) -V
+AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE)
 
 OBJECTS = main.o
 
@@ -15,10 +15,13 @@ help:
 hex: main.hex
 
 flash: main.hex
-	$(AVRDUDE) -U flash:w:main.hex:i
+	$(AVRDUDE) -V -U flash:w:main.hex:i
 
 fuse:
 	$(AVRDUDE) -U hfuse:w:0xdf:m -U lfuse:w:0x62:m
+
+terminal:
+	$(AVRDUDE) -t
 
 clean:
 	rm -f main.hex main.lst main.obj main.cof main.list main.map main.elf *.o
