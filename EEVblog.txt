@@ -4,6 +4,32 @@
 # Á				µ
 # õ				ä
 
+# eevBLAB 113 - How the Paid Media Influence Industry Works
+http://youtu.be/6-2ifl6AEvk
+# EEVblog 1545 - R&S MXO4 TEARDOWN. The World's Fastest Oscilloscope!
+http://youtu.be/BTuXbY_nBOM
+# EEVblog 1545 - MXO4 World's Fastest Oscilloscope TEARDOWN
+http://youtu.be/MahWtpA_PzQ
+# EEVblog 1544 - Platio Solar Pavement BUSTED!
+http://youtu.be/atRvNG669Os
+# Talking with Steve Sanghi. 31 years as CEO of Microchip
+http://youtu.be/d1D3d3YIc9A
+# EEVblog 1543 - Mailbag FNIRSI HS-01 USB Portable Soldering Iron
+http://youtu.be/Ia0C_X0ycFE
+# EEVblog 1542 - A Decade of Dumpster Diving!
+http://youtu.be/rjh-xS5pjCw
+# EEVblog1541 - What is this Blown SMD Component? Redux
+http://youtu.be/T2aa3X8Y0xs
+# eevBLAB 112 - Purchasing Email SCAM
+http://youtu.be/qkaC3PTOcZY
+# EEVblog 1540 - The $80 Zotek ZT-702S Osciloscope Multimeter REVIEW
+http://youtu.be/aUU-PGUnd0E
+# EEVblog 1539 - NEW PROJECT Part 3 - STM32L vs PIC24F
+http://youtu.be/mN4obUsJXVY
+# EEVblog 1538 - NEW PROJECT Part 2 - Microcontroller Selection
+http://youtu.be/SaQw_OQ0_4g
+# EEVblog 1537 - NEW PROJECT Enclosure Search FAIL
+http://youtu.be/NhIVaNh8Qhg
 # EEVblog 1536 - How to find a $50 Oscilloscope on Ebay (Part 3)
 http://youtu.be/6oxiaeXYja8
 # eevBLAB 111 - The TMA Banning x1/x10 Switchable Probes?
